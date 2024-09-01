@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Region and Country Selector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,28 +12,27 @@
             margin: 0 auto;
             padding: 20px;
         }
-
         select {
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
         }
-
-        #selectionDisplay,
-        #dataDisplay {
-            background-color: #eae9e9;
+        #selectionDisplay, #dataDisplay {
+            background-color: #f0f0f0;
             padding: 15px;
             border-radius: 5px;
             margin-top: 20px;
         }
-
         #dataDisplay {
             max-height: 500px;
             overflow-y: auto;
         }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
-
 <body>
     <h1>Region and Country Selector</h1>
     <select id="regionSelect">
@@ -55,11 +55,44 @@
         const selectedCountrySpan = document.getElementById('selectedCountry');
         const selectedUrlSpan = document.getElementById('selectedUrl');
         const dataDisplay = document.getElementById('dataDisplay');
+        let data = {};
 
-        async function fetchRegions() {
-            const response = await fetch('/regions');
-            const regions = await response.json();
-            regions.forEach(region => {
+        // 替换为您的GitHub仓库中CSV文件的raw URL
+        const csvUrl = 'https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/countylink.csv';
+
+        async function fetchCSVData() {
+            try {
+                const response = await fetch(csvUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const csvText = await response.text();
+                Papa.parse(csvText, {
+                    complete: function(results) {
+                        processData(results.data);
+                    },
+                    header: true
+                });
+            } catch (error) {
+                console.error("Error fetching CSV data:", error);
+                dataDisplay.innerHTML = `<p class="error">Error loading data: ${error.message}</p>`;
+            }
+        }
+
+        function processData(csvData) {
+            data = csvData.reduce((acc, row) => {
+                Object.keys(row).forEach(key => {
+                    if (!acc[key]) acc[key] = [];
+                    if (row[key]) acc[key].push(row[key]);
+                });
+                return acc;
+            }, {});
+            populateRegions();
+        }
+
+        function populateRegions() {
+            regionSelect.innerHTML = '<option value="">Select a region</option>';
+            Object.keys(data).forEach(region => {
                 const option = document.createElement('option');
                 option.value = region;
                 option.textContent = formatName(region);
@@ -67,55 +100,87 @@
             });
         }
 
-        async function fetchCountries(region) {
+        function populateCountries(region) {
             countrySelect.innerHTML = '<option value="">Select a country</option>';
-            const response = await fetch(`/countries/${region}`);
-            const countries = await response.json();
-            countries.forEach(country => {
-                const option = document.createElement('option');
-                option.value = country.url;
-                option.textContent = country.name;
-                countrySelect.appendChild(option);
-            });
+            if (data[region]) {
+                data[region].forEach(url => {
+                    if (url) {
+                        const country = url.split('/').slice(-2, -1)[0];
+                        const option = document.createElement('option');
+                        option.value = url;
+                        option.textContent = formatName(country);
+                        countrySelect.appendChild(option);
+                    }
+                });
+            }
         }
 
         function formatName(name) {
             return name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
         }
 
-        async function updateDisplay() {
+        function updateDisplay() {
             selectedRegionSpan.textContent = regionSelect.options[regionSelect.selectedIndex].text;
             selectedCountrySpan.textContent = countrySelect.options[countrySelect.selectedIndex].text;
             selectedUrlSpan.textContent = countrySelect.value || 'None';
 
             if (countrySelect.value) {
-                await fetchData(countrySelect.value);
+                fetchCountryData(countrySelect.value);
             } else {
                 dataDisplay.innerHTML = '';
             }
         }
 
-        async function fetchData(url) {
+        async function fetchCountryData(url) {
             try {
                 dataDisplay.innerHTML = 'Loading data...';
-                const response = await fetch(`/country-data/${encodeURIComponent(url)}`);
-                const data = await response.json();
-                dataDisplay.innerHTML = data.html;
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const html = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                
+                const divs = doc.querySelectorAll('div#geography, div#people-and-society, div#environment, div#government');
+                let extractedText = '';
+                
+                divs.forEach(div => {
+                    const tags = div.querySelectorAll('h2, h3, p, br');
+                    tags.forEach(tag => {
+                        if (tag.tagName === 'BR') {
+                            extractedText += '<br>';
+                        } else if (tag.tagName === 'H2' || tag.tagName === 'H3') {
+                            if (tag.tagName === 'H3' && tag.querySelector('a')) {
+                                extractedText += `<${tag.tagName}>${tag.querySelector('a').textContent}</${tag.tagName}>`;
+                            } else {
+                                extractedText += tag.outerHTML;
+                            }
+                        } else if (tag.tagName === 'P') {
+                            const pContent = tag.outerHTML;
+                            if (!extractedText.includes(pContent)) {
+                                extractedText += pContent;
+                            }
+                        }
+                    });
+                });
+                
+                dataDisplay.innerHTML = extractedText;
             } catch (error) {
-                console.error('Error fetching data:', error);
-                dataDisplay.innerHTML = 'Error fetching data. Please try again.';
+                console.error('Error fetching country data:', error);
+                dataDisplay.innerHTML = `<p class="error">Error fetching country data: ${error.message}</p>`;
             }
         }
 
-        regionSelect.addEventListener('change', async function () {
-            await fetchCountries(this.value);
-            await updateDisplay();
+        regionSelect.addEventListener('change', function() {
+            populateCountries(this.value);
+            updateDisplay();
         });
 
         countrySelect.addEventListener('change', updateDisplay);
 
-        fetchRegions();
+        // 初始化加载CSV数据
+        fetchCSVData();
     </script>
 </body>
-
 </html>
