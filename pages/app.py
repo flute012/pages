@@ -50,5 +50,5 @@ def get_country_data(url):
     
     return jsonify({'html': text})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+    #app.run(debug=True)
