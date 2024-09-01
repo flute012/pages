@@ -1,5 +1,4 @@
-
-from flask import Flask, jsonify, send_file
+#from flask import Flask, jsonify, send_file
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -7,7 +6,7 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
 # 读取CSV文件
 df = pd.read_csv(r'C:\Users\user\啟動伺服器\countylink.csv')
