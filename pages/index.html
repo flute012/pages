@@ -1,51 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>快速切換區塊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region and Country Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #selectionDisplay,
+        #dataDisplay {
+            background-color: #eae9e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #dataDisplay {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="block1">區塊 1</div>
-    <div id="block2">區塊 2</div>
-    <div id="block3">區塊 3</div>
-    <div id="block4">區塊 4</div>
-    <div id="block5">區塊 5</div>
-    <div id="block6">區塊 6</div>
-
-    <div class="tab" data-block-ids="block1,block2,block3">第一頁</div>
-    <div class="tab" data-block-ids="block1,block2,block3">第二頁</div>
-    <div class="tab" data-block-ids="block2,block3,block4,block6">第三頁</div>
-    <div class="tab" data-block-ids="block1,block4,block5,block6">第四頁</div>
+    <h1>Region and Country Selector</h1>
+    <select id="regionSelect">
+        <option value="">Select a region</option>
+    </select>
+    <select id="countrySelect">
+        <option value="">Select a country</option>
+    </select>
+    <div id="selectionDisplay">
+        <p>Selected Region: <span id="selectedRegion">None</span></p>
+        <p>Selected Country: <span id="selectedCountry">None</span></p>
+        <p>Selected URL: <span id="selectedUrl">None</span></p>
+    </div>
+    <div id="dataDisplay"></div>
 
     <script>
-        function onTabClick(event) {
-            // 獲取點擊的分頁
-            const tab = event.target;
+        const regionSelect = document.getElementById('regionSelect');
+        const countrySelect = document.getElementById('countrySelect');
+        const selectedRegionSpan = document.getElementById('selectedRegion');
+        const selectedCountrySpan = document.getElementById('selectedCountry');
+        const selectedUrlSpan = document.getElementById('selectedUrl');
+        const dataDisplay = document.getElementById('dataDisplay');
 
-            // 隱藏所有區塊
-            document.querySelectorAll("div").forEach(div => div.style.display = "none");
+        async function fetchRegions() {
+            const response = await fetch('/regions');
+            const regions = await response.json();
+            regions.forEach(region => {
+                const option = document.createElement('option');
+                option.value = region;
+                option.textContent = formatName(region);
+                regionSelect.appendChild(option);
+            });
+        }
 
-            // 顯示對應區塊
-            const blockIds = tab.dataset.blockIds.split(",");
-            for (const blockId of blockIds) {
-                document.getElementById(blockId).style.display = "block";
+        async function fetchCountries(region) {
+            countrySelect.innerHTML = '<option value="">Select a country</option>';
+            const response = await fetch(`/countries/${region}`);
+            const countries = await response.json();
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.url;
+                option.textContent = country.name;
+                countrySelect.appendChild(option);
+            });
+        }
+
+        function formatName(name) {
+            return name.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        async function updateDisplay() {
+            selectedRegionSpan.textContent = regionSelect.options[regionSelect.selectedIndex].text;
+            selectedCountrySpan.textContent = countrySelect.options[countrySelect.selectedIndex].text;
+            selectedUrlSpan.textContent = countrySelect.value || 'None';
+
+            if (countrySelect.value) {
+                await fetchData(countrySelect.value);
+            } else {
+                dataDisplay.innerHTML = '';
             }
         }
 
-        document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", onTabClick));
-
-        function onHashChange() {
-            // 獲取分頁的 ID
-            const tabId = location.hash.substring(1);
-
-            // 切換分頁
-            const tab = document.querySelector(`.tab[data-block-ids="${tabId}"`);
-            tab.click();
+        async function fetchData(url) {
+            try {
+                dataDisplay.innerHTML = 'Loading data...';
+                const response = await fetch(`/country-data/${encodeURIComponent(url)}`);
+                const data = await response.json();
+                dataDisplay.innerHTML = data.html;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                dataDisplay.innerHTML = 'Error fetching data. Please try again.';
+            }
         }
 
-        document.addEventListener("hashchange", onHashChange);
+        regionSelect.addEventListener('change', async function () {
+            await fetchCountries(this.value);
+            await updateDisplay();
+        });
+
+        countrySelect.addEventListener('change', updateDisplay);
+
+        fetchRegions();
     </script>
 </body>
 
