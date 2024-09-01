@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 #app = Flask(__name__)
 
 # 读取CSV文件
-df = pd.read_csv(r'C:\Users\user\啟動伺服器\countylink.csv')
+df = pd.read_csv('countylink.csv')
 
 @app.route('/')
 def index():
