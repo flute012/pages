@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国家数据比较</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        select,
+        button {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        #countryList {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-item {
+            flex: 0 0 auto;
+            margin-right: 15px;
+        }
+
+        #clearSelectedCountries {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #clearSelectedCountries:hover {
+            background-color: #d32f2f;
+        }
+
+        .selected-country {
+            background-color: #e0e0e0;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        .remove-country {
+            cursor: pointer;
+            color: red;
+            margin-left: 5px;
+        }
+
+        .comparison-table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .comparison-table .country-column {
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .comparison-table .indicator-column {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+
+        .comparison-table .odd-column {
+            background-color: #ffe6e6;
+        }
+
+        .comparison-table .even-column {
+            background-color: #ffffff;
+        }
+
+        .comparison-table .odd-row {
+            background-color: #f9f9f9;
+        }
+
+        .comparison-table .even-row {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>国家数据比较</h1>
+
+    <div id="countrySelector">
+        <select id="regionSelect">
+            <option value="">选择一个地区</option>
+        </select>
+        <div id="countryList" style="display:none;"></div>
+    </div>
+
+    <div id="fileInfo">
+        <p>数据更新日期: <span id="updateDate"></span></p>
+        <p id="csvDownload"></p>
+    </div>
+    <div id="selectedCountries">
+        <h3>已选择的国家：</h3>
+        <button id="clearSelectedCountries">清除所有选择</button>
+        <div id="selectedCountriesList"></div>
+    </div>
+
+    <h2>选择要显示的指标：</h2>
+    <div id="indicatorList"></div>
+
+    <button id="compareButton">比较</button>
+
+    <div id="countryData"></div>
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>
