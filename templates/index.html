@@ -1,196 +1,49 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>資料比較</title>
+    <title>国家数据比较</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-            margin: 5px;
-            padding: 5px;
-        }
-
-        select,
-        button {
-            margin: 5px 0;
-            padding: 5px;
-        }
-
-        #indicatorList {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        #indicatorList td {
-            padding: 5px;
-            border: none;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        #fileInfo {
-            margin: 8px 0 5px 0;
-            padding: 3px 10px;
-            background-color: #f7e6e6;
-            border-radius: 5px;
-            font-size: 12px;
-        }
-
-        #clearSelectedCountries {
-            background-color: #f58a82;
-            color: rgb(66, 65, 65);
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        #clearSelectedCountries:hover {
-            background-color: #fad4d4;
-            color: rgb(12, 12, 12);
-        }
-
-        .selected-country {
-            background-color: #fdf3ed;
-            padding: 5px;
-            margin: 5px;
-            display: inline-block;
-            border-radius: 3px;
-        }
-
-        .remove-country {
-            cursor: pointer;
-            color: rgb(253, 64, 64);
-            margin-left: 5px;
-        }
-
-        #countryList {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        #countryData table {
-            border-collapse: collapse;
-            width: 100%;
-            border: 1px solid #f6d0d0;
-        }
-
-        #countryData th,
-        #countryData td {
-            border: 1px solid #e9e9e9;
-            padding: 8px;
-            text-align: left;
-        }
-
-        #countryData th {
-            background-color: #f2f2f2;
-        }
-
-        .comparison-table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        .comparison-table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        .comparison-table .country-column {
-            font-weight: bold;
-            background-color: #f5d08f;
-            /* 绿色背景 */
-            color: rgb(16, 15, 15);
-        }
-
-        .comparison-table .indicator-column {
-            font-weight: bold;
-            background-color: #f2f2f2;
-            /* 浅灰色背景 */
-        }
-
-        .comparison-table .odd-column {
-            background-color: #ffe6e6;
-            /* 浅红色 */
-        }
-
-        .comparison-table .even-column {
-            background-color: #ffffff;
-            /* 白色 */
-        }
-
-        .comparison-table .odd-row {
-            background-color: #f9f9f9;
-            /* 浅灰色 */
-        }
-
-        .comparison-table .even-row {
-            background-color: #ffffff;
-            /* 白色 */
-        }
-
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        select, button { margin: 10px 0; padding: 5px; }
+        #countryList { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .checkbox-item { flex: 0 0 auto; margin-right: 15px; }
+        #clearSelectedCountries { margin-top: 10px; padding: 5px 10px; background-color: #f44336; color: white; border: none; cursor: pointer; }
+        #clearSelectedCountries:hover { background-color: #d32f2f; }
+        .selected-country { background-color: #e0e0e0; padding: 5px; margin: 5px; display: inline-block; border-radius: 3px; }
+        .remove-country { cursor: pointer; color: red; margin-left: 5px; }
+        .comparison-table { border-collapse: collapse; width: 100%; }
+        .comparison-table th, .comparison-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .comparison-table .country-column { font-weight: bold; background-color: #4CAF50; color: white; }
+        .comparison-table .indicator-column { font-weight: bold; background-color: #f2f2f2; }
+        .comparison-table .odd-column { background-color: #ffe6e6; }
+        .comparison-table .even-column { background-color: #ffffff; }
+        .comparison-table .odd-row { background-color: #f9f9f9; }
+        .comparison-table .even-row { background-color: #ffffff; }
     </style>
 </head>
-
 <body>
-    <h1>資料比較</h1>
-
-
+    <h1>国家数据比较</h1>
+    
     <div id="countrySelector">
         <select id="regionSelect">
-            <option value="">選擇一個地區</option>
-            {% for region in regions %}
-            <option value="{{ region }}">{{ region }}</option>
-            {% endfor %}
+            <option value="">选择一个地区</option>
         </select>
         <div id="countryList" style="display:none;"></div>
-        <button id="addCountryButton" style="display:none;">添加選中的國家</button>
     </div>
-
-    <div id="fileInfo">
-        <p id="csvDownload"><a href="/data/merged_country_data.csv" download>下載所有數據(CSV)</a> 資料更新日期: <span
-                id="updateDate"></span> </p>
-
-    </div>
-
+    
     <div id="selectedCountries">
-        <h3>已選擇的國家：</h3>
-        <button id="clearSelectedCountries">清除所有選擇</button>
+        <h3>已选择的国家：</h3>
+        <button id="clearSelectedCountries">清除所有选择</button>
         <div id="selectedCountriesList"></div>
     </div>
-
-    <h2>選擇要顯示的指標：</h2>
-    <table id="indicatorList"></table>
-
-    <button id="compareButton">比較</button>
-
+    
+    <h2>选择要显示的指标：</h2>
+    <div id="indicatorList"></div>
+    
+    <button id="compareButton">比较</button>
+    
     <div id="countryData"></div>
 
     <script>
@@ -203,101 +56,81 @@
         const countryData = document.getElementById('countryData');
 
         const indicatorTranslations = {
-            "area": "面積",
+            "area": "面积",
             "population": "人口",
-            "Age dependency ratio (% of working-age population)": "扶養比（占勞動年齡人口的百分比）",
-            "GDP (current US$)": "國內生產總值（美元）",
-            "GDP growth (annual %)": "國內生產總值增長率（年度百分比）",
-            "GDP per capita (current US$)": "人均國內生產總額（美元）",
-            "GNI per capita (current US$)": "人均國民總收入（美元）",
-            "Merchandise exports (current US$)": "商品出口（美元）",
-            "Merchandise imports (current US$)": "商品進口（美元）",
-            "Urban population (% of total)": "城市人口（占總人口百分比）"
+            "Age dependency ratio (% of working-age population)": "年龄依赖比（占劳动年龄人口的百分比）",
+            "GDP (current US$)": "国内生产总值（现价美元）",
+            "GDP growth (annual %)": "国内生产总值增长率（年度百分比）",
+            "GDP per capita (current US$)": "人均国内生产总值（现价美元）",
+            "GNI per capita (current US$)": "人均国民总收入（现价美元）",
+            "Merchandise exports (current US$)": "商品出口（现价美元）",
+            "Merchandise imports (current US$)": "商品进口（现价美元）",
+            "Urban population (% of total)": "城市人口（占总人口百分比）"
         };
 
         function initializeUI() {
-            regionSelect.addEventListener('change', function () {
-                fetch(`/get_countries/${this.value}`)
-                    .then(response => response.json())
-                    .then(countries => {
-                        countryList.innerHTML = `
-                            <div class="checkbox-item">
-                                <input type="checkbox" id="selectAll" name="countries" value="全部">
-                                <label for="selectAll">全部</label>
-                            </div>
-                        `;
-                        countries.forEach(country => {
-                            countryList.innerHTML += `
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="${country}" name="countries" value="${country}">
-                                    <label for="${country}">${country}</label>
-                                </div>
-                            `;
-                        });
-                        countryList.style.display = 'flex';
+            fetch('merged_country_data.json')
+                .then(response => response.json())
+                .then(data => {
+                    fullData = data;
+                    updateRegionSelect();
+                    initializeIndicatorList();
+                })
+                .catch(error => console.error('Error loading data:', error));
 
-                        document.querySelectorAll('input[name="countries"]').forEach(checkbox => {
-                            checkbox.addEventListener('change', function () {
-                                if (this.value === '全部') {
-                                    handleSelectAll(this.checked);
-                                } else {
-                                    handleCountrySelection(this.value, this.checked);
-                                }
-                            });
-                        });
-                    });
-            });
-
+            regionSelect.addEventListener('change', updateCountries);
             compareButton.addEventListener('click', compareCountries);
             document.getElementById('clearSelectedCountries').addEventListener('click', clearSelectedCountries);
+        }
 
-            initializeIndicatorList();
-            fetchFileInfo();
+        function updateRegionSelect() {
+            for (const region in fullData) {
+                const option = document.createElement('option');
+                option.value = region;
+                option.textContent = region;
+                regionSelect.appendChild(option);
+            }
+        }
+
+        function updateCountries() {
+            const region = regionSelect.value;
+            countryList.innerHTML = `
+                <div class="checkbox-item">
+                    <input type="checkbox" id="selectAll" name="countries" value="全部">
+                    <label for="selectAll">全部</label>
+                </div>
+            `;
+            fullData[region].forEach(country => {
+                countryList.innerHTML += `
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="${country.chinese}" name="countries" value="${country.chinese}">
+                        <label for="${country.chinese}">${country.chinese}</label>
+                    </div>
+                `;
+            });
+            countryList.style.display = 'flex';
+
+            document.querySelectorAll('input[name="countries"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    if (this.value === '全部') {
+                        handleSelectAll(this.checked);
+                    } else {
+                        handleCountrySelection(this.value, this.checked);
+                    }
+                });
+            });
         }
 
         function initializeIndicatorList() {
             const indicatorList = document.getElementById('indicatorList');
-            let tableHTML = '';
-            const indicators = Object.entries(indicatorTranslations);
-            const rows = Math.ceil(indicators.length / 4);
-
-            for (let i = 0; i < rows; i++) {
-                tableHTML += '<tr>';
-                for (let j = 0; j < 4; j++) {
-                    const index = i * 4 + j;
-                    if (index < indicators.length) {
-                        const [key, value] = indicators[index];
-                        tableHTML += `
-                            <td>
-                                <div class="checkbox-item">
-                                    <input type="checkbox" id="${key}" name="indicators" value="${key}" checked>
-                                    <label for="${key}">${value}</label>
-                                </div>
-                            </td>
-                        `;
-                    } else {
-                        tableHTML += '<td></td>';
-                    }
-                }
-                tableHTML += '</tr>';
+            for (const [key, value] of Object.entries(indicatorTranslations)) {
+                indicatorList.innerHTML += `
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="${key}" name="indicators" value="${key}" checked>
+                        <label for="${key}">${value}</label>
+                    </div>
+                `;
             }
-
-            indicatorList.innerHTML = tableHTML;
-        }
-
-        function fetchFileInfo() {
-            fetch('/file_info')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('updateDate').textContent = data.json_update_date;
-                    // if (data.csv_exists) {
-                    //     document.getElementById('csvDownload').innerHTML =
-                    //         '<a href="/data/merged_country_data.csv" download>下載所有數據(CSV)</a>';
-                    // } else {
-                    //     document.getElementById('csvDownload').textContent = 'CSV文件不可用';
-                    // }
-                })
-                .catch(error => console.error('Error fetching file info:', error));
         }
 
         function handleSelectAll(isChecked) {
@@ -358,37 +191,31 @@
                 return;
             }
 
-            fetch('/data/merged_country_data.json')
-                .then(response => response.json())
-                .then(data => {
-                    fullData = data;
-                    let html = '<table class="comparison-table">';
+            let html = '<table class="comparison-table">';
+            
+            // 添加表头（指标名称）
+            html += '<tr><th class="country-column">国家/指标</th>';
+            selectedIndicators.forEach((indicator, index) => {
+                html += `<th class="indicator-column ${index % 2 === 0 ? 'even-column' : 'odd-column'}">${indicatorTranslations[indicator]}</th>`;
+            });
+            html += '</tr>';
 
-                    // 添加表头（指标名称）
-                    html += '<tr><th class="country-column">国家/指标</th>';
-                    selectedIndicators.forEach((indicator, index) => {
-                        html += `<th class="indicator-column ${index % 2 === 0 ? 'even-column' : 'odd-column'}">${indicatorTranslations[indicator]}</th>`;
-                    });
-                    html += '</tr>';
+            // 添加每个国家的数据行
+            let rowIndex = 0;
+            for (const country in selectedCountriesData) {
+                html += `<tr class="${rowIndex % 2 === 0 ? 'even-row' : 'odd-row'}">`;
+                html += `<td class="country-column">${country}</td>`;
+                const countryData = findCountryData(country);
+                selectedIndicators.forEach((indicator, index) => {
+                    const value = countryData ? countryData[indicator] : 'N/A';
+                    html += `<td class="${index % 2 === 0 ? 'even-column' : 'odd-column'}">${formatNumber(value)}</td>`;
+                });
+                html += '</tr>';
+                rowIndex++;
+            }
 
-                    // 添加每个国家的数据行
-                    let rowIndex = 0;
-                    for (const country in selectedCountriesData) {
-                        html += `<tr class="${rowIndex % 2 === 0 ? 'even-row' : 'odd-row'}">`;
-                        html += `<td class="country-column">${country}</td>`;
-                        const countryData = findCountryData(country);
-                        selectedIndicators.forEach((indicator, index) => {
-                            const value = countryData ? countryData[indicator] : 'N/A';
-                            html += `<td class="${index % 2 === 0 ? 'even-column' : 'odd-column'}">${formatNumber(value)}</td>`;
-                        });
-                        html += '</tr>';
-                        rowIndex++;
-                    }
-
-                    html += '</table>';
-                    countryData.innerHTML = html;
-                })
-                .catch(error => console.error('Error loading data:', error));
+            html += '</table>';
+            countryData.innerHTML = html;
         }
 
         function findCountryData(countryName) {
@@ -407,7 +234,7 @@
             if (Math.abs(num) >= 1e8) {
                 return (num / 1e8).toFixed(decimalPlaces) + ' 億';
             } else if (Math.abs(num) >= 1e6) {
-                return (num / 1e6).toFixed(decimalPlaces) + ' 百萬';
+                return (num / 1e6).toFixed(decimalPlaces) + ' 百万';
             } else if (Math.abs(num) >= 1e3) {
                 return num.toLocaleString('en-US', { maximumFractionDigits: decimalPlaces });
             } else {
@@ -418,5 +245,4 @@
         document.addEventListener('DOMContentLoaded', initializeUI);
     </script>
 </body>
-
 </html>
