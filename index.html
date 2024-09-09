@@ -140,9 +140,9 @@
                     
                     if (indicator.includes('US$')) {
                         if (value >= 1e8) {
-                            return (value / 1e8).toFixed(2) + '亿美元';
+                            return (value / 1e8).toFixed(2) + '亿';
                         } else if (value >= 1e4) {
-                            return (value / 1e4).toFixed(2) + '万美元';
+                            return (value / 1e4).toFixed(2) + '万';
                         }
                     }
                     
