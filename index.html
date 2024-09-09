@@ -88,20 +88,19 @@
                 indicators: [
                     { key: 'area', label: '面积' },
                     { key: 'population', label: '人口' },
-                    { key: 'age_dependency_ratio', label: '年龄依赖比（占劳动年龄人口的百分比）' },
-                    { key: 'gdp', label: '国内生产总值（现价美元）' },
-                    { key: 'gdp_growth', label: '国内生产总值增长率（年度百分比）' },
-                    { key: 'gdp_per_capita', label: '人均国内生产总值（现价美元）' },
-                    { key: 'gni_per_capita', label: '人均国民总收入（现价美元）' },
-                    { key: 'exports', label: '商品出口（现价美元）' },
-                    { key: 'imports', label: '商品进口（现价美元）' },
-                    { key: 'urban_population_ratio', label: '城市人口（占总人口百分比）' }
+                    { key: 'Age dependency ratio (% of working-age population)', label: '年龄依赖比（占劳动年龄人口的百分比）' },
+                    { key: 'GDP (current US$)', label: '国内生产总值（现价美元）' },
+                    { key: 'GDP growth (annual %)', label: '国内生产总值增长率（年度百分比）' },
+                    { key: 'GDP per capita (current US$)', label: '人均国内生产总值（现价美元）' },
+                    { key: 'GNI per capita (current US$)', label: '人均国民总收入（现价美元）' },
+                    { key: 'Merchandise exports (current US$)', label: '商品出口（现价美元）' },
+                    { key: 'Merchandise imports (current US$)', label: '商品进口（现价美元）' },
+                    { key: 'Urban population (% of total)', label: '城市人口（占总人口百分比）' }
                 ],
                 selectedIndicators: [],
                 comparisonData: [],
                 updateDate: '',
                 countryData: null,
-                countyLinkData: null,
                 csvDownloadUrl: '',
                 selectAll: false
             },
@@ -112,12 +111,10 @@
                 loadData() {
                     Promise.all([
                         fetch('data/merged_country_data.json').then(response => response.json()),
-                        fetch('countylink.json').then(response => response.json()),
                         fetch('data/merged_country_data.csv').then(response => response.blob())
-                    ]).then(([mergedData, countyLinkData, csvBlob]) => {
+                    ]).then(([mergedData, csvBlob]) => {
                         this.countryData = mergedData;
-                        this.countyLinkData = countyLinkData;
-                        this.regions = Object.keys(countyLinkData);
+                        this.regions = Object.keys(mergedData);
                         this.updateDate = new Date().toISOString().split('T')[0]; // 使用当前日期作为更新日期
                         this.csvDownloadUrl = URL.createObjectURL(csvBlob);
                         this.selectedIndicators = this.indicators.map(i => i.key); // 默认选择所有指标
@@ -126,8 +123,8 @@
                     });
                 },
                 loadCountries() {
-                    if (this.selectedRegion && this.countyLinkData) {
-                        this.countries = this.countyLinkData[this.selectedRegion].countries;
+                    if (this.selectedRegion && this.countryData) {
+                        this.countries = this.countryData[this.selectedRegion];
                         this.selectedCountries = []; // 清空之前的选择
                         this.selectAll = false;
                     } else {
@@ -148,10 +145,7 @@
                     this.selectAll = false;
                 },
                 compareCountries() {
-                    this.comparisonData = this.selectedCountries.map(country => {
-                        const fullData = this.countryData[this.selectedRegion].find(c => c.name === country.name);
-                        return { ...country, ...fullData };
-                    });
+                    this.comparisonData = this.selectedCountries;
                 },
                 getIndicatorLabel(key) {
                     return this.indicators.find(i => i.key === key)?.label || key;
