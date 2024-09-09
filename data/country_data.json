@@ -1,0 +1,1431 @@
+{
+  "歐洲": [
+    {
+      "name": "Russian Federation",
+      "chinese": "俄羅斯",
+      "capital": "Moscow",
+      "area": 17098242,
+      "population": 140820810
+    },
+    {
+      "name": "Albania",
+      "chinese": "阿爾巴尼亞",
+      "capital": "Tirana (Tirane)",
+      "area": 28748,
+      "population": 3107100
+    },
+    {
+      "name": "Andorra",
+      "chinese": "安道爾",
+      "capital": "Andorra la Vella",
+      "area": 468,
+      "population": 85370
+    },
+    {
+      "name": "Austria",
+      "chinese": "奧地利",
+      "capital": "Vienna",
+      "area": 83871,
+      "population": 8967982
+    },
+    {
+      "name": "Belarus",
+      "chinese": "白俄羅斯",
+      "capital": "Minsk",
+      "area": 207600,
+      "population": 9501451
+    },
+    {
+      "name": "Belgium",
+      "chinese": "比利時",
+      "capital": "Brussels",
+      "area": 30528,
+      "population": 11977634
+    },
+    {
+      "name": "Bosnia and Herzegovina",
+      "chinese": "波士尼亞與赫塞哥維納",
+      "capital": "Sarajevo",
+      "area": 51197,
+      "population": 3798671
+    },
+    {
+      "name": "Bulgaria",
+      "chinese": "保加利亞",
+      "capital": "Sofia",
+      "area": 110879,
+      "population": 6782659
+    },
+    {
+      "name": "Croatia",
+      "chinese": "克羅埃西亞",
+      "capital": "Zagreb",
+      "area": 56594,
+      "population": 4150116
+    },
+    {
+      "name": "Czechia",
+      "chinese": "捷克",
+      "capital": "Prague",
+      "area": 78867,
+      "population": 10837890
+    },
+    {
+      "name": "Denmark",
+      "chinese": "丹麥",
+      "capital": "Copenhagen",
+      "area": 43094,
+      "population": 5973136
+    },
+    {
+      "name": "Estonia",
+      "chinese": "愛沙尼亞",
+      "capital": "Tallinn",
+      "area": 45228,
+      "population": 1193791
+    },
+    {
+      "name": "Finland",
+      "chinese": "芬蘭",
+      "capital": "Helsinki",
+      "area": 338145,
+      "population": 5626414
+    },
+    {
+      "name": "France",
+      "chinese": "法國",
+      "capital": "Paris",
+      "area": 643801,
+      "population": 68374591
+    },
+    {
+      "name": "Germany",
+      "chinese": "德國",
+      "capital": "Berlin",
+      "area": 357022,
+      "population": 84119100
+    },
+    {
+      "name": "Greece",
+      "chinese": "希臘",
+      "capital": "Athens",
+      "area": 131957,
+      "population": 10461091
+    },
+    {
+      "name": "Holy See (Vatican City)",
+      "chinese": "梵蒂岡",
+      "capital": "Vatican City",
+      "area": 0,
+      "population": 1000
+    },
+    {
+      "name": "Hungary",
+      "chinese": "匈牙利",
+      "capital": "Budapest",
+      "area": 93028,
+      "population": 9855745
+    },
+    {
+      "name": "Iceland",
+      "chinese": "冰島",
+      "capital": "Reykjavik",
+      "area": 103000,
+      "population": 364036
+    },
+    {
+      "name": "Ireland",
+      "chinese": "愛爾蘭",
+      "capital": "Dublin",
+      "area": 70273,
+      "population": 5233461
+    },
+    {
+      "name": "Italy",
+      "chinese": "義大利",
+      "capital": "Rome",
+      "area": 301340,
+      "population": 60964931
+    },
+    {
+      "name": "Kosovo",
+      "chinese": "科索沃",
+      "capital": "Pristina (Prishtine, Prishtina)",
+      "area": 10887,
+      "population": 1977093
+    },
+    {
+      "name": "Latvia",
+      "chinese": "拉脫維亞",
+      "capital": "Riga",
+      "area": 64589,
+      "population": 1801246
+    },
+    {
+      "name": "Liechtenstein",
+      "chinese": "列支敦斯登",
+      "capital": "Vaduz",
+      "area": 160,
+      "population": 40272
+    },
+    {
+      "name": "Lithuania",
+      "chinese": "立陶宛",
+      "capital": "Vilnius",
+      "area": 65300,
+      "population": 2628186
+    },
+    {
+      "name": "Luxembourg",
+      "chinese": "盧森堡",
+      "capital": "Luxembourg",
+      "area": 2586,
+      "population": 671254
+    },
+    {
+      "name": "Malta",
+      "chinese": "馬爾他",
+      "capital": "Valletta",
+      "area": 316,
+      "population": 469730
+    },
+    {
+      "name": "Moldova",
+      "chinese": "摩爾多瓦",
+      "capital": "Chisinau in Romanian (Kishinev in Russian)",
+      "area": 33851,
+      "population": 3599528
+    },
+    {
+      "name": "Monaco",
+      "chinese": "摩納哥",
+      "capital": "Monaco",
+      "area": 2,
+      "population": 31813
+    },
+    {
+      "name": "Montenegro",
+      "chinese": "蒙特內哥羅",
+      "capital": "Podgorica; note - Cetinje retains the status of \"Old Royal Capital\"",
+      "area": 13812,
+      "population": 599849
+    },
+    {
+      "name": "Netherlands",
+      "chinese": "荷蘭",
+      "capital": "Amsterdam; note - The Hague is the seat of government",
+      "area": 41543,
+      "population": 17772378
+    },
+    {
+      "name": "North Macedonia",
+      "chinese": "北馬其頓",
+      "capital": "Skopje",
+      "area": 25713,
+      "population": 2135622
+    },
+    {
+      "name": "Norway",
+      "chinese": "挪威",
+      "capital": "Oslo",
+      "area": 323802,
+      "population": 5509733
+    },
+    {
+      "name": "Poland",
+      "chinese": "波蘭",
+      "capital": "Warsaw",
+      "area": 312685,
+      "population": 38746310
+    },
+    {
+      "name": "Portugal",
+      "chinese": "葡萄牙",
+      "capital": "Lisbon",
+      "area": 92090,
+      "population": 10207177
+    },
+    {
+      "name": "Romania",
+      "chinese": "羅馬尼亞",
+      "capital": "Bucharest",
+      "area": 238391,
+      "population": 18148155
+    },
+    {
+      "name": "San Marino",
+      "chinese": "聖馬利諾",
+      "capital": "San Marino (city)",
+      "area": 61,
+      "population": 35095
+    },
+    {
+      "name": "Serbia",
+      "chinese": "塞爾維亞",
+      "capital": "Belgrade (Beograd)",
+      "area": 77474,
+      "population": 6652212
+    },
+    {
+      "name": "Slovak Republic",
+      "chinese": "斯洛伐克",
+      "capital": "Bratislava",
+      "area": 49035,
+      "population": 5563649
+    },
+    {
+      "name": "Slovenia",
+      "chinese": "斯洛維尼亞",
+      "capital": "Ljubljana",
+      "area": 20273,
+      "population": 2097893
+    },
+    {
+      "name": "Spain",
+      "chinese": "西班牙",
+      "capital": "Madrid",
+      "area": 505370,
+      "population": 47280433
+    },
+    {
+      "name": "Sweden",
+      "chinese": "瑞典",
+      "capital": "Stockholm",
+      "area": 450295,
+      "population": 10589835
+    },
+    {
+      "name": "Switzerland",
+      "chinese": "瑞士",
+      "capital": "Bern",
+      "area": 41277,
+      "population": 8860574
+    },
+    {
+      "name": "Ukraine",
+      "chinese": "烏克蘭",
+      "capital": "Kyiv (Kiev is the transliteration from Russian)",
+      "area": 603550,
+      "population": 35661826
+    },
+    {
+      "name": "United Kingdom",
+      "chinese": "英國",
+      "capital": "London",
+      "area": 243610,
+      "population": 68459055
+    }
+  ],
+  "南亞": [
+    {
+      "name": "Bangladesh",
+      "chinese": "孟加拉",
+      "capital": "Dhaka",
+      "area": 148460,
+      "population": 168697184
+    },
+    {
+      "name": "Bhutan",
+      "chinese": "不丹",
+      "capital": "Thimphu",
+      "area": 38394,
+      "population": 884546
+    },
+    {
+      "name": "India",
+      "chinese": "印度",
+      "capital": "New Delhi",
+      "area": 3287263,
+      "population": 1409128296
+    },
+    {
+      "name": "Maldives",
+      "chinese": "馬爾地夫",
+      "capital": "Male",
+      "area": 298,
+      "population": 388858
+    },
+    {
+      "name": "Nepal",
+      "chinese": "尼泊爾",
+      "capital": "Kathmandu",
+      "area": 147181,
+      "population": 31122387
+    },
+    {
+      "name": "Pakistan",
+      "chinese": "巴基斯坦",
+      "capital": "Islamabad",
+      "area": 796095,
+      "population": 252363571
+    },
+    {
+      "name": "Sri Lanka",
+      "chinese": "斯里蘭卡",
+      "capital": "Colombo (commercial capital); Sri Jayewardenepura Kotte (legislative capital)",
+      "area": 65610,
+      "population": 21982608
+    }
+  ],
+  "東南亞": [
+    {
+      "name": "Brunei Darussalam",
+      "chinese": "汶萊",
+      "capital": "Bandar Seri Begawan",
+      "area": 5765,
+      "population": 491900
+    },
+    {
+      "name": "Myanmar",
+      "chinese": "緬甸",
+      "capital": "Rangoon (aka Yangon, continues to be recognized as the primary Burmese capital by the US Government); Nay Pyi Taw is the administrative capital",
+      "area": 676578,
+      "population": 57527139
+    },
+    {
+      "name": "Cambodia",
+      "chinese": "柬埔寨",
+      "capital": "Phnom Penh",
+      "area": 181035,
+      "population": 17063669
+    },
+    {
+      "name": "Indonesia",
+      "chinese": "印尼",
+      "capital": "Jakarta; note - Indonesian lawmakers on 18 January 2022 approved the relocation of the country’s capital from Jakarta to a site on the island of Borneo between Samarinda City and the port city of Balikpapan; Nusantara (\"archipelago\"), the name of the new capital, is expected to be established in August 2024",
+      "area": 1904569,
+      "population": 281562465
+    },
+    {
+      "name": "Lao PDR",
+      "chinese": "寮國",
+      "capital": "Vientiane (Viangchan)",
+      "area": 236800,
+      "population": 7953556
+    },
+    {
+      "name": "Malaysia",
+      "chinese": "馬來西亞",
+      "capital": "Kuala Lumpur; note - nearby Putrajaya is referred to as a federal government administrative center but not the capital; Parliament meets in Kuala Lumpur",
+      "area": 329847,
+      "population": 34564810
+    },
+    {
+      "name": "Philippines",
+      "chinese": "菲律賓",
+      "capital": "Manila",
+      "area": 300000,
+      "population": 118277063
+    },
+    {
+      "name": "Singapore",
+      "chinese": "新加坡",
+      "capital": "Singapore",
+      "area": 719,
+      "population": 6028459
+    },
+    {
+      "name": "Thailand",
+      "chinese": "泰國",
+      "capital": "Bangkok",
+      "area": 513120,
+      "population": 69920998
+    },
+    {
+      "name": "Timor-Leste",
+      "chinese": "東帝汶",
+      "capital": "Dili",
+      "area": 14874,
+      "population": 1506909
+    },
+    {
+      "name": "Viet Nam",
+      "chinese": "越南",
+      "capital": "Hanoi (Ha Noi)",
+      "area": 331210,
+      "population": 105758975
+    }
+  ],
+  "東亞": [
+    {
+      "name": "China",
+      "chinese": "中國",
+      "capital": "Beijing",
+      "area": 9596960,
+      "population": 1416043270
+    },
+    {
+      "name": "Hong Kong SAR, China",
+      "chinese": "香港",
+      "capital": null,
+      "area": 1108,
+      "population": 7297821
+    },
+    {
+      "name": "Japan",
+      "chinese": "日本",
+      "capital": "Tokyo",
+      "area": 377915,
+      "population": 123201945
+    },
+    {
+      "name": "Korea, Dem. People's Rep.",
+      "chinese": "朝鮮",
+      "capital": "Pyongyang",
+      "area": 120538,
+      "population": 26298666
+    },
+    {
+      "name": "Korea, Rep.",
+      "chinese": "韓國",
+      "capital": "Seoul; note - Sejong, located some 120 km (75 mi) south of Seoul, serves as an administrative capital for segments of the South Korean Government",
+      "area": 99720,
+      "population": 52081799
+    },
+    {
+      "name": "Macao SAR, China",
+      "chinese": "澳門",
+      "capital": null,
+      "area": 28,
+      "population": 644426
+    },
+    {
+      "name": "Mongolia",
+      "chinese": "蒙古",
+      "capital": "Ulaanbaatar",
+      "area": 1564116,
+      "population": 3281676
+    },
+    {
+      "name": "Taiwan",
+      "chinese": "臺灣",
+      "capital": "Taipei",
+      "area": 35980,
+      "population": 23595274
+    }
+  ],
+  "西亞": [
+    {
+      "name": "Cyprus",
+      "chinese": "賽普勒斯",
+      "capital": "Nicosia (Lefkosia/Lefkosa)",
+      "area": 9251,
+      "population": 1320525
+    },
+    {
+      "name": "Bahrain",
+      "chinese": "巴林",
+      "capital": "Manama",
+      "area": 760,
+      "population": 1566888
+    },
+    {
+      "name": "Iran, Islamic Rep.",
+      "chinese": "伊朗",
+      "capital": "Tehran",
+      "area": 1648195,
+      "population": 88386937
+    },
+    {
+      "name": "Iraq",
+      "chinese": "伊拉克",
+      "capital": "Baghdad",
+      "area": 438317,
+      "population": 42083436
+    },
+    {
+      "name": "Israel",
+      "chinese": "以色列",
+      "capital": "Jerusalem; note - the US recognized Jerusalem as Israel’s capital in December 2017 without taking a position on the specific boundaries of Israeli sovereignty",
+      "area": 21937,
+      "population": 9402617
+    },
+    {
+      "name": "Jordan",
+      "chinese": "約旦",
+      "capital": "Amman",
+      "area": 89342,
+      "population": 11174024
+    },
+    {
+      "name": "Kuwait",
+      "chinese": "科威特",
+      "capital": "Kuwait City",
+      "area": 17818,
+      "population": 3138355
+    },
+    {
+      "name": "Lebanon",
+      "chinese": "黎巴嫩",
+      "capital": "Beirut",
+      "area": 10400,
+      "population": 5364482
+    },
+    {
+      "name": "Oman",
+      "chinese": "阿曼",
+      "capital": "Muscat",
+      "area": 309500,
+      "population": 3901992
+    },
+    {
+      "name": "Qatar",
+      "chinese": "卡達",
+      "capital": "Doha",
+      "area": 11586,
+      "population": 2552088
+    },
+    {
+      "name": "Saudi Arabia",
+      "chinese": "沙烏地阿拉伯",
+      "capital": "Riyadh",
+      "area": 2149690,
+      "population": 36544431
+    },
+    {
+      "name": "Syrian Arab Republic",
+      "chinese": "敘利亞",
+      "capital": "Damascus",
+      "area": 187437,
+      "population": 23865423
+    },
+    {
+      "name": "Turkiye",
+      "chinese": "土耳其",
+      "capital": "Ankara",
+      "area": 783562,
+      "population": 84119531
+    },
+    {
+      "name": "United Arab Emirates",
+      "chinese": "阿拉伯聯合大公國",
+      "capital": "Abu Dhabi",
+      "area": 83600,
+      "population": 10032213
+    },
+    {
+      "name": "Yemen, Rep.",
+      "chinese": "葉門",
+      "capital": "Sanaa",
+      "area": 527968,
+      "population": 32140443
+    },
+    {
+      "name": "Afghanistan",
+      "chinese": "阿富汗",
+      "capital": "Kabul",
+      "area": 652230,
+      "population": 40121552
+    }
+  ],
+  "北美洲": [
+    {
+      "name": "Canada",
+      "chinese": "加拿大",
+      "capital": "Ottawa",
+      "area": 9984670,
+      "population": 38794813
+    },
+    {
+      "name": "United States",
+      "chinese": "美國",
+      "capital": "Washington, DC",
+      "area": 9833517,
+      "population": 341963408
+    }
+  ],
+  "中南美洲": [
+    {
+      "name": "Antigua and Barbuda",
+      "chinese": "安地卡及巴布達",
+      "capital": "Saint John's",
+      "area": 443,
+      "population": 102634
+    },
+    {
+      "name": "Bahamas, The",
+      "chinese": "巴哈馬",
+      "capital": "Nassau",
+      "area": 13880,
+      "population": 410862
+    },
+    {
+      "name": "Barbados",
+      "chinese": "巴貝多",
+      "capital": "Bridgetown",
+      "area": 430,
+      "population": 304139
+    },
+    {
+      "name": "Belize",
+      "chinese": "貝里斯",
+      "capital": "Belmopan",
+      "area": 22966,
+      "population": 415789
+    },
+    {
+      "name": "Costa Rica",
+      "chinese": "哥斯大黎加",
+      "capital": "San José",
+      "area": 51100,
+      "population": 5265575
+    },
+    {
+      "name": "Cuba",
+      "chinese": "古巴",
+      "capital": "Havana",
+      "area": 110860,
+      "population": 10966038
+    },
+    {
+      "name": "Dominica",
+      "chinese": "多米尼克",
+      "capital": "Roseau",
+      "area": 751,
+      "population": 74661
+    },
+    {
+      "name": "Dominican Republic",
+      "chinese": "多明尼加",
+      "capital": "Santo Domingo",
+      "area": 48670,
+      "population": 10815857
+    },
+    {
+      "name": "El Salvador",
+      "chinese": "薩爾瓦多",
+      "capital": "San Salvador",
+      "area": 21041,
+      "population": 6628702
+    },
+    {
+      "name": "Grenada",
+      "chinese": "格瑞那達",
+      "capital": "Saint George's",
+      "area": 344,
+      "population": 114621
+    },
+    {
+      "name": "Guatemala",
+      "chinese": "瓜地馬拉",
+      "capital": "Guatemala City",
+      "area": 108889,
+      "population": 18255216
+    },
+    {
+      "name": "Haiti",
+      "chinese": "海地",
+      "capital": "Port-au-Prince",
+      "area": 27750,
+      "population": 11753943
+    },
+    {
+      "name": "Honduras",
+      "chinese": "宏都拉斯",
+      "capital": "Tegucigalpa; note - article eight of the Honduran constitution states that the twin cities of Tegucigalpa and Comayaguela, jointly, constitute the capital of the Republic of Honduras; however, virtually all governmental institutions are on the Tegucigalpa side, which in practical terms makes Tegucigalpa the capital",
+      "area": 112090,
+      "population": 9529188
+    },
+    {
+      "name": "Jamaica",
+      "chinese": "牙買加",
+      "capital": "Kingston",
+      "area": 10991,
+      "population": 2823713
+    },
+    {
+      "name": "Nicaragua",
+      "chinese": "尼加拉瓜",
+      "capital": "Managua",
+      "area": 130370,
+      "population": 6676948
+    },
+    {
+      "name": "Panama",
+      "chinese": "巴拿馬",
+      "capital": "Panama City",
+      "area": 75420,
+      "population": 4470241
+    },
+    {
+      "name": "St. Kitts and Nevis",
+      "chinese": "聖克里斯多福及尼維斯",
+      "capital": "Basseterre",
+      "area": 261,
+      "population": 55133
+    },
+    {
+      "name": "St. Lucia",
+      "chinese": "聖露西亞",
+      "capital": "Castries",
+      "area": 616,
+      "population": 168038
+    },
+    {
+      "name": "St. Vincent and the Grenadines",
+      "chinese": "聖文森及格瑞那丁",
+      "capital": "Kingstown",
+      "area": 389,
+      "population": 100647
+    },
+    {
+      "name": "Trinidad and Tobago",
+      "chinese": "千里達及托巴哥",
+      "capital": "Port of Spain",
+      "area": 5128,
+      "population": 1408966
+    },
+    {
+      "name": "Mexico",
+      "chinese": "墨西哥",
+      "capital": "Mexico City (Ciudad de Mexico)",
+      "area": 1964375,
+      "population": 130739927
+    },
+    {
+      "name": "Argentina",
+      "chinese": "阿根廷",
+      "capital": "Buenos Aires",
+      "area": 2780400,
+      "population": 46994384
+    },
+    {
+      "name": "Bolivia",
+      "chinese": "玻利維亞",
+      "capital": "La Paz (administrative capital); Sucre (constitutional [legislative and judicial] capital)",
+      "area": 1098581,
+      "population": 12311974
+    },
+    {
+      "name": "Brazil",
+      "chinese": "巴西",
+      "capital": "Brasília",
+      "area": 8515770,
+      "population": 220051512
+    },
+    {
+      "name": "Chile",
+      "chinese": "智利",
+      "capital": "Santiago; note - Valparaiso is the seat of the national legislature",
+      "area": 756102,
+      "population": 18664652
+    },
+    {
+      "name": "Colombia",
+      "chinese": "哥倫比亞",
+      "capital": "Bogotá",
+      "area": 1138910,
+      "population": 49588357
+    },
+    {
+      "name": "Ecuador",
+      "chinese": "厄瓜多",
+      "capital": "Quito",
+      "area": 283561,
+      "population": 18309984
+    },
+    {
+      "name": "Guyana",
+      "chinese": "蓋亞那",
+      "capital": "Georgetown",
+      "area": 214969,
+      "population": 794099
+    },
+    {
+      "name": "Paraguay",
+      "chinese": "巴拉圭",
+      "capital": "Asunción",
+      "area": 406752,
+      "population": 7522549
+    },
+    {
+      "name": "Peru",
+      "chinese": "秘魯",
+      "capital": "Lima",
+      "area": 1285216,
+      "population": 32600249
+    },
+    {
+      "name": "Suriname",
+      "chinese": "蘇利南",
+      "capital": "Paramaribo",
+      "area": 163820,
+      "population": 646758
+    },
+    {
+      "name": "Uruguay",
+      "chinese": "烏拉圭",
+      "capital": "Montevideo",
+      "area": 176215,
+      "population": 3425330
+    },
+    {
+      "name": "Venezuela, RB",
+      "chinese": "委內瑞拉",
+      "capital": "Caracas",
+      "area": 912050,
+      "population": 31250306
+    }
+  ],
+  "中亞": [
+    {
+      "name": "Kazakhstan",
+      "chinese": "哈薩克",
+      "capital": "Astana",
+      "area": 2724900,
+      "population": 20260006
+    },
+    {
+      "name": "Kyrgyz Republic",
+      "chinese": "吉爾吉斯",
+      "capital": "Bishkek",
+      "area": 199951,
+      "population": 6172101
+    },
+    {
+      "name": "Tajikistan",
+      "chinese": "塔吉克",
+      "capital": "Dushanbe",
+      "area": 144100,
+      "population": 10394063
+    },
+    {
+      "name": "Turkmenistan",
+      "chinese": "土庫曼",
+      "capital": "Ashgabat (Ashkhabad)",
+      "area": 488100,
+      "population": 5744151
+    },
+    {
+      "name": "Uzbekistan",
+      "chinese": "烏茲別克",
+      "capital": "Tashkent (Toshkent)",
+      "area": 447400,
+      "population": 36520593
+    },
+    {
+      "name": "Armenia",
+      "chinese": "亞美尼亞",
+      "capital": "Yerevan",
+      "area": 29743,
+      "population": 2976765
+    },
+    {
+      "name": "Azerbaijan",
+      "chinese": "亞塞拜然",
+      "capital": "Baku (Baki, Baky)",
+      "area": 86600,
+      "population": 10650239
+    },
+    {
+      "name": "Georgia",
+      "chinese": "喬治亞",
+      "capital": "Tbilisi",
+      "area": 69700,
+      "population": 4900961
+    }
+  ],
+  "大洋洲": [
+    {
+      "name": "Australia",
+      "chinese": "澳洲",
+      "capital": "Canberra",
+      "area": 7741220,
+      "population": 26768598
+    },
+    {
+      "name": "Fiji",
+      "chinese": "斐濟",
+      "capital": "Suva (on Viti Levu)",
+      "area": 18274,
+      "population": 951611
+    },
+    {
+      "name": "Guam",
+      "chinese": "關島",
+      "capital": "Hagatna (Agana)",
+      "area": 544,
+      "population": 169532
+    },
+    {
+      "name": "Kiribati",
+      "chinese": "吉里巴斯",
+      "capital": "Tarawa",
+      "area": 811,
+      "population": 116545
+    },
+    {
+      "name": "Marshall Islands",
+      "chinese": "馬紹爾群島",
+      "capital": "Majuro; note - the capital is an atoll of 64 islands; governmental buildings are housed on three fused islands on the eastern side of the atoll: Djarrit, Uliga, and Delap",
+      "area": 181,
+      "population": 82011
+    },
+    {
+      "name": "Micronesia, Fed. Sts.",
+      "chinese": "密克羅尼西亞聯邦",
+      "capital": "Palikir",
+      "area": 702,
+      "population": 99603
+    },
+    {
+      "name": "Nauru",
+      "chinese": "諾魯",
+      "capital": "no official capital; government offices in the Yaren District",
+      "area": 21,
+      "population": 9892
+    },
+    {
+      "name": "New Zealand",
+      "chinese": "紐西蘭",
+      "capital": "Wellington",
+      "area": 268838,
+      "population": 5161211
+    },
+    {
+      "name": "Niue",
+      "chinese": "紐埃",
+      "capital": "Alofi",
+      "area": 260,
+      "population": 2000
+    },
+    {
+      "name": "Palau",
+      "chinese": "帛琉",
+      "capital": "Ngerulmud",
+      "area": 459,
+      "population": 21864
+    },
+    {
+      "name": "Samoa",
+      "chinese": "薩摩亞",
+      "capital": "Apia",
+      "area": 2831,
+      "population": 208853
+    },
+    {
+      "name": "Solomon Islands",
+      "chinese": "索羅門群島",
+      "capital": "Honiara",
+      "area": 28896,
+      "population": 726799
+    },
+    {
+      "name": "Tokelau",
+      "chinese": "托克勞群島",
+      "capital": "\"Te Atua\" (For the Almighty)",
+      "area": 12,
+      "population": 1647
+    },
+    {
+      "name": "Tonga",
+      "chinese": "東加",
+      "capital": "Nuku'alofa",
+      "area": 747,
+      "population": 104889
+    },
+    {
+      "name": "Tuvalu",
+      "chinese": "吐瓦魯",
+      "capital": "Funafuti; note - the capital is an atoll of some 29 islets; administrative offices are in Vaiaku Village on Fongafale Islet",
+      "area": 26,
+      "population": 11733
+    },
+    {
+      "name": "Vanuatu",
+      "chinese": "萬那杜",
+      "capital": "Port-Vila (on Efate)",
+      "area": 12189,
+      "population": 318007
+    },
+    {
+      "name": "Papua New Guinea",
+      "chinese": "巴布亞紐幾內亞",
+      "capital": "Port Moresby",
+      "area": 462840,
+      "population": 10046233
+    }
+  ],
+  "漠南非洲": [
+    {
+      "name": "Angola",
+      "chinese": "安哥拉",
+      "capital": "Luanda",
+      "area": 1246700,
+      "population": 37202061
+    },
+    {
+      "name": "Benin",
+      "chinese": "貝南",
+      "capital": "Porto-Novo (constitutional capital); Cotonou (seat of government)",
+      "area": 112622,
+      "population": 14697052
+    },
+    {
+      "name": "Botswana",
+      "chinese": "波札那",
+      "capital": "Gaborone",
+      "area": 581730,
+      "population": 2450668
+    },
+    {
+      "name": "Burkina Faso",
+      "chinese": "布吉納法索",
+      "capital": "Ouagadougou",
+      "area": 274200,
+      "population": 23042199
+    },
+    {
+      "name": "Burundi",
+      "chinese": "蒲隆地",
+      "capital": "Gitega (political capital), Bujumbura (commercial capital)",
+      "area": 27830,
+      "population": 13590102
+    },
+    {
+      "name": "Cabo Verde",
+      "chinese": "維德角",
+      "capital": "Praia",
+      "area": 4033,
+      "population": 611014
+    },
+    {
+      "name": "Cameroon",
+      "chinese": "喀麥隆",
+      "capital": "Yaounde",
+      "area": 475440,
+      "population": 30966105
+    },
+    {
+      "name": "Central African Republic",
+      "chinese": "中非共和國",
+      "capital": "Bangui",
+      "area": 622984,
+      "population": 5650957
+    },
+    {
+      "name": "Chad",
+      "chinese": "查德",
+      "capital": "N'Djamena",
+      "area": 1284000,
+      "population": 19093595
+    },
+    {
+      "name": "Comoros",
+      "chinese": "葛摩聯盟",
+      "capital": "Moroni",
+      "area": 2235,
+      "population": 900141
+    },
+    {
+      "name": "Congo, Dem. Rep.",
+      "chinese": "剛果民主共和國",
+      "capital": "Kinshasa",
+      "area": 2344858,
+      "population": 115403027
+    },
+    {
+      "name": "Congo, Rep.",
+      "chinese": "剛果",
+      "capital": "Brazzaville",
+      "area": 342000,
+      "population": 6097665
+    },
+    {
+      "name": "Cote d'Ivoire",
+      "chinese": "象牙海岸",
+      "capital": "Yamoussoukro (legislative capital), Abidjan (administrative capital); note - although Yamoussoukro has been the official capital since 1983, Abidjan remains the administrative capital as well as the officially designated economic capital; the US, like other countries, maintains its Embassy in Abidjan",
+      "area": 322463,
+      "population": 29981758
+    },
+    {
+      "name": "Djibouti",
+      "chinese": "吉布地",
+      "capital": "Djibouti",
+      "area": 23200,
+      "population": 994974
+    },
+    {
+      "name": "Equatorial Guinea",
+      "chinese": "赤道幾內亞",
+      "capital": "Malabo; note - Malabo is on the island of Bioko; some months of the year, the government operates out of Bata on the mainland region.",
+      "area": 28051,
+      "population": 1795834
+    },
+    {
+      "name": "Eritrea",
+      "chinese": "厄利垂亞",
+      "capital": "Asmara",
+      "area": 117600,
+      "population": 6343956
+    },
+    {
+      "name": "Eswatini",
+      "chinese": "史瓦帝尼",
+      "capital": "Mbabane (administrative capital); Lobamba (royal and legislative capital)",
+      "area": 17364,
+      "population": 1138089
+    },
+    {
+      "name": "Ethiopia",
+      "chinese": "衣索比亞",
+      "capital": "Addis Ababa",
+      "area": 1104300,
+      "population": 118550298
+    },
+    {
+      "name": "Gabon",
+      "chinese": "加彭",
+      "capital": "Libreville",
+      "area": 267667,
+      "population": 2455105
+    },
+    {
+      "name": "Gambia, The",
+      "chinese": "甘比亞",
+      "capital": "Banjul",
+      "area": 11300,
+      "population": 2523327
+    },
+    {
+      "name": "Ghana",
+      "chinese": "迦納",
+      "capital": "Accra",
+      "area": 238533,
+      "population": 34589092
+    },
+    {
+      "name": "Guinea",
+      "chinese": "幾內亞",
+      "capital": "Conakry",
+      "area": 245857,
+      "population": 13986179
+    },
+    {
+      "name": "Guinea-Bissau",
+      "chinese": "幾內亞比索",
+      "capital": "Bissau",
+      "area": 36125,
+      "population": 2132325
+    },
+    {
+      "name": "Kenya",
+      "chinese": "肯亞",
+      "capital": "Nairobi",
+      "area": 580367,
+      "population": 58246378
+    },
+    {
+      "name": "Lesotho",
+      "chinese": "賴索托",
+      "capital": "Maseru",
+      "area": 30355,
+      "population": 2227548
+    },
+    {
+      "name": "Liberia",
+      "chinese": "賴比瑞亞",
+      "capital": "Monrovia",
+      "area": 111369,
+      "population": 5437249
+    },
+    {
+      "name": "Madagascar",
+      "chinese": "馬達加斯加",
+      "capital": "Antananarivo",
+      "area": 587041,
+      "population": 29452714
+    },
+    {
+      "name": "Malawi",
+      "chinese": "馬拉威",
+      "capital": "Lilongwe",
+      "area": 118484,
+      "population": 21763309
+    },
+    {
+      "name": "Mali",
+      "chinese": "馬利",
+      "capital": "Bamako",
+      "area": 1240192,
+      "population": 21990607
+    },
+    {
+      "name": "Mauritania",
+      "chinese": "茅利塔尼亞",
+      "capital": "Nouakchott",
+      "area": 1030700,
+      "population": 4328040
+    },
+    {
+      "name": "Mauritius",
+      "chinese": "模里西斯",
+      "capital": "Port Louis",
+      "area": 2040,
+      "population": 1310504
+    },
+    {
+      "name": "Mozambique",
+      "chinese": "莫三比克",
+      "capital": "Maputo",
+      "area": 799380,
+      "population": 33350954
+    },
+    {
+      "name": "Namibia",
+      "chinese": "納米比亞",
+      "capital": "Windhoek",
+      "area": 824292,
+      "population": 2803660
+    },
+    {
+      "name": "Niger",
+      "chinese": "尼日",
+      "capital": "Niamey",
+      "area": 1267000,
+      "population": 26342784
+    },
+    {
+      "name": "Nigeria",
+      "chinese": "奈及利亞",
+      "capital": "Abuja",
+      "area": 923768,
+      "population": 236747130
+    },
+    {
+      "name": "Rwanda",
+      "chinese": "盧安達",
+      "capital": "Kigali",
+      "area": 26338,
+      "population": 13623302
+    },
+    {
+      "name": "Sao Tome and Principe",
+      "chinese": "聖多美普林西比",
+      "capital": "Sao Tome",
+      "area": 964,
+      "population": 223561
+    },
+    {
+      "name": "Senegal",
+      "chinese": "塞內加爾",
+      "capital": "Dakar",
+      "area": 196722,
+      "population": 18847519
+    },
+    {
+      "name": "Seychelles",
+      "chinese": "塞席爾",
+      "capital": "Victoria",
+      "area": 455,
+      "population": 98187
+    },
+    {
+      "name": "Sierra Leone",
+      "chinese": "獅子山",
+      "capital": "Freetown",
+      "area": 71740,
+      "population": 9121049
+    },
+    {
+      "name": "Somalia",
+      "chinese": "索馬利亞",
+      "capital": "Mogadishu",
+      "area": 637657,
+      "population": 13017273
+    },
+    {
+      "name": "South Africa",
+      "chinese": "南非",
+      "capital": "Pretoria (administrative capital); Cape Town (legislative capital); Bloemfontein (judicial capital)",
+      "area": 1219090,
+      "population": 60442647
+    },
+    {
+      "name": "South Sudan",
+      "chinese": "南蘇丹",
+      "capital": "Juba",
+      "area": 644329,
+      "population": 12703714
+    },
+    {
+      "name": "Tanzania",
+      "chinese": "坦尚尼亞",
+      "capital": "Dodoma; note - Dodoma was designated the national capital in 1996; Dar es Salaam, the original national capital, is the country's largest city and commercial center",
+      "area": 947300,
+      "population": 67462121
+    },
+    {
+      "name": "Togo",
+      "chinese": "多哥",
+      "capital": "Lome",
+      "area": 56785,
+      "population": 8917994
+    },
+    {
+      "name": "Uganda",
+      "chinese": "烏干達",
+      "capital": "Kampala",
+      "area": 241038,
+      "population": 49283041
+    },
+    {
+      "name": "Zambia",
+      "chinese": "尚比亞",
+      "capital": "Lusaka",
+      "area": 752618,
+      "population": 20799116
+    },
+    {
+      "name": "Zimbabwe",
+      "chinese": "辛巴威",
+      "capital": "Harare",
+      "area": 390757,
+      "population": 17150352
+    }
+  ],
+  "北非": [
+    {
+      "name": "Algeria",
+      "chinese": "阿爾及利亞",
+      "capital": "Algiers",
+      "area": 2381740,
+      "population": 47022473
+    },
+    {
+      "name": "Egypt, Arab Rep.",
+      "chinese": "埃及",
+      "capital": "Cairo",
+      "area": 1001450,
+      "population": 111247248
+    },
+    {
+      "name": "Libya",
+      "chinese": "利比亞",
+      "capital": "Tripoli (Tarabulus)",
+      "area": 1759540,
+      "population": 7361263
+    },
+    {
+      "name": "Morocco",
+      "chinese": "摩洛哥",
+      "capital": "Rabat",
+      "area": 716550,
+      "population": 37387585
+    },
+    {
+      "name": "Sudan",
+      "chinese": "蘇丹",
+      "capital": "Khartoum",
+      "area": 1861484,
+      "population": 50467278
+    },
+    {
+      "name": "Tunisia",
+      "chinese": "突尼西亞",
+      "capital": "Tunis",
+      "area": 163610,
+      "population": 12048847
+    }
+  ]
+}
