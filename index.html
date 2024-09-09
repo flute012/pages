@@ -83,6 +83,7 @@
                 comparisonData: [],
                 updateDate: '',
                 countryData: null,
+                countyLinkData: null,
                 csvDownloadUrl: ''
             },
             mounted() {
@@ -90,21 +91,23 @@
             },
             methods: {
                 loadData() {
-                    fetch('data/merged_country_data.json')
-                        .then(response => response.json())
-                        .then(data => {
-                            this.countryData = data;
-                            this.regions = Object.keys(data);
-                            this.updateDate = new Date().toISOString().split('T')[0]; // 使用当前日期作为更新日期
-                            this.loadCSV();
-                        })
-                        .catch(error => {
-                            console.error('Error loading data:', error);
-                        });
+                    Promise.all([
+                        fetch('data/merged_country_data.json').then(response => response.json()),
+                        fetch('countylink.json').then(response => response.json()),
+                        fetch('data/merged_country_data.csv').then(response => response.blob())
+                    ]).then(([mergedData, countyLinkData, csvBlob]) => {
+                        this.countryData = mergedData;
+                        this.countyLinkData = countyLinkData;
+                        this.regions = Object.keys(countyLinkData);
+                        this.updateDate = new Date().toISOString().split('T')[0]; // 使用当前日期作为更新日期
+                        this.csvDownloadUrl = URL.createObjectURL(csvBlob);
+                    }).catch(error => {
+                        console.error('Error loading data:', error);
+                    });
                 },
                 loadCountries() {
-                    if (this.selectedRegion && this.countryData) {
-                        this.countries = this.countryData[this.selectedRegion];
+                    if (this.selectedRegion && this.countyLinkData) {
+                        this.countries = this.countyLinkData[this.selectedRegion].countries;
                     } else {
                         this.countries = [];
                     }
@@ -118,17 +121,10 @@
                     this.comparisonData = this.comparisonData.filter(c => c !== country);
                 },
                 compareCountries() {
-                    this.comparisonData = this.selectedCountries;
-                },
-                loadCSV() {
-                    fetch('data/merged_country_data.csv')
-                        .then(response => response.blob())
-                        .then(blob => {
-                            this.csvDownloadUrl = URL.createObjectURL(blob);
-                        })
-                        .catch(error => {
-                            console.error('Error loading CSV:', error);
-                        });
+                    this.comparisonData = this.selectedCountries.map(country => {
+                        const fullData = this.countryData[this.selectedRegion].find(c => c.name === country.name);
+                        return { ...country, ...fullData };
+                    });
                 }
             }
         });
