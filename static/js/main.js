@@ -78,14 +78,30 @@ function updateCountries() {
 
 function initializeIndicatorList() {
     const indicatorList = document.getElementById('indicatorList');
-    for (const [key, value] of Object.entries(indicatorTranslations)) {
-        indicatorList.innerHTML += `
-            <div class="checkbox-item">
-                <input type="checkbox" id="${key}" name="indicators" value="${key}" checked>
-                <label for="${key}">${value}</label>
-            </div>
-        `;
+    let html = '';
+    const indicators = Object.entries(indicatorTranslations);
+    const rows = Math.ceil(indicators.length / 4); // 4列布局
+
+    for (let i = 0; i < rows; i++) {
+        html += '<div class="row">';
+        for (let j = 0; j < 4; j++) {
+            const index = i * 4 + j;
+            if (index < indicators.length) {
+                const [key, value] = indicators[index];
+                html += `
+                    <div class="cell">
+                        <input type="checkbox" id="${key}" name="indicators" value="${key}" checked>
+                        <label for="${key}">${value}</label>
+                    </div>
+                `;
+            } else {
+                html += '<div class="cell"></div>'; // 空单元格以保持对齐
+            }
+        }
+        html += '</div>';
     }
+
+    indicatorList.innerHTML = html;
 }
 
 function handleSelectAll(isChecked) {
@@ -162,7 +178,7 @@ function compareCountries() {
         const country = countryInfo.chinese;
         if (selectedCountriesData[country]) {
             html += `<tr class="${rowIndex % 2 === 0 ? 'even-row' : 'odd-row'}">`;
-            html += `<td class="country-column">${country}</td>`;
+            html += `<td class="country-column">${country}</td>`; // 使用更新后的样式
             const countryData = findCountryData(country);
             selectedIndicators.forEach((indicator, index) => {
                 const value = countryData ? countryData[indicator] : 'N/A';
