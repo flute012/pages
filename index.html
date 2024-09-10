@@ -7,19 +7,18 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <style>
-            .country-column { background-color: #edf4d3; }
+            .country-column { background-color: #e7ebda }
             .alternate-column { background-color: #ffe6e6; }
+.sort-icon { cursor: pointer; user-select: none; }
         </style>
     </head>
 <body class="bg-gray-100">
     <div id="app" class="container mx-auto p-4">
         <h1 class="text-3xl font-bold mb-4">國家資料比較</h1>
-
         <div id="fileInfo" class="mb-4">
             <p>資料更新日期: <span id="updateDate">{{ updateDate }}</span></p>
             <a :href="csvDownloadUrl" download="merged_country_data.csv" class="text-blue-500 hover:underline">下載所有資料(CSV)</a>
         </div>
-
         <div id="countrySelector" class="mb-4">
             <label for="regionSelect" class="block mb-2">選擇一個地區：</label>
             <select id="regionSelect" v-model="selectedRegion" class="w-full p-2 border rounded" @change="loadCountries">
@@ -67,15 +66,23 @@
             <table v-if="comparisonData.length > 0" class="w-full border-collapse border">
                 <thead>
                     <tr>
-                        <th class="border p-2 country-column">國家/指標</th>
+                        <th class="border p-2 country-column">
+                            国家/指标
+                            <span class="sort-icon" @click="sort('chinese')">
+                                {{ getSortIcon('chinese') }}
+                            </span>
+                        </th>
                         <th v-for="(indicator, index) in selectedIndicators" :key="indicator" 
                             class="border p-2" :class="{ 'alternate-column': index % 2 !== 0 }">
                             {{ getIndicatorLabel(indicator) }}
+                            <span class="sort-icon" @click="sort(indicator)">
+                                {{ getSortIcon(indicator) }}
+                            </span>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="country in comparisonData" :key="country.name">
+                    <tr v-for="country in sortedData" :key="country.name">
                         <td class="border p-2 country-column">{{ country.chinese }} ({{ country.name }})</td>
                         <td v-for="(indicator, index) in selectedIndicators" :key="indicator"
                             class="border p-2" :class="{ 'alternate-column': index % 2 !== 0 }">
@@ -86,7 +93,6 @@
             </table>
         </div>
     </div>
-
     <script>
         new Vue({
             el: '#app',
@@ -113,11 +119,53 @@
                 countryData: null,
                 csvDownloadUrl: '',
                 selectAll: false
+                sortKey: '',
+                sortOrder: 'asc',
+            },
+computed: {
+                sortedData() {
+                    const data = [...this.comparisonData];
+                    if (this.sortKey) {
+                        data.sort((a, b) => {
+                            let aValue = a[this.sortKey];
+                            let bValue = b[this.sortKey];
+                            
+                            // 处理嵌套属性，如 'chinese'
+                            if (this.sortKey === 'chinese') {
+                                aValue = a.chinese;
+                                bValue = b.chinese;
+                            }
+
+                            if (typeof aValue === 'string') {
+                                return this.sortOrder === 'asc' 
+                                    ? aValue.localeCompare(bValue)
+                                    : bValue.localeCompare(aValue);
+                            } else {
+                                return this.sortOrder === 'asc' 
+                                    ? aValue - bValue
+                                    : bValue - aValue;
+                            }
+                        });
+                    }
+                    return data;
+                }
             },
             mounted() {
                 this.loadData();
             },
             methods: {
+                sort(key) {
+                    if (this.sortKey === key) {
+                        this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        this.sortKey = key;
+                        this.sortOrder = 'asc';
+                    }
+                },
+                getSortIcon(key) {
+                    if (this.sortKey !== key) return '⇅';
+                    return this.sortOrder === 'asc' ? '↑' : '↓';
+                },
                 loadData() {
                     Promise.all([
                         fetch('data/merged_country_data.json').then(response => response.json()),
