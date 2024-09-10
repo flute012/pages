@@ -28,92 +28,81 @@
     <div id="app" class="container mx-auto p-4">
         <h1 class="text-3xl font-bold mb-4">國家資料比較</h1>
 
-        <div id="fileInfo" class="mb-4">
-            <p>資料更新日期: <span id="updateDate">{{ updateDate }}</span></p>
-            <a :href="csvDownloadUrl" download="merged_country_data.csv"
-                class="text-blue-500 hover:underline">下載所有資料(CSV)</a>
-        </div>
-
-        <div id="countrySelector" class="mb-4">
-            <label for="regionSelect" class="block mb-2">選擇一個地區：</label>
+        <div class="mb-4">
+            <label for="regionSelect" class="block mb-2">選擇地區：</label>
             <select id="regionSelect" v-model="selectedRegion" class="w-full p-2 border rounded"
                 @change="loadCountries">
                 <option value="">請選擇地區</option>
                 <option v-for="region in regions" :key="region" :value="region">{{ region }}</option>
             </select>
+        </div>
 
-            <div v-if="selectedRegion" class="mt-4">
-                <label class="block mb-2">選擇國家：</label>
-                <div class="flex flex-wrap items-center">
-                    <div class="mr-4 mb-2">
-                        <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries"
-                            class="mr-1">
-                        <label for="selectAll">全部</label>
-                    </div>
-                    <div v-for="country in countries" :key="country.name" class="mr-4 mb-2">
-                        <input type="checkbox" :id="country.name" :value="country" v-model="selectedCountries"
-                            class="mr-1">
-                        <label :for="country.name">
-                            <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
-                            {{ country.chinese }}
-                        </label>
-                    </div>
-                </div>
+        <div v-if="selectedRegion" class="mb-4">
+            <h2 class="text-xl font-bold mb-2">選擇國家：</h2>
+            <div class="flex items-center mb-2">
+                <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries" class="mr-2">
+                <label for="selectAll">全部</label>
+            </div>
+            <div class="flex flex-wrap">
+                <label v-for="country in countries" :key="country.name" class="mr-4 mb-2 flex items-center">
+                    <input type="checkbox" :value="country" v-model="selectedCountries" class="mr-2">
+                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                    {{ country.chinese }}
+                </label>
             </div>
         </div>
 
-        <div id="selectedCountries" class="mb-4">
-            <h3 class="text-xl font-bold mb-2">已選擇的國家：</h3>
-            <button @click="clearSelectedCountries"
-                class="bg-red-500 text-white p-2 rounded hover:bg-red-600 mb-2">清除所有選擇</button>
+        <div v-if="selectedCountries.length" class="mb-4">
+            <h2 class="text-xl font-bold mb-2">已選擇的國家：</h2>
             <div class="flex flex-wrap">
                 <div v-for="country in selectedCountries" :key="country.name"
-                    class="bg-gray-200 rounded px-2 py-1 mr-2 mb-2">
-                    <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
+                    class="mr-2 mb-2 p-2 bg-gray-200 rounded flex items-center">
+                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
                     {{ country.chinese }}
-                    <button @click="removeCountry(country)" class="ml-1 text-red-500 hover:text-red-700">×</button>
+                    <button @click="removeCountry(country)" class="ml-2 text-red-500">&times;</button>
                 </div>
             </div>
+            <button @click="clearSelectedCountries" class="mt-2 bg-red-500 text-white p-2 rounded">清除所有選擇</button>
         </div>
 
-        <h2 class="text-2xl font-bold mb-2">選擇要顯示的指標：</h2>
-        <div class="grid grid-cols-3 gap-2 mb-4">
-            <div v-for="indicator in indicators" :key="indicator.key" class="flex items-center">
-                <input type="checkbox" :id="indicator.key" :value="indicator.key" v-model="selectedIndicators"
-                    class="mr-2">
-                <label :for="indicator.key">{{ indicator.label }}</label>
+        <div class="mb-4">
+            <h2 class="text-xl font-bold mb-2">選擇要顯示的指標：</h2>
+            <div class="flex flex-wrap">
+                <label v-for="indicator in indicators" :key="indicator.key" class="mr-4 mb-2">
+                    <input type="checkbox" :value="indicator.key" v-model="selectedIndicators" class="mr-2">
+                    {{ indicator.label }}
+                </label>
             </div>
         </div>
 
-        <button @click="compareCountries" class="bg-green-500 text-white p-2 rounded hover:bg-green-600">比較</button>
+        <button @click="compareCountries" class="bg-blue-500 text-white p-2 rounded mb-4">比較</button>
 
-        <div id="countryData" class="mt-4 overflow-x-auto">
-            <table v-if="comparisonData.length > 0" class="w-full border-collapse border">
+        <div v-if="comparisonData.length" class="overflow-x-auto">
+            <table class="w-full border-collapse border">
                 <thead>
                     <tr>
-                        <th class="border p-2 country-column">
+                        <th class="border p-2 country-column">序號</th>
+                        <th @click="sort('chinese')" class="border p-2 country-column cursor-pointer">
                             國家/指標
-                            <span class="sort-icon" @click="sort('chinese')">
-                                {{ getSortIcon('chinese') }}
-                            </span>
+                            <span class="sort-icon">{{ getSortIcon('chinese') }}</span>
                         </th>
-                        <th v-for="(indicator, index) in selectedIndicators" :key="indicator" class="border p-2"
-                            :class="{ 'alternate-column': index % 2 !== 0 }">
+                        <th v-for="indicator in selectedIndicators" :key="indicator" @click="sort(indicator)"
+                            class="border p-2 cursor-pointer"
+                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
                             {{ getIndicatorLabel(indicator) }}
-                            <span class="sort-icon" @click="sort(indicator)">
-                                {{ getSortIcon(indicator) }}
-                            </span>
+                            <span class="sort-icon">{{ getSortIcon(indicator) }}</span>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="country in sortedData" :key="country.name">
+                    <tr v-for="(country, index) in sortedData" :key="country.name">
+                        <td class="border p-2 text-center">{{ index + 1 }}</td>
                         <td class="border p-2 country-column">
-                            <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
+                            <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
                             {{ country.chinese }} ({{ country.name }})
                         </td>
-                        <td v-for="(indicator, index) in selectedIndicators" :key="indicator" class="border p-2"
-                            :class="{ 'alternate-column': index % 2 !== 0 }">
+                        <td v-for="indicator in selectedIndicators" :key="indicator" class="border p-2"
+                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
                             {{ formatValue(country[indicator], indicator) }}
                         </td>
                     </tr>
@@ -144,13 +133,14 @@
                 ],
                 selectedIndicators: [],
                 comparisonData: [],
-                updateDate: '',
                 countryData: null,
                 mergedData: null,
-                csvDownloadUrl: '',
-                selectAll: false,
                 sortKey: '',
-                sortOrder: 'asc'
+                sortOrder: 'asc',
+                selectAll: false
+            },
+            mounted() {
+                this.loadData();
             },
             computed: {
                 sortedData() {
@@ -179,51 +169,61 @@
                     return data;
                 }
             },
-            mounted() {
-                this.loadData();
-            },
             methods: {
-                loadData() {
-                    Promise.all([
-                        fetch('countylink.json').then(response => response.json()),
-                        fetch('data/merged_country_data.json').then(response => response.json()),
-                        fetch('data/merged_country_data.csv').then(response => response.blob())
-                    ]).then(([countyLinkData, mergedData, csvBlob]) => {
-                        this.countryData = countyLinkData;
-                        this.mergedData = mergedData;
-                        this.regions = Object.keys(countyLinkData);
-                        this.updateDate = new Date().toISOString().split('T')[0];
-                        this.csvDownloadUrl = URL.createObjectURL(csvBlob);
+                async loadData() {
+                    try {
+                        const [countryLinkResponse, mergedDataResponse] = await Promise.all([
+                            fetch('countylink.json'),
+                            fetch('data/merged_country_data.json')
+                        ]);
+                        this.countryData = await countryLinkResponse.json();
+                        this.mergedData = await mergedDataResponse.json();
+                        this.regions = Object.keys(this.countryData);
                         this.selectedIndicators = this.indicators.map(i => i.key);
-                    }).catch(error => {
+                    } catch (error) {
                         console.error('Error loading data:', error);
-                    });
+                    }
                 },
                 loadCountries() {
                     if (this.selectedRegion && this.countryData) {
                         this.countries = this.countryData[this.selectedRegion].countries;
-                        this.selectedCountries = [];
-                        this.selectAll = false;
+                        this.selectAll = this.countries.every(country =>
+                            this.selectedCountries.some(c => c.name === country.name)
+                        );
                     } else {
                         this.countries = [];
                     }
                 },
                 toggleAllCountries() {
-                    this.selectedCountries = this.selectAll ? [...this.countries] : [];
+                    if (this.selectAll) {
+                        this.selectedCountries = [...this.selectedCountries, ...this.countries.filter(country =>
+                            !this.selectedCountries.some(c => c.name === country.name)
+                        )];
+                    } else {
+                        this.selectedCountries = this.selectedCountries.filter(country =>
+                            !this.countries.some(c => c.name === country.name)
+                        );
+                    }
+                },
+                removeCountry(country) {
+                    this.selectedCountries = this.selectedCountries.filter(c => c !== country);
+                    if (this.selectedRegion) {
+                        this.selectAll = this.countries.every(c =>
+                            this.selectedCountries.some(sc => sc.name === c.name)
+                        );
+                    }
                 },
                 clearSelectedCountries() {
                     this.selectedCountries = [];
                     this.comparisonData = [];
                     this.selectAll = false;
                 },
-                removeCountry(country) {
-                    this.selectedCountries = this.selectedCountries.filter(c => c !== country);
-                    this.comparisonData = this.comparisonData.filter(c => c.name !== country.name);
-                    this.selectAll = false;
-                },
                 compareCountries() {
                     this.comparisonData = this.selectedCountries.map(country => {
-                        const mergedCountryData = this.mergedData[this.selectedRegion].find(c => c.name === country.name);
+                        const region = this.regions.find(r =>
+                            this.countryData[r].countries.some(c => c.name === country.name)
+                        );
+                        const mergedCountryData = this.mergedData[region].find(c => c.name === country.name);
                         return { ...country, ...mergedCountryData };
                     });
                 },
@@ -234,9 +234,9 @@
 
                     if (indicator.includes('US$')) {
                         if (value >= 1e8) {
-                            return (value / 1e8).toFixed(2) + '億';
+                            return (value / 1e8).toFixed(2) + '億美元';
                         } else if (value >= 1e4) {
-                            return (value / 1e4).toFixed(2) + '萬';
+                            return (value / 1e4).toFixed(2) + '萬美元';
                         }
                     }
 
@@ -253,9 +253,6 @@
                     }
 
                     return value.toFixed(2);
-                },
-                getCountryFlagClass(code) {
-                    return `flag-icon flag-icon-${code.toLowerCase()}`;
                 },
                 sort(key) {
                     if (this.sortKey === key) {
