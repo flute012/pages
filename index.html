@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>國家資料比較</title>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <style>
-            .country-column { background-color: #e7ebda }
-            .alternate-column { background-color: #ffe6e6; }
-.sort-icon { cursor: pointer; user-select: none; }
-        </style>
-    </head>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國家資料比較</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .country-column { background-color: #edf4d3; }
+        .alternate-column { background-color: #ffe6e6; }
+        .sort-icon { cursor: pointer; user-select: none; }
+    </style>
+</head>
 <body class="bg-gray-100">
     <div id="app" class="container mx-auto p-4">
         <h1 class="text-3xl font-bold mb-4">國家資料比較</h1>
+
         <div id="fileInfo" class="mb-4">
             <p>資料更新日期: <span id="updateDate">{{ updateDate }}</span></p>
             <a :href="csvDownloadUrl" download="merged_country_data.csv" class="text-blue-500 hover:underline">下載所有資料(CSV)</a>
         </div>
+
         <div id="countrySelector" class="mb-4">
             <label for="regionSelect" class="block mb-2">選擇一個地區：</label>
             <select id="regionSelect" v-model="selectedRegion" class="w-full p-2 border rounded" @change="loadCountries">
                 <option value="">請選擇地區</option>
-                <option v-for="region in regions" :value="region">{{ region }}</option>
+                <option v-for="region in regions" :key="region" :value="region">{{ region }}</option>
             </select>
 
             <div v-if="selectedRegion" class="mt-4">
@@ -33,7 +35,7 @@
                         <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries" class="mr-1">
                         <label for="selectAll">全部</label>
                     </div>
-                    <div v-for="country in countries" class="mr-4 mb-2">
+                    <div v-for="country in countries" :key="country.name" class="mr-4 mb-2">
                         <input type="checkbox" :id="country.name" :value="country" v-model="selectedCountries" class="mr-1">
                         <label :for="country.name">{{ country.chinese }}</label>
                     </div>
@@ -45,7 +47,7 @@
             <h3 class="text-xl font-bold mb-2">已選擇的國家：</h3>
             <button @click="clearSelectedCountries" class="bg-red-500 text-white p-2 rounded hover:bg-red-600 mb-2">清除所有選擇</button>
             <div class="flex flex-wrap">
-                <div v-for="country in selectedCountries" class="bg-gray-200 rounded px-2 py-1 mr-2 mb-2">
+                <div v-for="country in selectedCountries" :key="country.name" class="bg-gray-200 rounded px-2 py-1 mr-2 mb-2">
                     {{ country.chinese }}
                     <button @click="removeCountry(country)" class="ml-1 text-red-500 hover:text-red-700">×</button>
                 </div>
@@ -54,7 +56,7 @@
 
         <h2 class="text-2xl font-bold mb-2">選擇要顯示的指標：</h2>
         <div class="grid grid-cols-3 gap-2 mb-4">
-            <div v-for="indicator in indicators" class="flex items-center">
+            <div v-for="indicator in indicators" :key="indicator.key" class="flex items-center">
                 <input type="checkbox" :id="indicator.key" :value="indicator.key" v-model="selectedIndicators" class="mr-2">
                 <label :for="indicator.key">{{ indicator.label }}</label>
             </div>
@@ -67,7 +69,7 @@
                 <thead>
                     <tr>
                         <th class="border p-2 country-column">
-                            国家/指标
+                            國家/指標
                             <span class="sort-icon" @click="sort('chinese')">
                                 {{ getSortIcon('chinese') }}
                             </span>
@@ -93,6 +95,7 @@
             </table>
         </div>
     </div>
+
     <script>
         new Vue({
             el: '#app',
@@ -104,7 +107,7 @@
                 indicators: [
                     { key: 'area', label: '面積' },
                     { key: 'population', label: '人口' },
-                    { key: 'Age dependency ratio (% of working-age population)', label: '扶養比（占勞動人口百分比）' },
+                    { key: 'Age dependency ratio (% of working-age population)', label: '扶養比（占勞動人口的百分比）' },
                     { key: 'GDP (current US$)', label: '國內生產總額（美元）' },
                     { key: 'GDP growth (annual %)', label: '國內生產總額增長率（年度百分比）' },
                     { key: 'GDP per capita (current US$)', label: '人均國內生產總額（美元）' },
@@ -118,11 +121,11 @@
                 updateDate: '',
                 countryData: null,
                 csvDownloadUrl: '',
-                selectAll: false
+                selectAll: false,
                 sortKey: '',
-                sortOrder: 'asc',
+                sortOrder: 'asc'
             },
-computed: {
+            computed: {
                 sortedData() {
                     const data = [...this.comparisonData];
                     if (this.sortKey) {
@@ -130,7 +133,6 @@ computed: {
                             let aValue = a[this.sortKey];
                             let bValue = b[this.sortKey];
                             
-                            // 处理嵌套属性，如 'chinese'
                             if (this.sortKey === 'chinese') {
                                 aValue = a.chinese;
                                 bValue = b.chinese;
@@ -154,6 +156,27 @@ computed: {
                 this.loadData();
             },
             methods: {
+                loadData() {
+                    // 加載數據的代碼
+                },
+                loadCountries() {
+                    // 加載國家的代碼
+                },
+                toggleAllCountries() {
+                    // 全選/取消全選的代碼
+                },
+                clearSelectedCountries() {
+                    // 清除所有選擇的代碼
+                },
+                removeCountry(country) {
+                    // 移除單個國家的代碼
+                },
+                compareCountries() {
+                    // 比較國家的代碼
+                },
+                formatValue(value, indicator) {
+                    // 格式化數值的代碼
+                },
                 sort(key) {
                     if (this.sortKey === key) {
                         this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
@@ -166,79 +189,9 @@ computed: {
                     if (this.sortKey !== key) return '⇅';
                     return this.sortOrder === 'asc' ? '↑' : '↓';
                 },
-                loadData() {
-                    Promise.all([
-                        fetch('data/merged_country_data.json').then(response => response.json()),
-                        fetch('data/merged_country_data.csv').then(response => response.blob())
-                    ]).then(([mergedData, csvBlob]) => {
-                        this.countryData = mergedData;
-                        this.regions = Object.keys(mergedData);
-                        this.updateDate = new Date().toISOString().split('T')[0]; // 使用當前日期作為更新日期
-                        this.csvDownloadUrl = URL.createObjectURL(csvBlob);
-                        this.selectedIndicators = this.indicators.map(i => i.key); // 默認選擇所有指標
-                    }).catch(error => {
-                        console.error('Error loading data:', error);
-                    });
-                },
-
-                formatValue(value, indicator) {
-                    if (typeof value !== 'number') {
-                        return value;
-                    }
-                    
-                    if (indicator.includes('US$')) {
-                        if (value >= 1e8) {
-                            return (value / 1e8).toFixed(2) + '億';
-                        } else if (value >= 1e4) {
-                            return (value / 1e4).toFixed(2) + '萬';
-                        }
-                    }
-                    
-                    if (indicator === 'population') {
-                        if (value >= 1e8) {
-                            return (value / 1e8).toFixed(2) + '億';
-                        } else if (value >= 1e4) {
-                            return (value / 1e4).toFixed(2) + '萬';
-                        }
-                    }
-                    
-                    if (indicator === 'area') {
-                        return value.toLocaleString() + ' 平方公里';
-                    }
-                    
-                    // 對於百分比和其他數值，保留兩位小數
-                    return value.toFixed(2);
-                },
-
-                loadCountries() {
-                    if (this.selectedRegion && this.countryData) {
-                        this.countries = this.countryData[this.selectedRegion];
-                        this.selectedCountries = []; // 清空之前的選擇
-                        this.selectAll = false;
-                    } else {
-                        this.countries = [];
-                    }
-                },
-                toggleAllCountries() {
-                    this.selectedCountries = this.selectAll ? [...this.countries] : [];
-                },
-                clearSelectedCountries() {
-                    this.selectedCountries = [];
-                    this.comparisonData = [];
-                    this.selectAll = false;
-                },
-                removeCountry(country) {
-                    this.selectedCountries = this.selectedCountries.filter(c => c !== country);
-                    this.comparisonData = this.comparisonData.filter(c => c.name !== country.name);
-                    this.selectAll = false;
-                },
-                compareCountries() {
-                    this.comparisonData = this.selectedCountries;
-                },
                 getIndicatorLabel(key) {
                     return this.indicators.find(i => i.key === key)?.label || key;
                 }
-
             }
         });
     </script>
