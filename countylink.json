@@ -4,227 +4,272 @@
       {
         "name": "Russian Federation",
         "chinese": "俄羅斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/russia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/russia/",
+        "code": "RU"
       },
       {
         "name": "Albania",
         "chinese": "阿爾巴尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/albania/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/albania/",
+        "code": "AL"
       },
       {
         "name": "Andorra",
         "chinese": "安道爾",
-        "url": "https://www.cia.gov/the-world-factbook/countries/andorra/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/andorra/",
+        "code": "AD"
       },
       {
         "name": "Austria",
         "chinese": "奧地利",
-        "url": "https://www.cia.gov/the-world-factbook/countries/austria/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/austria/",
+        "code": "AT"
       },
       {
         "name": "Belarus",
         "chinese": "白俄羅斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/belarus/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/belarus/",
+        "code": "BY"
       },
       {
         "name": "Belgium",
         "chinese": "比利時",
-        "url": "https://www.cia.gov/the-world-factbook/countries/belgium/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/belgium/",
+        "code": "BE"
       },
       {
         "name": "Bosnia and Herzegovina",
         "chinese": "波士尼亞與赫塞哥維納",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bosnia-and-herzegovina/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bosnia-and-herzegovina/",
+        "code": "BA"
       },
       {
         "name": "Bulgaria",
         "chinese": "保加利亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bulgaria/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bulgaria/",
+        "code": "BG"
       },
       {
         "name": "Croatia",
         "chinese": "克羅埃西亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/croatia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/croatia/",
+        "code": "HR"
       },
       {
         "name": "Czechia",
         "chinese": "捷克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/czechia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/czechia/",
+        "code": "CZ"
       },
       {
         "name": "Denmark",
         "chinese": "丹麥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/denmark/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/denmark/",
+        "code": "DK"
       },
       {
         "name": "Estonia",
         "chinese": "愛沙尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/estonia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/estonia/",
+        "code": "EE"
       },
       {
         "name": "Finland",
         "chinese": "芬蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/finland/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/finland/",
+        "code": "FI"
       },
       {
         "name": "France",
         "chinese": "法國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/france/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/france/",
+        "code": "FR"
       },
       {
         "name": "Germany",
         "chinese": "德國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/germany/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/germany/",
+        "code": "DE"
       },
       {
         "name": "Greece",
         "chinese": "希臘",
-        "url": "https://www.cia.gov/the-world-factbook/countries/greece/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/greece/",
+        "code": "GR"
       },
       {
         "name": "Holy See (Vatican City)",
         "chinese": "梵蒂岡",
-        "url": "https://www.cia.gov/the-world-factbook/countries/holy-see-vatican-city/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/holy-see-vatican-city/",
+        "code": "VA"
       },
       {
         "name": "Hungary",
         "chinese": "匈牙利",
-        "url": "https://www.cia.gov/the-world-factbook/countries/hungary/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/hungary/",
+        "code": "HU"
       },
       {
         "name": "Iceland",
         "chinese": "冰島",
-        "url": "https://www.cia.gov/the-world-factbook/countries/iceland/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/iceland/",
+        "code": "IS"
       },
       {
         "name": "Ireland",
         "chinese": "愛爾蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/ireland/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/ireland/",
+        "code": "IE"
       },
       {
         "name": "Italy",
         "chinese": "義大利",
-        "url": "https://www.cia.gov/the-world-factbook/countries/italy/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/italy/",
+        "code": "IT"
       },
       {
         "name": "Kosovo",
         "chinese": "科索沃",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kosovo/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kosovo/",
+        "code": ""
       },
       {
         "name": "Latvia",
         "chinese": "拉脫維亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/latvia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/latvia/",
+        "code": "LV"
       },
       {
         "name": "Liechtenstein",
         "chinese": "列支敦斯登",
-        "url": "https://www.cia.gov/the-world-factbook/countries/liechtenstein/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/liechtenstein/",
+        "code": "LI"
       },
       {
         "name": "Lithuania",
         "chinese": "立陶宛",
-        "url": "https://www.cia.gov/the-world-factbook/countries/lithuania/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/lithuania/",
+        "code": "LT"
       },
       {
         "name": "Luxembourg",
         "chinese": "盧森堡",
-        "url": "https://www.cia.gov/the-world-factbook/countries/luxembourg/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/luxembourg/",
+        "code": "LU"
       },
       {
         "name": "Malta",
         "chinese": "馬爾他",
-        "url": "https://www.cia.gov/the-world-factbook/countries/malta/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/malta/",
+        "code": "MT"
       },
       {
         "name": "Moldova",
         "chinese": "摩爾多瓦",
-        "url": "https://www.cia.gov/the-world-factbook/countries/moldova/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/moldova/",
+        "code": "MD"
       },
       {
         "name": "Monaco",
         "chinese": "摩納哥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/monaco/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/monaco/",
+        "code": "MC"
       },
       {
         "name": "Montenegro",
         "chinese": "蒙特內哥羅",
-        "url": "https://www.cia.gov/the-world-factbook/countries/montenegro/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/montenegro/",
+        "code": "ME"
       },
       {
         "name": "Netherlands",
         "chinese": "荷蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/netherlands/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/netherlands/",
+        "code": "NL"
       },
       {
         "name": "North Macedonia",
         "chinese": "北馬其頓",
-        "url": "https://www.cia.gov/the-world-factbook/countries/north-macedonia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/north-macedonia/",
+        "code": "MK"
       },
       {
         "name": "Norway",
         "chinese": "挪威",
-        "url": "https://www.cia.gov/the-world-factbook/countries/norway/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/norway/",
+        "code": "NO"
       },
       {
         "name": "Poland",
         "chinese": "波蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/poland/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/poland/",
+        "code": "PL"
       },
       {
         "name": "Portugal",
         "chinese": "葡萄牙",
-        "url": "https://www.cia.gov/the-world-factbook/countries/portugal/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/portugal/",
+        "code": "PT"
       },
       {
         "name": "Romania",
         "chinese": "羅馬尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/romania/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/romania/",
+        "code": "RO"
       },
       {
         "name": "San Marino",
         "chinese": "聖馬利諾",
-        "url": "https://www.cia.gov/the-world-factbook/countries/san-marino/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/san-marino/",
+        "code": "SM"
       },
       {
         "name": "Serbia",
         "chinese": "塞爾維亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/serbia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/serbia/",
+        "code": "RS"
       },
       {
         "name": "Slovak Republic",
         "chinese": "斯洛伐克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/slovakia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/slovakia/",
+        "code": "SK"
       },
       {
         "name": "Slovenia",
         "chinese": "斯洛維尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/slovenia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/slovenia/",
+        "code": "SI"
       },
       {
         "name": "Spain",
         "chinese": "西班牙",
-        "url": "https://www.cia.gov/the-world-factbook/countries/spain/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/spain/",
+        "code": "ES"
       },
       {
         "name": "Sweden",
         "chinese": "瑞典",
-        "url": "https://www.cia.gov/the-world-factbook/countries/sweden/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/sweden/",
+        "code": "SE"
       },
       {
         "name": "Switzerland",
         "chinese": "瑞士",
-        "url": "https://www.cia.gov/the-world-factbook/countries/switzerland/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/switzerland/",
+        "code": "CH"
       },
       {
         "name": "Ukraine",
         "chinese": "烏克蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/ukraine/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/ukraine/",
+        "code": "UA"
       },
       {
         "name": "United Kingdom",
         "chinese": "英國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/united-kingdom/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/united-kingdom/",
+        "code": "GB"
       }
     ]
   },
@@ -233,37 +278,44 @@
       {
         "name": "Bangladesh",
         "chinese": "孟加拉",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bangladesh/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bangladesh/",
+        "code": "BD"
       },
       {
         "name": "Bhutan",
         "chinese": "不丹",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bhutan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bhutan/",
+        "code": "BT"
       },
       {
         "name": "India",
         "chinese": "印度",
-        "url": "https://www.cia.gov/the-world-factbook/countries/india/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/india/",
+        "code": "IN"
       },
       {
         "name": "Maldives",
         "chinese": "馬爾地夫",
-        "url": "https://www.cia.gov/the-world-factbook/countries/maldives/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/maldives/",
+        "code": "MV"
       },
       {
         "name": "Nepal",
         "chinese": "尼泊爾",
-        "url": "https://www.cia.gov/the-world-factbook/countries/nepal/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/nepal/",
+        "code": "NP"
       },
       {
         "name": "Pakistan",
         "chinese": "巴基斯坦",
-        "url": "https://www.cia.gov/the-world-factbook/countries/pakistan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/pakistan/",
+        "code": "PK"
       },
       {
         "name": "Sri Lanka",
         "chinese": "斯里蘭卡",
-        "url": "https://www.cia.gov/the-world-factbook/countries/sri-lanka/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/sri-lanka/",
+        "code": "LK"
       }
     ]
   },
@@ -272,57 +324,68 @@
       {
         "name": "Brunei Darussalam",
         "chinese": "汶萊",
-        "url": "https://www.cia.gov/the-world-factbook/countries/brunei/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/brunei/",
+        "code": "BN"
       },
       {
         "name": "Myanmar",
         "chinese": "緬甸",
-        "url": "https://www.cia.gov/the-world-factbook/countries/burma/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/burma/",
+        "code": "MM"
       },
       {
         "name": "Cambodia",
         "chinese": "柬埔寨",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cambodia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cambodia/",
+        "code": "KH"
       },
       {
         "name": "Indonesia",
         "chinese": "印尼",
-        "url": "https://www.cia.gov/the-world-factbook/countries/indonesia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/indonesia/",
+        "code": "ID"
       },
       {
         "name": "Lao PDR",
         "chinese": "寮國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/laos/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/laos/",
+        "code": "LA"
       },
       {
         "name": "Malaysia",
         "chinese": "馬來西亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/malaysia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/malaysia/",
+        "code": "MY"
       },
       {
         "name": "Philippines",
         "chinese": "菲律賓",
-        "url": "https://www.cia.gov/the-world-factbook/countries/philippines/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/philippines/",
+        "code": "PH"
       },
       {
         "name": "Singapore",
         "chinese": "新加坡",
-        "url": "https://www.cia.gov/the-world-factbook/countries/singapore/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/singapore/",
+        "code": "SG"
       },
       {
         "name": "Thailand",
         "chinese": "泰國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/thailand/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/thailand/",
+        "code": "TH"
       },
       {
         "name": "Timor-Leste",
         "chinese": "東帝汶",
-        "url": "https://www.cia.gov/the-world-factbook/countries/timor-leste/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/timor-leste/",
+        "code": "TL"
       },
       {
         "name": "Viet Nam",
         "chinese": "越南",
-        "url": "https://www.cia.gov/the-world-factbook/countries/vietnam/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/vietnam/",
+        "code": "VN"
       }
     ]
   },
@@ -331,42 +394,50 @@
       {
         "name": "China",
         "chinese": "中國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/china/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/china/",
+        "code": "CN"
       },
       {
         "name": "Hong Kong SAR, China",
         "chinese": "香港",
-        "url": "https://www.cia.gov/the-world-factbook/countries/hong-kong/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/hong-kong/",
+        "code": "HK"
       },
       {
         "name": "Japan",
         "chinese": "日本",
-        "url": "https://www.cia.gov/the-world-factbook/countries/japan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/japan/",
+        "code": "JP"
       },
       {
         "name": "Korea, Dem. People's Rep.",
         "chinese": "朝鮮",
-        "url": "https://www.cia.gov/the-world-factbook/countries/korea-north/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/korea-north/",
+        "code": "KP"
       },
       {
         "name": "Korea, Rep.",
         "chinese": "韓國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/korea-south/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/korea-south/",
+        "code": "KR"
       },
       {
         "name": "Macao SAR, China",
         "chinese": "澳門",
-        "url": "https://www.cia.gov/the-world-factbook/countries/macau/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/macau/",
+        "code": "MO"
       },
       {
         "name": "Mongolia",
         "chinese": "蒙古",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mongolia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mongolia/",
+        "code": "MN"
       },
       {
         "name": "Taiwan",
         "chinese": "臺灣",
-        "url": "https://www.cia.gov/the-world-factbook/countries/taiwan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/taiwan/",
+        "code": "TW"
       }
     ]
   },
@@ -375,82 +446,98 @@
       {
         "name": "Cyprus",
         "chinese": "賽普勒斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cyprus/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cyprus/",
+        "code": "CY"
       },
       {
         "name": "Bahrain",
         "chinese": "巴林",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bahrain/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bahrain/",
+        "code": "BH"
       },
       {
         "name": "Iran, Islamic Rep.",
         "chinese": "伊朗",
-        "url": "https://www.cia.gov/the-world-factbook/countries/iran/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/iran/",
+        "code": "IR"
       },
       {
         "name": "Iraq",
         "chinese": "伊拉克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/iraq/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/iraq/",
+        "code": "IQ"
       },
       {
         "name": "Israel",
         "chinese": "以色列",
-        "url": "https://www.cia.gov/the-world-factbook/countries/israel/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/israel/",
+        "code": "IL"
       },
       {
         "name": "Jordan",
         "chinese": "約旦",
-        "url": "https://www.cia.gov/the-world-factbook/countries/jordan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/jordan/",
+        "code": "JO"
       },
       {
         "name": "Kuwait",
         "chinese": "科威特",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kuwait/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kuwait/",
+        "code": "KW"
       },
       {
         "name": "Lebanon",
         "chinese": "黎巴嫩",
-        "url": "https://www.cia.gov/the-world-factbook/countries/lebanon/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/lebanon/",
+        "code": "LB"
       },
       {
         "name": "Oman",
         "chinese": "阿曼",
-        "url": "https://www.cia.gov/the-world-factbook/countries/oman/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/oman/",
+        "code": "OM"
       },
       {
         "name": "Qatar",
         "chinese": "卡達",
-        "url": "https://www.cia.gov/the-world-factbook/countries/qatar/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/qatar/",
+        "code": "QA"
       },
       {
         "name": "Saudi Arabia",
         "chinese": "沙烏地阿拉伯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/saudi-arabia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/saudi-arabia/",
+        "code": "SA"
       },
       {
         "name": "Syrian Arab Republic",
         "chinese": "敘利亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/syria/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/syria/",
+        "code": "SY"
       },
       {
         "name": "Turkiye",
         "chinese": "土耳其",
-        "url": "https://www.cia.gov/the-world-factbook/countries/turkey-turkiye/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/turkey-turkiye/",
+        "code": "TR"
       },
       {
         "name": "United Arab Emirates",
         "chinese": "阿拉伯聯合大公國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/united-arab-emirates/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/united-arab-emirates/",
+        "code": "AE"
       },
       {
         "name": "Yemen, Rep.",
         "chinese": "葉門",
-        "url": "https://www.cia.gov/the-world-factbook/countries/yemen/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/yemen/",
+        "code": "YE"
       },
       {
         "name": "Afghanistan",
         "chinese": "阿富汗",
-        "url": "https://www.cia.gov/the-world-factbook/countries/afghanistan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/afghanistan/",
+        "code": "AF"
       }
     ]
   },
@@ -459,12 +546,14 @@
       {
         "name": "Canada",
         "chinese": "加拿大",
-        "url": "https://www.cia.gov/the-world-factbook/countries/canada/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/canada/",
+        "code": "CA"
       },
       {
         "name": "United States",
         "chinese": "美國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/united-states/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/united-states/",
+        "code": "US"
       }
     ]
   },
@@ -473,167 +562,200 @@
       {
         "name": "Antigua and Barbuda",
         "chinese": "安地卡及巴布達",
-        "url": "https://www.cia.gov/the-world-factbook/countries/antigua-and-barbuda/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/antigua-and-barbuda/",
+        "code": "AG"
       },
       {
         "name": "Bahamas, The",
         "chinese": "巴哈馬",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bahamas-the/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bahamas-the/",
+        "code": "BS"
       },
       {
         "name": "Barbados",
         "chinese": "巴貝多",
-        "url": "https://www.cia.gov/the-world-factbook/countries/barbados/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/barbados/",
+        "code": "BB"
       },
       {
         "name": "Belize",
         "chinese": "貝里斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/belize/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/belize/",
+        "code": "BZ"
       },
       {
         "name": "Costa Rica",
         "chinese": "哥斯大黎加",
-        "url": "https://www.cia.gov/the-world-factbook/countries/costa-rica/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/costa-rica/",
+        "code": "CR"
       },
       {
         "name": "Cuba",
         "chinese": "古巴",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cuba/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cuba/",
+        "code": "CU"
       },
       {
         "name": "Dominica",
         "chinese": "多米尼克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/dominica/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/dominica/",
+        "code": "DM"
       },
       {
         "name": "Dominican Republic",
         "chinese": "多明尼加",
-        "url": "https://www.cia.gov/the-world-factbook/countries/dominican-republic/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/dominican-republic/",
+        "code": "DO"
       },
       {
         "name": "El Salvador",
         "chinese": "薩爾瓦多",
-        "url": "https://www.cia.gov/the-world-factbook/countries/el-salvador/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/el-salvador/",
+        "code": "SV"
       },
       {
         "name": "Grenada",
         "chinese": "格瑞那達",
-        "url": "https://www.cia.gov/the-world-factbook/countries/grenada/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/grenada/",
+        "code": "GD"
       },
       {
         "name": "Guatemala",
         "chinese": "瓜地馬拉",
-        "url": "https://www.cia.gov/the-world-factbook/countries/guatemala/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/guatemala/",
+        "code": "GT"
       },
       {
         "name": "Haiti",
         "chinese": "海地",
-        "url": "https://www.cia.gov/the-world-factbook/countries/haiti/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/haiti/",
+        "code": "HT"
       },
       {
         "name": "Honduras",
         "chinese": "宏都拉斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/honduras/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/honduras/",
+        "code": "HN"
       },
       {
         "name": "Jamaica",
         "chinese": "牙買加",
-        "url": "https://www.cia.gov/the-world-factbook/countries/jamaica/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/jamaica/",
+        "code": "JM"
       },
       {
         "name": "Nicaragua",
         "chinese": "尼加拉瓜",
-        "url": "https://www.cia.gov/the-world-factbook/countries/nicaragua/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/nicaragua/",
+        "code": "NI"
       },
       {
         "name": "Panama",
         "chinese": "巴拿馬",
-        "url": "https://www.cia.gov/the-world-factbook/countries/panama/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/panama/",
+        "code": "PA"
       },
       {
         "name": "St. Kitts and Nevis",
         "chinese": "聖克里斯多福及尼維斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/saint-kitts-and-nevis/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/saint-kitts-and-nevis/",
+        "code": "KN"
       },
       {
         "name": "St. Lucia",
         "chinese": "聖露西亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/saint-lucia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/saint-lucia/",
+        "code": "LC"
       },
       {
         "name": "St. Vincent and the Grenadines",
         "chinese": "聖文森及格瑞那丁",
-        "url": "https://www.cia.gov/the-world-factbook/countries/saint-vincent-and-the-grenadines/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/saint-vincent-and-the-grenadines/",
+        "code": "VC"
       },
       {
         "name": "Trinidad and Tobago",
         "chinese": "千里達及托巴哥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/trinidad-and-tobago/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/trinidad-and-tobago/",
+        "code": "TT"
       },
       {
         "name": "Mexico",
         "chinese": "墨西哥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mexico/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mexico/",
+        "code": "MX"
       },
       {
         "name": "Argentina",
         "chinese": "阿根廷",
-        "url": "https://www.cia.gov/the-world-factbook/countries/argentina/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/argentina/",
+        "code": "AR"
       },
       {
         "name": "Bolivia",
         "chinese": "玻利維亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/bolivia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/bolivia/",
+        "code": "BO"
       },
       {
         "name": "Brazil",
         "chinese": "巴西",
-        "url": "https://www.cia.gov/the-world-factbook/countries/brazil/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/brazil/",
+        "code": "BR"
       },
       {
         "name": "Chile",
         "chinese": "智利",
-        "url": "https://www.cia.gov/the-world-factbook/countries/chile/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/chile/",
+        "code": "CL"
       },
       {
         "name": "Colombia",
         "chinese": "哥倫比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/colombia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/colombia/",
+        "code": "CO"
       },
       {
         "name": "Ecuador",
         "chinese": "厄瓜多",
-        "url": "https://www.cia.gov/the-world-factbook/countries/ecuador/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/ecuador/",
+        "code": "EC"
       },
       {
         "name": "Guyana",
         "chinese": "蓋亞那",
-        "url": "https://www.cia.gov/the-world-factbook/countries/guyana/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/guyana/",
+        "code": "GY"
       },
       {
         "name": "Paraguay",
         "chinese": "巴拉圭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/paraguay/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/paraguay/",
+        "code": "PY"
       },
       {
         "name": "Peru",
         "chinese": "秘魯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/peru/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/peru/",
+        "code": "PE"
       },
       {
         "name": "Suriname",
         "chinese": "蘇利南",
-        "url": "https://www.cia.gov/the-world-factbook/countries/suriname/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/suriname/",
+        "code": "SR"
       },
       {
         "name": "Uruguay",
         "chinese": "烏拉圭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/uruguay/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/uruguay/",
+        "code": "UY"
       },
       {
         "name": "Venezuela, RB",
         "chinese": "委內瑞拉",
-        "url": "https://www.cia.gov/the-world-factbook/countries/venezuela/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/venezuela/",
+        "code": "VE"
       }
     ]
   },
@@ -642,42 +764,50 @@
       {
         "name": "Kazakhstan",
         "chinese": "哈薩克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kazakhstan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kazakhstan/",
+        "code": "KZ"
       },
       {
         "name": "Kyrgyz Republic",
         "chinese": "吉爾吉斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kyrgyzstan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kyrgyzstan/",
+        "code": "KG"
       },
       {
         "name": "Tajikistan",
         "chinese": "塔吉克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tajikistan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tajikistan/",
+        "code": "TJ"
       },
       {
         "name": "Turkmenistan",
         "chinese": "土庫曼",
-        "url": "https://www.cia.gov/the-world-factbook/countries/turkmenistan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/turkmenistan/",
+        "code": "TM"
       },
       {
         "name": "Uzbekistan",
         "chinese": "烏茲別克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/uzbekistan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/uzbekistan/",
+        "code": "UZ"
       },
       {
         "name": "Armenia",
         "chinese": "亞美尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/armenia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/armenia/",
+        "code": "AM"
       },
       {
         "name": "Azerbaijan",
         "chinese": "亞塞拜然",
-        "url": "https://www.cia.gov/the-world-factbook/countries/azerbaijan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/azerbaijan/",
+        "code": "AZ"
       },
       {
         "name": "Georgia",
         "chinese": "喬治亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/georgia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/georgia/",
+        "code": "GE"
       }
     ]
   },
@@ -686,87 +816,104 @@
       {
         "name": "Australia",
         "chinese": "澳洲",
-        "url": "https://www.cia.gov/the-world-factbook/countries/australia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/australia/",
+        "code": "AU"
       },
       {
         "name": "Fiji",
         "chinese": "斐濟",
-        "url": "https://www.cia.gov/the-world-factbook/countries/fiji/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/fiji/",
+        "code": "FJ"
       },
       {
         "name": "Guam",
         "chinese": "關島",
-        "url": "https://www.cia.gov/the-world-factbook/countries/guam/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/guam/",
+        "code": "GU"
       },
       {
         "name": "Kiribati",
         "chinese": "吉里巴斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kiribati/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kiribati/",
+        "code": "KI"
       },
       {
         "name": "Marshall Islands",
         "chinese": "馬紹爾群島",
-        "url": "https://www.cia.gov/the-world-factbook/countries/marshall-islands/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/marshall-islands/",
+        "code": "MH"
       },
       {
         "name": "Micronesia, Fed. Sts.",
         "chinese": "密克羅尼西亞聯邦",
-        "url": "https://www.cia.gov/the-world-factbook/countries/micronesia-federated-states-of/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/micronesia-federated-states-of/",
+        "code": "FM"
       },
       {
         "name": "Nauru",
         "chinese": "諾魯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/nauru/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/nauru/",
+        "code": "NR"
       },
       {
         "name": "New Zealand",
         "chinese": "紐西蘭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/new-zealand/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/new-zealand/",
+        "code": "NZ"
       },
       {
         "name": "Niue",
         "chinese": "紐埃",
-        "url": "https://www.cia.gov/the-world-factbook/countries/niue/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/niue/",
+        "code": "NU"
       },
       {
         "name": "Palau",
         "chinese": "帛琉",
-        "url": "https://www.cia.gov/the-world-factbook/countries/palau/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/palau/",
+        "code": "PW"
       },
       {
         "name": "Samoa",
         "chinese": "薩摩亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/samoa/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/samoa/",
+        "code": "WS"
       },
       {
         "name": "Solomon Islands",
         "chinese": "索羅門群島",
-        "url": "https://www.cia.gov/the-world-factbook/countries/solomon-islands/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/solomon-islands/",
+        "code": "SB"
       },
       {
         "name": "Tokelau",
         "chinese": "托克勞群島",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tokelau/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tokelau/",
+        "code": "TK"
       },
       {
         "name": "Tonga",
         "chinese": "東加",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tonga/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tonga/",
+        "code": "TO"
       },
       {
         "name": "Tuvalu",
         "chinese": "吐瓦魯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tuvalu/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tuvalu/",
+        "code": "TV"
       },
       {
         "name": "Vanuatu",
         "chinese": "萬那杜",
-        "url": "https://www.cia.gov/the-world-factbook/countries/vanuatu/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/vanuatu/",
+        "code": "VU"
       },
       {
         "name": "Papua New Guinea",
         "chinese": "巴布亞紐幾內亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/papua-new-guinea/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/papua-new-guinea/",
+        "code": "PG"
       }
     ]
   },
@@ -775,242 +922,290 @@
       {
         "name": "Angola",
         "chinese": "安哥拉",
-        "url": "https://www.cia.gov/the-world-factbook/countries/angola/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
+        "code": "AO"
       },
       {
         "name": "Benin",
         "chinese": "貝南",
-        "url": "https://www.cia.gov/the-world-factbook/countries/benin/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/benin/",
+        "code": "BJ"
       },
       {
         "name": "Botswana",
         "chinese": "波札那",
-        "url": "https://www.cia.gov/the-world-factbook/countries/botswana/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/botswana/",
+        "code": "BW"
       },
       {
         "name": "Burkina Faso",
         "chinese": "布吉納法索",
-        "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
+        "code": "BF"
       },
       {
         "name": "Burundi",
         "chinese": "蒲隆地",
-        "url": "https://www.cia.gov/the-world-factbook/countries/burundi/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/burundi/",
+        "code": "BI"
       },
       {
         "name": "Cabo Verde",
         "chinese": "維德角",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cabo-verde/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cabo-verde/",
+        "code": "CV"
       },
       {
         "name": "Cameroon",
         "chinese": "喀麥隆",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
+        "code": "CM"
       },
       {
         "name": "Central African Republic",
         "chinese": "中非共和國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/",
+        "code": "CF"
       },
       {
         "name": "Chad",
         "chinese": "查德",
-        "url": "https://www.cia.gov/the-world-factbook/countries/chad/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
+        "code": "TD"
       },
       {
         "name": "Comoros",
         "chinese": "葛摩聯盟",
-        "url": "https://www.cia.gov/the-world-factbook/countries/comoros/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/comoros/",
+        "code": "KM"
       },
       {
         "name": "Congo, Dem. Rep.",
         "chinese": "剛果民主共和國",
-        "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
+        "code": "CD"
       },
       {
         "name": "Congo, Rep.",
         "chinese": "剛果",
-        "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
+        "code": "CG"
       },
       {
         "name": "Cote d'Ivoire",
         "chinese": "象牙海岸",
-        "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
+        "code": "CI"
       },
       {
         "name": "Djibouti",
         "chinese": "吉布地",
-        "url": "https://www.cia.gov/the-world-factbook/countries/djibouti/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/djibouti/",
+        "code": "DJ"
       },
       {
         "name": "Equatorial Guinea",
         "chinese": "赤道幾內亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/equatorial-guinea/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/equatorial-guinea/",
+        "code": "GQ"
       },
       {
         "name": "Eritrea",
         "chinese": "厄利垂亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/eritrea/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/eritrea/",
+        "code": "ER"
       },
       {
         "name": "Eswatini",
         "chinese": "史瓦帝尼",
-        "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/",
+        "code": "SZ"
       },
       {
         "name": "Ethiopia",
         "chinese": "衣索比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
+        "code": "ET"
       },
       {
         "name": "Gabon",
         "chinese": "加彭",
-        "url": "https://www.cia.gov/the-world-factbook/countries/gabon/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/gabon/",
+        "code": "GA"
       },
       {
         "name": "Gambia, The",
         "chinese": "甘比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/gambia-the/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/gambia-the/",
+        "code": "GM"
       },
       {
         "name": "Ghana",
         "chinese": "迦納",
-        "url": "https://www.cia.gov/the-world-factbook/countries/ghana/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
+        "code": "GH"
       },
       {
         "name": "Guinea",
         "chinese": "幾內亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/guinea/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/guinea/",
+        "code": "GN"
       },
       {
         "name": "Guinea-Bissau",
         "chinese": "幾內亞比索",
-        "url": "https://www.cia.gov/the-world-factbook/countries/guinea-bissau/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/guinea-bissau/",
+        "code": "GW"
       },
       {
         "name": "Kenya",
         "chinese": "肯亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/kenya/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
+        "code": "KE"
       },
       {
         "name": "Lesotho",
         "chinese": "賴索托",
-        "url": "https://www.cia.gov/the-world-factbook/countries/lesotho/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/lesotho/",
+        "code": "LS"
       },
       {
         "name": "Liberia",
         "chinese": "賴比瑞亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/liberia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/liberia/",
+        "code": "LR"
       },
       {
         "name": "Madagascar",
         "chinese": "馬達加斯加",
-        "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
+        "code": "MG"
       },
       {
         "name": "Malawi",
         "chinese": "馬拉威",
-        "url": "https://www.cia.gov/the-world-factbook/countries/malawi/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/malawi/",
+        "code": "MW"
       },
       {
         "name": "Mali",
         "chinese": "馬利",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mali/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mali/",
+        "code": "ML"
       },
       {
         "name": "Mauritania",
         "chinese": "茅利塔尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mauritania/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mauritania/",
+        "code": "MR"
       },
       {
         "name": "Mauritius",
         "chinese": "模里西斯",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mauritius/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mauritius/",
+        "code": "MU"
       },
       {
         "name": "Mozambique",
         "chinese": "莫三比克",
-        "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
+        "code": "MZ"
       },
       {
         "name": "Namibia",
         "chinese": "納米比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/namibia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/namibia/",
+        "code": "NA"
       },
       {
         "name": "Niger",
         "chinese": "尼日",
-        "url": "https://www.cia.gov/the-world-factbook/countries/niger/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
+        "code": "NE"
       },
       {
         "name": "Nigeria",
         "chinese": "奈及利亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
+        "code": "NG"
       },
       {
         "name": "Rwanda",
         "chinese": "盧安達",
-        "url": "https://www.cia.gov/the-world-factbook/countries/rwanda/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/rwanda/",
+        "code": "RW"
       },
       {
         "name": "Sao Tome and Principe",
         "chinese": "聖多美普林西比",
-        "url": "https://www.cia.gov/the-world-factbook/countries/sao-tome-and-principe/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/sao-tome-and-principe/",
+        "code": "ST"
       },
       {
         "name": "Senegal",
         "chinese": "塞內加爾",
-        "url": "https://www.cia.gov/the-world-factbook/countries/senegal/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
+        "code": "SN"
       },
       {
         "name": "Seychelles",
         "chinese": "塞席爾",
-        "url": "https://www.cia.gov/the-world-factbook/countries/seychelles/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/seychelles/",
+        "code": "SC"
       },
       {
         "name": "Sierra Leone",
         "chinese": "獅子山",
-        "url": "https://www.cia.gov/the-world-factbook/countries/sierra-leone/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/sierra-leone/",
+        "code": "SL"
       },
       {
         "name": "Somalia",
         "chinese": "索馬利亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/somalia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/somalia/",
+        "code": "SO"
       },
       {
         "name": "South Africa",
         "chinese": "南非",
-        "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/",
+        "code": "ZA"
       },
       {
         "name": "South Sudan",
         "chinese": "南蘇丹",
-        "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
+        "code": "SS"
       },
       {
         "name": "Tanzania",
         "chinese": "坦尚尼亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
+        "code": "TZ"
       },
       {
         "name": "Togo",
         "chinese": "多哥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/togo/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/togo/",
+        "code": "TG"
       },
       {
         "name": "Uganda",
         "chinese": "烏干達",
-        "url": "https://www.cia.gov/the-world-factbook/countries/uganda/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
+        "code": "UG"
       },
       {
         "name": "Zambia",
         "chinese": "尚比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/zambia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/zambia/",
+        "code": "ZM"
       },
       {
         "name": "Zimbabwe",
         "chinese": "辛巴威",
-        "url": "https://www.cia.gov/the-world-factbook/countries/zimbabwe/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/zimbabwe/",
+        "code": "ZW"
       }
     ]
   },
@@ -1019,32 +1214,38 @@
       {
         "name": "Algeria",
         "chinese": "阿爾及利亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/algeria/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/algeria/",
+        "code": "DZ"
       },
       {
         "name": "Egypt, Arab Rep.",
         "chinese": "埃及",
-        "url": "https://www.cia.gov/the-world-factbook/countries/egypt/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/egypt/",
+        "code": "EG"
       },
       {
         "name": "Libya",
         "chinese": "利比亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/libya/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/libya/",
+        "code": "LY"
       },
       {
         "name": "Morocco",
         "chinese": "摩洛哥",
-        "url": "https://www.cia.gov/the-world-factbook/countries/morocco/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/morocco/",
+        "code": "MA"
       },
       {
         "name": "Sudan",
         "chinese": "蘇丹",
-        "url": "https://www.cia.gov/the-world-factbook/countries/sudan/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/sudan/",
+        "code": "SS"
       },
       {
         "name": "Tunisia",
         "chinese": "突尼西亞",
-        "url": "https://www.cia.gov/the-world-factbook/countries/tunisia/"
+        "url": "https://www.cia.gov/the-world-factbook/countries/tunisia/",
+        "code": "TN"
       }
     ]
   }

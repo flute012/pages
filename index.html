@@ -7,6 +7,7 @@
     <title>國家資料比較</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <style>
         .country-column {
             background-color: #edf4d3;
@@ -52,7 +53,10 @@
                     <div v-for="country in countries" :key="country.name" class="mr-4 mb-2">
                         <input type="checkbox" :id="country.name" :value="country" v-model="selectedCountries"
                             class="mr-1">
-                        <label :for="country.name">{{ country.chinese }}</label>
+                        <label :for="country.name">
+                            <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
+                            {{ country.chinese }}
+                        </label>
                     </div>
                 </div>
             </div>
@@ -65,6 +69,7 @@
             <div class="flex flex-wrap">
                 <div v-for="country in selectedCountries" :key="country.name"
                     class="bg-gray-200 rounded px-2 py-1 mr-2 mb-2">
+                    <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
                     {{ country.chinese }}
                     <button @click="removeCountry(country)" class="ml-1 text-red-500 hover:text-red-700">×</button>
                 </div>
@@ -103,7 +108,10 @@
                 </thead>
                 <tbody>
                     <tr v-for="country in sortedData" :key="country.name">
-                        <td class="border p-2 country-column">{{ country.chinese }} ({{ country.name }})</td>
+                        <td class="border p-2 country-column">
+                            <span :class="getCountryFlagClass(country.code)" class="mr-1"></span>
+                            {{ country.chinese }} ({{ country.name }})
+                        </td>
                         <td v-for="(indicator, index) in selectedIndicators" :key="indicator" class="border p-2"
                             :class="{ 'alternate-column': index % 2 !== 0 }">
                             {{ formatValue(country[indicator], indicator) }}
@@ -138,6 +146,7 @@
                 comparisonData: [],
                 updateDate: '',
                 countryData: null,
+                mergedData: null,
                 csvDownloadUrl: '',
                 selectAll: false,
                 sortKey: '',
@@ -176,22 +185,24 @@
             methods: {
                 loadData() {
                     Promise.all([
+                        fetch('countylink.json').then(response => response.json()),
                         fetch('data/merged_country_data.json').then(response => response.json()),
                         fetch('data/merged_country_data.csv').then(response => response.blob())
-                    ]).then(([jsonData, csvBlob]) => {
-                        this.countryData = jsonData;
-                        this.regions = Object.keys(jsonData);
-                        this.updateDate = new Date().toISOString().split('T')[0]; // 使用當前日期作為更新日期
+                    ]).then(([countyLinkData, mergedData, csvBlob]) => {
+                        this.countryData = countyLinkData;
+                        this.mergedData = mergedData;
+                        this.regions = Object.keys(countyLinkData);
+                        this.updateDate = new Date().toISOString().split('T')[0];
                         this.csvDownloadUrl = URL.createObjectURL(csvBlob);
-                        this.selectedIndicators = this.indicators.map(i => i.key); // 預設選擇所有指標
+                        this.selectedIndicators = this.indicators.map(i => i.key);
                     }).catch(error => {
                         console.error('Error loading data:', error);
                     });
                 },
                 loadCountries() {
                     if (this.selectedRegion && this.countryData) {
-                        this.countries = this.countryData[this.selectedRegion];
-                        this.selectedCountries = []; // 清空之前的選擇
+                        this.countries = this.countryData[this.selectedRegion].countries;
+                        this.selectedCountries = [];
                         this.selectAll = false;
                     } else {
                         this.countries = [];
@@ -211,7 +222,10 @@
                     this.selectAll = false;
                 },
                 compareCountries() {
-                    this.comparisonData = this.selectedCountries;
+                    this.comparisonData = this.selectedCountries.map(country => {
+                        const mergedCountryData = this.mergedData[this.selectedRegion].find(c => c.name === country.name);
+                        return { ...country, ...mergedCountryData };
+                    });
                 },
                 formatValue(value, indicator) {
                     if (typeof value !== 'number') {
@@ -238,8 +252,10 @@
                         return value.toLocaleString() + ' 平方公里';
                     }
 
-                    // 對於百分比和其他數值，保留兩位小數
                     return value.toFixed(2);
+                },
+                getCountryFlagClass(code) {
+                    return `flag-icon flag-icon-${code.toLowerCase()}`;
                 },
                 sort(key) {
                     if (this.sortKey === key) {
@@ -260,4 +276,5 @@
         });
     </script>
 </body>
+
 </html>
