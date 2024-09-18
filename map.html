@@ -82,6 +82,13 @@
                             <p>首都: ${country.capital || 'N/A'}</p>
                             <p>人口: ${(country.population || 0).toLocaleString()}</p>
                             <p>面積: ${(country.area || 0).toLocaleString()} km²</p>
+                            <p>GDP: ${(country.GDP || 0).toLocaleString()} 美元</p>
+                            <p>GDP成長率: ${(country.GDP_growth || 0).toLocaleString()} %</p>
+                            <p>人均GDP: ${(country.GDP_per_capita || 0).toLocaleString()} 美元</p>
+                            <p>人均GNI: ${(country.GNI_per_capita || 0).toLocaleString()} 美元</p>
+                            <p>商品出口: ${(country.Merchandise_exports || 0).toLocaleString()} 美元</p>
+                            <p>商品進口: ${(country.Merchandise_imports || 0).toLocaleString()} 美元</p>
+                            <p>城市人口: ${(country.Urban_population || 0).toLocaleString()} %</p>
                         `);
 
                         markersAdded++;
