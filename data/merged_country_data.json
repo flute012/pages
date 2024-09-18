@@ -3,6 +3,8 @@
     {
       "name": "Russian Federation",
       "chinese": "俄羅斯",
+      "code": "RU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/russia/",
       "capital": "Moscow",
       "area": 17098242,
       "population": 140820810,
@@ -13,11 +15,15 @@
       "GNI per capita (current US$)": 14250.0,
       "Merchandise exports (current US$)": 423915000000.0,
       "Merchandise imports (current US$)": 303786000000.0,
-      "Urban population (% of total)": 75.331
+      "Urban population (% of total)": 75.331,
+      "lat": 55.45,
+      "lng": 37.35
     },
     {
       "name": "Albania",
       "chinese": "阿爾巴尼亞",
+      "code": "AL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/albania/",
       "capital": "Tirana (Tirane)",
       "area": 28748,
       "population": 3107100,
@@ -28,11 +34,15 @@
       "GNI per capita (current US$)": 7570.0,
       "Merchandise exports (current US$)": 4324000000.0,
       "Merchandise imports (current US$)": 8613000000.0,
-      "Urban population (% of total)": 64.603
+      "Urban population (% of total)": 64.603,
+      "lat": 41.18,
+      "lng": 19.49
     },
     {
       "name": "Andorra",
       "chinese": "安道爾",
+      "code": "AD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/andorra/",
       "capital": "Andorra la Vella",
       "area": 468,
       "population": 85370,
@@ -43,11 +53,15 @@
       "GNI per capita (current US$)": 50080.0,
       "Merchandise exports (current US$)": 252000000.0,
       "Merchandise imports (current US$)": 1995000000.0,
-      "Urban population (% of total)": 87.774
+      "Urban population (% of total)": 87.774,
+      "lat": 42.31,
+      "lng": 1.32
     },
     {
       "name": "Austria",
       "chinese": "奧地利",
+      "code": "AT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/austria/",
       "capital": "Vienna",
       "area": 83871,
       "population": 8967982,
@@ -58,11 +72,15 @@
       "GNI per capita (current US$)": 55070.0,
       "Merchandise exports (current US$)": 223549000000.0,
       "Merchandise imports (current US$)": 224543000000.0,
-      "Urban population (% of total)": 59.53
+      "Urban population (% of total)": 59.53,
+      "lat": 48.12,
+      "lng": 16.22
     },
     {
       "name": "Belarus",
       "chinese": "白俄羅斯",
+      "code": "BY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/belarus/",
       "capital": "Minsk",
       "area": 207600,
       "population": 9501451,
@@ -73,11 +91,15 @@
       "GNI per capita (current US$)": 7780.0,
       "Merchandise exports (current US$)": 40168000000.0,
       "Merchandise imports (current US$)": 43256000000.0,
-      "Urban population (% of total)": 80.731
+      "Urban population (% of total)": 80.731,
+      "lat": 53.52,
+      "lng": 27.3
     },
     {
       "name": "Belgium",
       "chinese": "比利時",
+      "code": "BE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/belgium/",
       "capital": "Brussels",
       "area": 30528,
       "population": 11977634,
@@ -88,11 +110,15 @@
       "GNI per capita (current US$)": 54530.0,
       "Merchandise exports (current US$)": 562439000000.0,
       "Merchandise imports (current US$)": 546765000000.0,
-      "Urban population (% of total)": 98.189
+      "Urban population (% of total)": 98.189,
+      "lat": 50.51,
+      "lng": 4.21
     },
     {
       "name": "Bosnia and Herzegovina",
       "chinese": "波士尼亞與赫塞哥維納",
+      "code": "BA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bosnia-and-herzegovina/",
       "capital": "Sarajevo",
       "area": 51197,
       "population": 3798671,
@@ -103,11 +129,15 @@
       "GNI per capita (current US$)": 8160.0,
       "Merchandise exports (current US$)": 9232000000.0,
       "Merchandise imports (current US$)": 15355000000.0,
-      "Urban population (% of total)": 50.269
+      "Urban population (% of total)": 50.269,
+      "lat": 43.52,
+      "lng": 18.26
     },
     {
       "name": "Bulgaria",
       "chinese": "保加利亞",
+      "code": "BG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bulgaria/",
       "capital": "Sofia",
       "area": 110879,
       "population": 6782659,
@@ -118,11 +148,15 @@
       "GNI per capita (current US$)": 14460.0,
       "Merchandise exports (current US$)": 47854000000.0,
       "Merchandise imports (current US$)": 53551000000.0,
-      "Urban population (% of total)": 76.701
+      "Urban population (% of total)": 76.701,
+      "lat": 42.45,
+      "lng": 23.2
     },
     {
       "name": "Croatia",
       "chinese": "克羅埃西亞",
+      "code": "HR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/croatia/",
       "capital": "Zagreb",
       "area": 56594,
       "population": 4150116,
@@ -133,11 +167,15 @@
       "GNI per capita (current US$)": 20670.0,
       "Merchandise exports (current US$)": 24894000000.0,
       "Merchandise imports (current US$)": 43181000000.0,
-      "Urban population (% of total)": 58.575
+      "Urban population (% of total)": 58.575,
+      "lat": 45.5,
+      "lng": 15.58
     },
     {
       "name": "Czechia",
       "chinese": "捷克",
+      "code": "CZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/czechia/",
       "capital": "Prague",
       "area": 78867,
       "population": 10837890,
@@ -148,11 +186,15 @@
       "GNI per capita (current US$)": 27110.0,
       "Merchandise exports (current US$)": 255450000000.0,
       "Merchandise imports (current US$)": 230599000000.0,
-      "Urban population (% of total)": 74.552
+      "Urban population (% of total)": 74.552,
+      "lat": 50.05,
+      "lng": 14.22
     },
     {
       "name": "Denmark",
       "chinese": "丹麥",
+      "code": "DK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/denmark/",
       "capital": "Copenhagen",
       "area": 43094,
       "population": 5973136,
@@ -163,11 +205,15 @@
       "GNI per capita (current US$)": 73360.0,
       "Merchandise exports (current US$)": 136631000000.0,
       "Merchandise imports (current US$)": 126653000000.0,
-      "Urban population (% of total)": 88.495
+      "Urban population (% of total)": 88.495,
+      "lat": 55.41,
+      "lng": 12.34
     },
     {
       "name": "Estonia",
       "chinese": "愛沙尼亞",
+      "code": "EE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/estonia/",
       "capital": "Tallinn",
       "area": 45228,
       "population": 1193791,
@@ -178,11 +224,15 @@
       "GNI per capita (current US$)": 27240.0,
       "Merchandise exports (current US$)": 19669000000.0,
       "Merchandise imports (current US$)": 22963000000.0,
-      "Urban population (% of total)": 69.81
+      "Urban population (% of total)": 69.81,
+      "lat": 59.22,
+      "lng": 24.48
     },
     {
       "name": "Finland",
       "chinese": "芬蘭",
+      "code": "FI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/finland/",
       "capital": "Helsinki",
       "area": 338145,
       "population": 5626414,
@@ -193,11 +243,15 @@
       "GNI per capita (current US$)": 53390.0,
       "Merchandise exports (current US$)": 82355000000.0,
       "Merchandise imports (current US$)": 82345000000.0,
-      "Urban population (% of total)": 85.773
+      "Urban population (% of total)": 85.773,
+      "lat": 60.15,
+      "lng": 25.03
     },
     {
       "name": "France",
       "chinese": "法國",
+      "code": "FR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/france/",
       "capital": "Paris",
       "area": 643801,
       "population": 68374591,
@@ -208,11 +262,15 @@
       "GNI per capita (current US$)": 45070.0,
       "Merchandise exports (current US$)": 648481000000.0,
       "Merchandise imports (current US$)": 785884000000.0,
-      "Urban population (% of total)": 81.777
+      "Urban population (% of total)": 81.777,
+      "lat": 48.5,
+      "lng": 2.2
     },
     {
       "name": "Germany",
       "chinese": "德國",
+      "code": "DE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/germany/",
       "capital": "Berlin",
       "area": 357022,
       "population": 84119100,
@@ -223,11 +281,15 @@
       "GNI per capita (current US$)": 53970.0,
       "Merchandise exports (current US$)": 1688419000000.0,
       "Merchandise imports (current US$)": 1462602000000.0,
-      "Urban population (% of total)": 77.765
+      "Urban population (% of total)": 77.765,
+      "lat": 52.3,
+      "lng": 13.25
     },
     {
       "name": "Greece",
       "chinese": "希臘",
+      "code": "GR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/greece/",
       "capital": "Athens",
       "area": 131957,
       "population": 10461091,
@@ -238,18 +300,26 @@
       "GNI per capita (current US$)": 22580.0,
       "Merchandise exports (current US$)": 55047000000.0,
       "Merchandise imports (current US$)": 88617000000.0,
-      "Urban population (% of total)": 80.673
+      "Urban population (% of total)": 80.673,
+      "lat": 37.58,
+      "lng": 23.46
     },
     {
       "name": "Holy See (Vatican City)",
       "chinese": "梵蒂岡",
+      "code": "VA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/holy-see-vatican-city/",
       "capital": "Vatican City",
       "area": 0,
-      "population": 1000
+      "population": 1000,
+      "lat": 41.902784,
+      "lng": 12.453298
     },
     {
       "name": "Hungary",
       "chinese": "匈牙利",
+      "code": "HU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/hungary/",
       "capital": "Budapest",
       "area": 93028,
       "population": 9855745,
@@ -260,11 +330,15 @@
       "GNI per capita (current US$)": 19820.0,
       "Merchandise exports (current US$)": 160955000000.0,
       "Merchandise imports (current US$)": 155966000000.0,
-      "Urban population (% of total)": 72.864
+      "Urban population (% of total)": 72.864,
+      "lat": 47.29,
+      "lng": 19.05
     },
     {
       "name": "Iceland",
       "chinese": "冰島",
+      "code": "IS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/iceland/",
       "capital": "Reykjavik",
       "area": 103000,
       "population": 364036,
@@ -275,11 +349,15 @@
       "GNI per capita (current US$)": 79840.0,
       "Merchandise exports (current US$)": 6609000000.0,
       "Merchandise imports (current US$)": 9464000000.0,
-      "Urban population (% of total)": 94.042
+      "Urban population (% of total)": 94.042,
+      "lat": 64.1,
+      "lng": -21.57
     },
     {
       "name": "Ireland",
       "chinese": "愛爾蘭",
+      "code": "IE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/ireland/",
       "capital": "Dublin",
       "area": 70273,
       "population": 5233461,
@@ -290,11 +368,15 @@
       "GNI per capita (current US$)": 80390.0,
       "Merchandise exports (current US$)": 209499000000.0,
       "Merchandise imports (current US$)": 147065000000.0,
-      "Urban population (% of total)": 64.466
+      "Urban population (% of total)": 64.466,
+      "lat": 53.21,
+      "lng": -6.15
     },
     {
       "name": "Italy",
       "chinese": "義大利",
+      "code": "IT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/italy/",
       "capital": "Rome",
       "area": 301340,
       "population": 60964931,
@@ -305,11 +387,15 @@
       "GNI per capita (current US$)": 38200.0,
       "Merchandise exports (current US$)": 676963000000.0,
       "Merchandise imports (current US$)": 639630000000.0,
-      "Urban population (% of total)": 71.973
+      "Urban population (% of total)": 71.973,
+      "lat": 41.54,
+      "lng": 12.29
     },
     {
       "name": "Kosovo",
       "chinese": "科索沃",
+      "code": "",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kosovo/",
       "capital": "Pristina (Prishtine, Prishtina)",
       "area": 10887,
       "population": 1977093,
@@ -317,11 +403,15 @@
       "GDP (current US$)": 10438351483.1677,
       "GDP growth (annual %)": 3.3378946993315,
       "GDP per capita (current US$)": 5943.12571420876,
-      "GNI per capita (current US$)": 5980.0
+      "GNI per capita (current US$)": 5980.0,
+      "lat": 21,
+      "lng": 42.58
     },
     {
       "name": "Latvia",
       "chinese": "拉脫維亞",
+      "code": "LV",
+      "url": "https://www.cia.gov/the-world-factbook/countries/latvia/",
       "capital": "Riga",
       "area": 64589,
       "population": 1801246,
@@ -332,22 +422,30 @@
       "GNI per capita (current US$)": 21970.0,
       "Merchandise exports (current US$)": 22446000000.0,
       "Merchandise imports (current US$)": 27114000000.0,
-      "Urban population (% of total)": 68.671
+      "Urban population (% of total)": 68.671,
+      "lat": 56.53,
+      "lng": 24.08
     },
     {
       "name": "Liechtenstein",
       "chinese": "列支敦斯登",
+      "code": "LI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/liechtenstein/",
       "capital": "Vaduz",
       "area": 160,
       "population": 40272,
       "Age dependency ratio (% of working-age population)": 52.4278947976433,
       "GDP (current US$)": 7364654515.13984,
       "GDP per capita (current US$)": 187267.132380803,
-      "Urban population (% of total)": 14.617
+      "Urban population (% of total)": 14.617,
+      "lat": 47.08,
+      "lng": 9.31
     },
     {
       "name": "Lithuania",
       "chinese": "立陶宛",
+      "code": "LT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/lithuania/",
       "capital": "Vilnius",
       "area": 65300,
       "population": 2628186,
@@ -358,11 +456,15 @@
       "GNI per capita (current US$)": 24820.0,
       "Merchandise exports (current US$)": 42639000000.0,
       "Merchandise imports (current US$)": 48436000000.0,
-      "Urban population (% of total)": 68.694
+      "Urban population (% of total)": 68.694,
+      "lat": 54.38,
+      "lng": 25.19
     },
     {
       "name": "Luxembourg",
       "chinese": "盧森堡",
+      "code": "LU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/luxembourg/",
       "capital": "Luxembourg",
       "area": 2586,
       "population": 671254,
@@ -373,11 +475,15 @@
       "GNI per capita (current US$)": 88370.0,
       "Merchandise exports (current US$)": 17148000000.0,
       "Merchandise imports (current US$)": 25535000000.0,
-      "Urban population (% of total)": 92.078
+      "Urban population (% of total)": 92.078,
+      "lat": 49.37,
+      "lng": 6.09
     },
     {
       "name": "Malta",
       "chinese": "馬爾他",
+      "code": "MT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/malta/",
       "capital": "Valletta",
       "area": 316,
       "population": 469730,
@@ -388,11 +494,15 @@
       "GNI per capita (current US$)": 34240.0,
       "Merchandise exports (current US$)": 3468000000.0,
       "Merchandise imports (current US$)": 8105000000.0,
-      "Urban population (% of total)": 94.941
+      "Urban population (% of total)": 94.941,
+      "lat": 35.54,
+      "lng": 14.31
     },
     {
       "name": "Moldova",
       "chinese": "摩爾多瓦",
+      "code": "MD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/moldova/",
       "capital": "Chisinau in Romanian (Kishinev in Russian)",
       "area": 33851,
       "population": 3599528,
@@ -403,11 +513,15 @@
       "GNI per capita (current US$)": 6110.0,
       "Merchandise exports (current US$)": 4049000000.0,
       "Merchandise imports (current US$)": 8674000000.0,
-      "Urban population (% of total)": 43.373
+      "Urban population (% of total)": 43.373,
+      "lat": 47.618979,
+      "lng": 28.467198
     },
     {
       "name": "Monaco",
       "chinese": "摩納哥",
+      "code": "MC",
+      "url": "https://www.cia.gov/the-world-factbook/countries/monaco/",
       "capital": "Monaco",
       "area": 2,
       "population": 31813,
@@ -415,11 +529,15 @@
       "GDP (current US$)": 8784002931.68665,
       "GDP growth (annual %)": 11.0968262747971,
       "GDP per capita (current US$)": 240862.18244774,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat": 43.737664,
+      "lng": 7.421904
     },
     {
       "name": "Montenegro",
       "chinese": "蒙特內哥羅",
+      "code": "ME",
+      "url": "https://www.cia.gov/the-world-factbook/countries/montenegro/",
       "capital": "Podgorica; note - Cetinje retains the status of \"Old Royal Capital\"",
       "area": 13812,
       "population": 599849,
@@ -430,11 +548,15 @@
       "GNI per capita (current US$)": 11500.0,
       "Merchandise exports (current US$)": 679000000.0,
       "Merchandise imports (current US$)": 4118000000.0,
-      "Urban population (% of total)": 68.502
-    },
+      "Urban population (% of total)": 68.502,
+       "lng": 42.8889,
+       "lat": 19.297
+   },
     {
       "name": "Netherlands",
       "chinese": "荷蘭",
+      "code": "NL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/netherlands/",
       "capital": "Amsterdam; note - The Hague is the seat of government",
       "area": 41543,
       "population": 17772378,
@@ -445,11 +567,15 @@
       "GNI per capita (current US$)": 60670.0,
       "Merchandise exports (current US$)": 934568000000.0,
       "Merchandise imports (current US$)": 842051000000.0,
-      "Urban population (% of total)": 93.179
+      "Urban population (% of total)": 93.179,
+      "lat": 52.23,
+      "lng": 4.54
     },
     {
       "name": "North Macedonia",
       "chinese": "北馬其頓",
+      "code": "MK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/north-macedonia/",
       "capital": "Skopje",
       "area": 25713,
       "population": 2135622,
@@ -460,11 +586,15 @@
       "GNI per capita (current US$)": 7660.0,
       "Merchandise exports (current US$)": 8999000000.0,
       "Merchandise imports (current US$)": 12056000000.0,
-      "Urban population (% of total)": 59.479
+      "Urban population (% of total)": 59.479,
+       "lng": 41.9949,  
+       "lat": 21.42727
     },
     {
       "name": "Norway",
       "chinese": "挪威",
+      "code": "NO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/norway/",
       "capital": "Oslo",
       "area": 323802,
       "population": 5509733,
@@ -475,11 +605,15 @@
       "GNI per capita (current US$)": 102460.0,
       "Merchandise exports (current US$)": 173906000000.0,
       "Merchandise imports (current US$)": 95292000000.0,
-      "Urban population (% of total)": 83.995
+      "Urban population (% of total)": 83.995,
+      "lat": 59.55,
+      "lng": 10.45
     },
     {
       "name": "Poland",
       "chinese": "波蘭",
+      "code": "PL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/poland/",
       "capital": "Warsaw",
       "area": 312685,
       "population": 38746310,
@@ -490,11 +624,15 @@
       "GNI per capita (current US$)": 19730.0,
       "Merchandise exports (current US$)": 381517000000.0,
       "Merchandise imports (current US$)": 370076000000.0,
-      "Urban population (% of total)": 60.218
+      "Urban population (% of total)": 60.218,
+      "lat": 52.13,
+      "lng": 21
     },
     {
       "name": "Portugal",
       "chinese": "葡萄牙",
+      "code": "PT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/portugal/",
       "capital": "Lisbon",
       "area": 92090,
       "population": 10207177,
@@ -505,11 +643,15 @@
       "GNI per capita (current US$)": 26270.0,
       "Merchandise exports (current US$)": 83901000000.0,
       "Merchandise imports (current US$)": 113475000000.0,
-      "Urban population (% of total)": 67.906
+      "Urban population (% of total)": 67.906,
+      "lat": 38.42,
+      "lng": -9.1
     },
     {
       "name": "Romania",
       "chinese": "羅馬尼亞",
+      "code": "RO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/romania/",
       "capital": "Bucharest",
       "area": 238391,
       "population": 18148155,
@@ -520,11 +662,15 @@
       "GNI per capita (current US$)": 16670.0,
       "Merchandise exports (current US$)": 100612000000.0,
       "Merchandise imports (current US$)": 131912000000.0,
-      "Urban population (% of total)": 54.672
+      "Urban population (% of total)": 54.672,
+      "lat": 44.27,
+      "lng": 26.1
     },
     {
       "name": "San Marino",
       "chinese": "聖馬利諾",
+      "code": "SM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/san-marino/",
       "capital": "San Marino (city)",
       "area": 61,
       "population": 35095,
@@ -533,11 +679,15 @@
       "GDP growth (annual %)": 8.46307184428878,
       "GDP per capita (current US$)": 54982.451714817,
       "GNI per capita (current US$)": 47120.0,
-      "Urban population (% of total)": 97.836
+      "Urban population (% of total)": 97.836,
+      "lat": 43.946215101,
+      "lng": 12.46
     },
     {
       "name": "Serbia",
       "chinese": "塞爾維亞",
+      "code": "RS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/serbia/",
       "capital": "Belgrade (Beograd)",
       "area": 77474,
       "population": 6652212,
@@ -548,11 +698,15 @@
       "GNI per capita (current US$)": 10030.0,
       "Merchandise exports (current US$)": 30935000000.0,
       "Merchandise imports (current US$)": 39838000000.0,
-      "Urban population (% of total)": 57.113
+      "Urban population (% of total)": 57.113,
+      "lat": 42.890781,
+      "lng": 19.251107
     },
     {
       "name": "Slovak Republic",
       "chinese": "斯洛伐克",
+      "code": "SK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/slovakia/",
       "capital": "Bratislava",
       "area": 49035,
       "population": 5563649,
@@ -563,11 +717,15 @@
       "GNI per capita (current US$)": 22790.0,
       "Merchandise exports (current US$)": 117316000000.0,
       "Merchandise imports (current US$)": 113532000000.0,
-      "Urban population (% of total)": 54.027
+      "Urban population (% of total)": 54.027,
+      "lat": 48.1,
+      "lng": 17.07
     },
     {
       "name": "Slovenia",
       "chinese": "斯洛維尼亞",
+      "code": "SI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/slovenia/",
       "capital": "Ljubljana",
       "area": 20273,
       "population": 2097893,
@@ -578,11 +736,15 @@
       "GNI per capita (current US$)": 30620.0,
       "Merchandise exports (current US$)": 73034000000.0,
       "Merchandise imports (current US$)": 71445000000.0,
-      "Urban population (% of total)": 56.088
+      "Urban population (% of total)": 56.088,
+      "lat": 46.04,
+      "lng": 14.33
     },
     {
       "name": "Spain",
       "chinese": "西班牙",
+      "code": "ES",
+      "url": "https://www.cia.gov/the-world-factbook/countries/spain/",
       "capital": "Madrid",
       "area": 505370,
       "population": 47280433,
@@ -593,11 +755,15 @@
       "GNI per capita (current US$)": 32180.0,
       "Merchandise exports (current US$)": 423221000000.0,
       "Merchandise imports (current US$)": 470328000000.0,
-      "Urban population (% of total)": 81.552
+      "Urban population (% of total)": 81.552,
+      "lat": 40.25,
+      "lng": -3.45
     },
     {
       "name": "Sweden",
       "chinese": "瑞典",
+      "code": "SE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/sweden/",
       "capital": "Stockholm",
       "area": 450295,
       "population": 10589835,
@@ -608,11 +774,15 @@
       "GNI per capita (current US$)": 61650.0,
       "Merchandise exports (current US$)": 197860000000.0,
       "Merchandise imports (current US$)": 193016000000.0,
-      "Urban population (% of total)": 88.738
+      "Urban population (% of total)": 88.738,
+      "lat": 59.2,
+      "lng": 18.03
     },
     {
       "name": "Switzerland",
       "chinese": "瑞士",
+      "code": "CH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/switzerland/",
       "capital": "Bern",
       "area": 41277,
       "population": 8860574,
@@ -623,11 +793,15 @@
       "GNI per capita (current US$)": 95160.0,
       "Merchandise exports (current US$)": 420170000000.0,
       "Merchandise imports (current US$)": 364098000000.0,
-      "Urban population (% of total)": 74.202
+      "Urban population (% of total)": 74.202,
+      "lat": 46.57,
+      "lng": 7.28
     },
     {
       "name": "Ukraine",
       "chinese": "烏克蘭",
+      "code": "UA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/ukraine/",
       "capital": "Kyiv (Kiev is the transliteration from Russian)",
       "area": 603550,
       "population": 35661826,
@@ -638,11 +812,15 @@
       "GNI per capita (current US$)": 5070.0,
       "Merchandise exports (current US$)": 36040000000.0,
       "Merchandise imports (current US$)": 63527000000.0,
-      "Urban population (% of total)": 70.095
+      "Urban population (% of total)": 70.095,
+      "lat": 50.3,
+      "lng": 30.28
     },
     {
       "name": "United Kingdom",
       "chinese": "英國",
+      "code": "GB",
+      "url": "https://www.cia.gov/the-world-factbook/countries/united-kingdom/",
       "capital": "London",
       "area": 243610,
       "population": 68459055,
@@ -653,13 +831,17 @@
       "GNI per capita (current US$)": 47800.0,
       "Merchandise exports (current US$)": 520691000000.0,
       "Merchandise imports (current US$)": 791302000000.0,
-      "Urban population (% of total)": 84.642
+      "Urban population (% of total)": 84.642,
+      "lat": 51.36,
+      "lng": -0.05
     }
   ],
   "南亞": [
     {
       "name": "Bangladesh",
       "chinese": "孟加拉",
+      "code": "BD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bangladesh/",
       "capital": "Dhaka",
       "area": 148460,
       "population": 168697184,
@@ -670,11 +852,15 @@
       "GNI per capita (current US$)": 2860.0,
       "Merchandise exports (current US$)": 55788000000.0,
       "Merchandise imports (current US$)": 66863000000.0,
-      "Urban population (% of total)": 40.473
+      "Urban population (% of total)": 40.473,
+      "lat": 24.204019,
+      "lng": 90.254063
     },
     {
       "name": "Bhutan",
       "chinese": "不丹",
+      "code": "BT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bhutan/",
       "capital": "Thimphu",
       "area": 38394,
       "population": 884546,
@@ -685,11 +871,15 @@
       "GNI per capita (current US$)": 3590.0,
       "Merchandise exports (current US$)": 795000000.0,
       "Merchandise imports (current US$)": 1399000000.0,
-      "Urban population (% of total)": 44.35
+      "Urban population (% of total)": 44.35,
+      "lat": 27.31,
+      "lng": 89.45
     },
     {
       "name": "India",
       "chinese": "印度",
+      "code": "IN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/india/",
       "capital": "New Delhi",
       "area": 3287263,
       "population": 1409128296,
@@ -700,11 +890,15 @@
       "GNI per capita (current US$)": 2540.0,
       "Merchandise exports (current US$)": 432001000000.0,
       "Merchandise imports (current US$)": 672667000000.0,
-      "Urban population (% of total)": 36.364
+      "Urban population (% of total)": 36.364,
+      "lat": 28.37,
+      "lng": 77.13
     },
     {
       "name": "Maldives",
       "chinese": "馬爾地夫",
+      "code": "MV",
+      "url": "https://www.cia.gov/the-world-factbook/countries/maldives/",
       "capital": "Male",
       "area": 298,
       "population": 388858,
@@ -715,11 +909,15 @@
       "GNI per capita (current US$)": 11030.0,
       "Merchandise exports (current US$)": 421000000.0,
       "Merchandise imports (current US$)": 3497000000.0,
-      "Urban population (% of total)": 41.971
+      "Urban population (% of total)": 41.971,
+      "lat": 4,
+      "lng": 73.28
     },
     {
       "name": "Nepal",
       "chinese": "尼泊爾",
+      "code": "NP",
+      "url": "https://www.cia.gov/the-world-factbook/countries/nepal/",
       "capital": "Kathmandu",
       "area": 147181,
       "population": 31122387,
@@ -730,11 +928,15 @@
       "GNI per capita (current US$)": 1370.0,
       "Merchandise exports (current US$)": 1015000000.0,
       "Merchandise imports (current US$)": 12476000000.0,
-      "Urban population (% of total)": 21.903
+      "Urban population (% of total)": 21.903,
+      "lat": 27.45,
+      "lng": 85.2
     },
     {
       "name": "Pakistan",
       "chinese": "巴基斯坦",
+      "code": "PK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/pakistan/",
       "capital": "Islamabad",
       "area": 796095,
       "population": 252363571,
@@ -745,11 +947,15 @@
       "GNI per capita (current US$)": 1500.0,
       "Merchandise exports (current US$)": 28488000000.0,
       "Merchandise imports (current US$)": 50500000000.0,
-      "Urban population (% of total)": 38.04
+      "Urban population (% of total)": 38.04,
+      "lat": 33.4,
+      "lng": 73.1
     },
     {
       "name": "Sri Lanka",
       "chinese": "斯里蘭卡",
+      "code": "LK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/sri-lanka/",
       "capital": "Colombo (commercial capital); Sri Jayewardenepura Kotte (legislative capital)",
       "area": 65610,
       "population": 21982608,
@@ -760,13 +966,17 @@
       "GNI per capita (current US$)": 3540.0,
       "Merchandise exports (current US$)": 11911000000.0,
       "Merchandise imports (current US$)": 16811000000.0,
-      "Urban population (% of total)": 19.211
+      "Urban population (% of total)": 19.211,
+      "lat": 7.6657,
+      "lng": 80.705613
     }
   ],
   "東南亞": [
     {
       "name": "Brunei Darussalam",
       "chinese": "汶萊",
+      "code": "BN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/brunei/",
       "capital": "Bandar Seri Begawan",
       "area": 5765,
       "population": 491900,
@@ -777,11 +987,15 @@
       "GNI per capita (current US$)": 34970.0,
       "Merchandise exports (current US$)": 9090000000.0,
       "Merchandise imports (current US$)": 6317000000.0,
-      "Urban population (% of total)": 79.149
+      "Urban population (% of total)": 79.149,
+      "lat": 4.52,
+      "lng": 115
     },
     {
       "name": "Myanmar",
       "chinese": "緬甸",
+      "code": "MM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/burma/",
       "capital": "Rangoon (aka Yangon, continues to be recognized as the primary Burmese capital by the US Government); Nay Pyi Taw is the administrative capital",
       "area": 676578,
       "population": 57527139,
@@ -792,11 +1006,15 @@
       "GNI per capita (current US$)": 1210.0,
       "Merchandise exports (current US$)": 13594000000.0,
       "Merchandise imports (current US$)": 15566000000.0,
-      "Urban population (% of total)": 32.112
+      "Urban population (% of total)": 32.112,
+      "lat": 16.45,
+      "lng": 96.2
     },
     {
       "name": "Cambodia",
       "chinese": "柬埔寨",
+      "code": "KH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cambodia/",
       "capital": "Phnom Penh",
       "area": 181035,
       "population": 17063669,
@@ -807,11 +1025,15 @@
       "GNI per capita (current US$)": 1810.0,
       "Merchandise exports (current US$)": 23470000000.0,
       "Merchandise imports (current US$)": 24386000000.0,
-      "Urban population (% of total)": 25.57
+      "Urban population (% of total)": 25.57,
+      "lat": 11.33,
+      "lng": 104.55
     },
     {
       "name": "Indonesia",
       "chinese": "印尼",
+      "code": "ID",
+      "url": "https://www.cia.gov/the-world-factbook/countries/indonesia/",
       "capital": "Jakarta; note - Indonesian lawmakers on 18 January 2022 approved the relocation of the country’s capital from Jakarta to a site on the island of Borneo between Samarinda City and the port city of Balikpapan; Nusantara (\"archipelago\"), the name of the new capital, is expected to be established in August 2024",
       "area": 1904569,
       "population": 281562465,
@@ -822,11 +1044,15 @@
       "GNI per capita (current US$)": 4870.0,
       "Merchandise exports (current US$)": 258857000000.0,
       "Merchandise imports (current US$)": 221886000000.0,
-      "Urban population (% of total)": 58.572
+      "Urban population (% of total)": 58.572,
+      "lat": -6.09,
+      "lng": 106.49
     },
     {
       "name": "Lao PDR",
       "chinese": "寮國",
+      "code": "LA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/laos/",
       "capital": "Vientiane (Viangchan)",
       "area": 236800,
       "population": 7953556,
@@ -837,11 +1063,15 @@
       "GNI per capita (current US$)": 2120.0,
       "Merchandise exports (current US$)": 8371000000.0,
       "Merchandise imports (current US$)": 7711000000.0,
-      "Urban population (% of total)": 38.247
+      "Urban population (% of total)": 38.247,
+      "lat": 17.58,
+      "lng": 102.36
     },
     {
       "name": "Malaysia",
       "chinese": "馬來西亞",
+      "code": "MY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/malaysia/",
       "capital": "Kuala Lumpur; note - nearby Putrajaya is referred to as a federal government administrative center but not the capital; Parliament meets in Kuala Lumpur",
       "area": 329847,
       "population": 34564810,
@@ -852,11 +1082,15 @@
       "GNI per capita (current US$)": 11970.0,
       "Merchandise exports (current US$)": 312846000000.0,
       "Merchandise imports (current US$)": 265755000000.0,
-      "Urban population (% of total)": 78.716
+      "Urban population (% of total)": 78.716,
+      "lat": 3.09,
+      "lng": 101.41
     },
     {
       "name": "Philippines",
       "chinese": "菲律賓",
+      "code": "PH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/philippines/",
       "capital": "Manila",
       "area": 300000,
       "population": 118277063,
@@ -867,11 +1101,15 @@
       "GNI per capita (current US$)": 4230.0,
       "Merchandise exports (current US$)": 72918000000.0,
       "Merchandise imports (current US$)": 132979000000.0,
-      "Urban population (% of total)": 48.287
+      "Urban population (% of total)": 48.287,
+      "lat": 14.4,
+      "lng": 121.03
     },
     {
       "name": "Singapore",
       "chinese": "新加坡",
+      "code": "SG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/singapore/",
       "capital": "Singapore",
       "area": 719,
       "population": 6028459,
@@ -882,11 +1120,15 @@
       "GNI per capita (current US$)": 70590.0,
       "Merchandise exports (current US$)": 476252000000.0,
       "Merchandise imports (current US$)": 423448000000.0,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat": 1.362735,
+      "lng": 103.864154
     },
     {
       "name": "Thailand",
       "chinese": "泰國",
+      "code": "TH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/thailand/",
       "capital": "Bangkok",
       "area": 513120,
       "population": 69920998,
@@ -897,11 +1139,15 @@
       "GNI per capita (current US$)": 7180.0,
       "Merchandise exports (current US$)": 284562000000.0,
       "Merchandise imports (current US$)": 289754000000.0,
-      "Urban population (% of total)": 53.608
+      "Urban population (% of total)": 53.608,
+      "lat": 13.45,
+      "lng": 100.35
     },
     {
       "name": "Timor-Leste",
       "chinese": "東帝汶",
+      "code": "TL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/timor-leste/",
       "capital": "Dili",
       "area": 14874,
       "population": 1506909,
@@ -912,11 +1158,15 @@
       "GNI per capita (current US$)": 2140.0,
       "Merchandise exports (current US$)": 295000000.0,
       "Merchandise imports (current US$)": 894000000.0,
-      "Urban population (% of total)": 32.456
+      "Urban population (% of total)": 32.456,
+      "lat": -8.29,
+      "lng": 125.34
     },
     {
       "name": "Viet Nam",
       "chinese": "越南",
+      "code": "VN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/vietnam/",
       "capital": "Hanoi (Ha Noi)",
       "area": 331210,
       "population": 105758975,
@@ -927,13 +1177,17 @@
       "GNI per capita (current US$)": 4180.0,
       "Merchandise exports (current US$)": 353782000000.0,
       "Merchandise imports (current US$)": 325776000000.0,
-      "Urban population (% of total)": 39.48
+      "Urban population (% of total)": 39.48,
+      "lat": 21.05,
+      "lng": 105.55
     }
   ],
   "東亞": [
     {
       "name": "China",
       "chinese": "中國",
+      "code": "CN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/china/",
       "capital": "Beijing",
       "area": 9596960,
       "population": 1416043270,
@@ -944,11 +1198,15 @@
       "GNI per capita (current US$)": 13400.0,
       "Merchandise exports (current US$)": 3380024000000.0,
       "Merchandise imports (current US$)": 2556802000000.0,
-      "Urban population (% of total)": 64.57
+      "Urban population (% of total)": 64.57,
+      "lat": 39.55,
+      "lng": 116.2
     },
     {
       "name": "Hong Kong SAR, China",
       "chinese": "香港",
+      "code": "HK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/hong-kong/",
       "capital": null,
       "area": 1108,
       "population": 7297821,
@@ -959,11 +1217,15 @@
       "GNI per capita (current US$)": 55200.0,
       "Merchandise exports (current US$)": 573871000000.0,
       "Merchandise imports (current US$)": 653696000000.0,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat": 114.185,
+      "lng": 22.268
     },
     {
       "name": "Japan",
       "chinese": "日本",
+      "code": "JP",
+      "url": "https://www.cia.gov/the-world-factbook/countries/japan/",
       "capital": "Tokyo",
       "area": 377915,
       "population": 123201945,
@@ -974,22 +1236,30 @@
       "GNI per capita (current US$)": 39030.0,
       "Merchandise exports (current US$)": 717315000000.0,
       "Merchandise imports (current US$)": 785615000000.0,
-      "Urban population (% of total)": 92.043
+      "Urban population (% of total)": 92.043,
+      "lat": 36.668438,
+      "lng": 138.657591
     },
     {
       "name": "Korea, Dem. People's Rep.",
       "chinese": "朝鮮",
+      "code": "KP",
+      "url": "https://www.cia.gov/the-world-factbook/countries/korea-north/",
       "capital": "Pyongyang",
       "area": 120538,
       "population": 26298666,
       "Age dependency ratio (% of working-age population)": 45.0078646006059,
       "Merchandise exports (current US$)": 347000000.0,
       "Merchandise imports (current US$)": 2726000000.0,
-      "Urban population (% of total)": 63.203
+      "Urban population (% of total)": 63.203,
+      "lat": 39.09,
+      "lng": 125.3
     },
     {
       "name": "Korea, Rep.",
       "chinese": "韓國",
+      "code": "KR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/korea-south/",
       "capital": "Seoul; note - Sejong, located some 120 km (75 mi) south of Seoul, serves as an administrative capital for segments of the South Korean Government",
       "area": 99720,
       "population": 52081799,
@@ -1000,11 +1270,15 @@
       "GNI per capita (current US$)": 35490.0,
       "Merchandise exports (current US$)": 632226000000.0,
       "Merchandise imports (current US$)": 642572000000.0,
-      "Urban population (% of total)": 81.456
+      "Urban population (% of total)": 81.456,
+      "lat": 37.31,
+      "lng": 126.58
     },
     {
       "name": "Macao SAR, China",
       "chinese": "澳門",
+      "code": "MO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/macau/",
       "capital": null,
       "area": 28,
       "population": 644426,
@@ -1015,11 +1289,15 @@
       "GNI per capita (current US$)": 43940.0,
       "Merchandise exports (current US$)": 1654000000.0,
       "Merchandise imports (current US$)": 17541000000.0,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat":22.2 ,
+      "lng":113.55
     },
     {
       "name": "Mongolia",
       "chinese": "蒙古",
+      "code": "MN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mongolia/",
       "capital": "Ulaanbaatar",
       "area": 1564116,
       "population": 3281676,
@@ -1030,20 +1308,28 @@
       "GNI per capita (current US$)": 4950.0,
       "Merchandise exports (current US$)": 15185000000.0,
       "Merchandise imports (current US$)": 9253000000.0,
-      "Urban population (% of total)": 69.089
+      "Urban population (% of total)": 69.089,
+      "lat": 46.935061,
+      "lng": 103.258146
     },
     {
       "name": "Taiwan",
       "chinese": "臺灣",
+      "code": "TW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/taiwan/",
       "capital": "Taipei",
       "area": 35980,
-      "population": 23595274
+      "population": 23595274,
+      "lat": 25.01,
+      "lng": 121.54
     }
   ],
   "西亞": [
     {
       "name": "Cyprus",
       "chinese": "賽普勒斯",
+      "code": "CY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cyprus/",
       "capital": "Nicosia (Lefkosia/Lefkosa)",
       "area": 9251,
       "population": 1320525,
@@ -1054,11 +1340,15 @@
       "GNI per capita (current US$)": 30990.0,
       "Merchandise exports (current US$)": 4453000000.0,
       "Merchandise imports (current US$)": 13987000000.0,
-      "Urban population (% of total)": 66.987
+      "Urban population (% of total)": 66.987,
+      "lat": 35.1,
+      "lng": 33.25
     },
     {
       "name": "Bahrain",
       "chinese": "巴林",
+      "code": "BH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bahrain/",
       "capital": "Manama",
       "area": 760,
       "population": 1566888,
@@ -1069,11 +1359,15 @@
       "GNI per capita (current US$)": 28280.0,
       "Merchandise exports (current US$)": 25235000000.0,
       "Merchandise imports (current US$)": 15367000000.0,
-      "Urban population (% of total)": 89.869
+      "Urban population (% of total)": 89.869,
+      "lat": 26.1,
+      "lng": 50.3
     },
     {
       "name": "Iran, Islamic Rep.",
       "chinese": "伊朗",
+      "code": "IR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/iran/",
       "capital": "Tehran",
       "area": 1648195,
       "population": 88386937,
@@ -1084,11 +1378,15 @@
       "GNI per capita (current US$)": 4680.0,
       "Merchandise exports (current US$)": 91188000000.0,
       "Merchandise imports (current US$)": 65276000000.0,
-      "Urban population (% of total)": 77.257
+      "Urban population (% of total)": 77.257,
+      "lat": 35.44,
+      "lng": 51.3
     },
     {
       "name": "Iraq",
       "chinese": "伊拉克",
+      "code": "IQ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/iraq/",
       "capital": "Baghdad",
       "area": 438317,
       "population": 42083436,
@@ -1099,11 +1397,15 @@
       "GNI per capita (current US$)": 5600.0,
       "Merchandise exports (current US$)": 115952000000.0,
       "Merchandise imports (current US$)": 95519000000.0,
-      "Urban population (% of total)": 71.599
+      "Urban population (% of total)": 71.599,
+      "lat": 33.2,
+      "lng": 44.3
     },
     {
       "name": "Israel",
       "chinese": "以色列",
+      "code": "IL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/israel/",
       "capital": "Jerusalem; note - the US recognized Jerusalem as Israel’s capital in December 2017 without taking a position on the specific boundaries of Israeli sovereignty",
       "area": 21937,
       "population": 9402617,
@@ -1114,11 +1416,15 @@
       "GNI per capita (current US$)": 55020.0,
       "Merchandise exports (current US$)": 66893000000.0,
       "Merchandise imports (current US$)": 91284000000.0,
-      "Urban population (% of total)": 92.854
+      "Urban population (% of total)": 92.854,
+      "lat": 31.47,
+      "lng": 35.12
     },
     {
       "name": "Jordan",
       "chinese": "約旦",
+      "code": "JO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/jordan/",
       "capital": "Amman",
       "area": 89342,
       "population": 11174024,
@@ -1129,11 +1435,15 @@
       "GNI per capita (current US$)": 4460.0,
       "Merchandise exports (current US$)": 12763000000.0,
       "Merchandise imports (current US$)": 25470000000.0,
-      "Urban population (% of total)": 92.02
+      "Urban population (% of total)": 92.02,
+      "lat": 31.57,
+      "lng": 35.52
     },
     {
       "name": "Kuwait",
       "chinese": "科威特",
+      "code": "KW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kuwait/",
       "capital": "Kuwait City",
       "area": 17818,
       "population": 3138355,
@@ -1144,11 +1454,15 @@
       "GNI per capita (current US$)": 46140.0,
       "Merchandise exports (current US$)": 85409000000.0,
       "Merchandise imports (current US$)": 37378000000.0,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat": 29.3,
+      "lng": 48
     },
     {
       "name": "Lebanon",
       "chinese": "黎巴嫩",
+      "code": "LB",
+      "url": "https://www.cia.gov/the-world-factbook/countries/lebanon/",
       "capital": "Beirut",
       "area": 10400,
       "population": 5364482,
@@ -1159,11 +1473,15 @@
       "GNI per capita (current US$)": 3740.0,
       "Merchandise exports (current US$)": 3083000000.0,
       "Merchandise imports (current US$)": 15286000000.0,
-      "Urban population (% of total)": 89.432
+      "Urban population (% of total)": 89.432,
+      "lat": 33.53,
+      "lng": 35.31
     },
     {
       "name": "Oman",
       "chinese": "阿曼",
+      "code": "OM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/oman/",
       "capital": "Muscat",
       "area": 309500,
       "population": 3901992,
@@ -1174,11 +1492,15 @@
       "GNI per capita (current US$)": 21540.0,
       "Merchandise exports (current US$)": 62736000000.0,
       "Merchandise imports (current US$)": 36382000000.0,
-      "Urban population (% of total)": 88.4
+      "Urban population (% of total)": 88.4,
+      "lat": 23.37,
+      "lng": 58.36
     },
     {
       "name": "Qatar",
       "chinese": "卡達",
+      "code": "QA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/qatar/",
       "capital": "Doha",
       "area": 11586,
       "population": 2552088,
@@ -1189,11 +1511,15 @@
       "GNI per capita (current US$)": 70070.0,
       "Merchandise exports (current US$)": 97365000000.0,
       "Merchandise imports (current US$)": 30928000000.0,
-      "Urban population (% of total)": 99.354
+      "Urban population (% of total)": 99.354,
+      "lat": 25.15,
+      "lng": 51.35
     },
     {
       "name": "Saudi Arabia",
       "chinese": "沙烏地阿拉伯",
+      "code": "SA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/saudi-arabia/",
       "capital": "Riyadh",
       "area": 2149690,
       "population": 36544431,
@@ -1204,11 +1530,15 @@
       "GNI per capita (current US$)": 28690.0,
       "Merchandise exports (current US$)": 322256000000.0,
       "Merchandise imports (current US$)": 211028000000.0,
-      "Urban population (% of total)": 84.95
+      "Urban population (% of total)": 84.95,
+      "lat": 24.41,
+      "lng": 46.42
     },
     {
       "name": "Syrian Arab Republic",
       "chinese": "敘利亞",
+      "code": "SY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/syria/",
       "capital": "Damascus",
       "area": 187437,
       "population": 23865423,
@@ -1219,11 +1549,15 @@
       "GNI per capita (current US$)": 560.0,
       "Merchandise exports (current US$)": 5470000000.0,
       "Merchandise imports (current US$)": 7300000000.0,
-      "Urban population (% of total)": 57.409
+      "Urban population (% of total)": 57.409,
+      "lat": 35.001576,
+      "lng": 38.616081
     },
     {
       "name": "Turkiye",
       "chinese": "土耳其",
+      "code": "TR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/turkey-turkiye/",
       "capital": "Ankara",
       "area": 783562,
       "population": 84119531,
@@ -1234,11 +1568,15 @@
       "GNI per capita (current US$)": 11650.0,
       "Merchandise exports (current US$)": 255777000000.0,
       "Merchandise imports (current US$)": 361774000000.0,
-      "Urban population (% of total)": 77.463
+      "Urban population (% of total)": 77.463,
+      "lat": 39.57,
+      "lng": 32.54
     },
     {
       "name": "United Arab Emirates",
       "chinese": "阿拉伯聯合大公國",
+      "code": "AE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/united-arab-emirates/",
       "capital": "Abu Dhabi",
       "area": 83600,
       "population": 10032213,
@@ -1249,11 +1587,15 @@
       "GNI per capita (current US$)": 53290.0,
       "Merchandise exports (current US$)": 487778000000.0,
       "Merchandise imports (current US$)": 448688000000.0,
-      "Urban population (% of total)": 87.779
+      "Urban population (% of total)": 87.779,
+      "lat": 23.892695,
+      "lng": 54.308412
     },
     {
       "name": "Yemen, Rep.",
       "chinese": "葉門",
+      "code": "YE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/yemen/",
       "capital": "Sanaa",
       "area": 527968,
       "population": 32140443,
@@ -1261,11 +1603,15 @@
       "GDP per capita (current US$)": 533.367123496464,
       "Merchandise exports (current US$)": 226000000.0,
       "Merchandise imports (current US$)": 5031000000.0,
-      "Urban population (% of total)": 39.831
+      "Urban population (% of total)": 39.831,
+      "lat": 15.895133,
+      "lng": 47.702306
     },
     {
       "name": "Afghanistan",
       "chinese": "阿富汗",
+      "code": "AF",
+      "url": "https://www.cia.gov/the-world-factbook/countries/afghanistan/",
       "capital": "Kabul",
       "area": 652230,
       "population": 40121552,
@@ -1276,13 +1622,17 @@
       "GNI per capita (current US$)": 360.0,
       "Merchandise exports (current US$)": 903000000.0,
       "Merchandise imports (current US$)": 6064000000.0,
-      "Urban population (% of total)": 26.933
+      "Urban population (% of total)": 26.933,
+      "lat": 34.28,
+      "lng": 69.11
     }
   ],
   "北美洲": [
     {
       "name": "Canada",
       "chinese": "加拿大",
+      "code": "CA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/canada/",
       "capital": "Ottawa",
       "area": 9984670,
       "population": 38794813,
@@ -1293,11 +1643,15 @@
       "GNI per capita (current US$)": 53930.0,
       "Merchandise exports (current US$)": 569257000000.0,
       "Merchandise imports (current US$)": 570419000000.0,
-      "Urban population (% of total)": 81.862
+      "Urban population (% of total)": 81.862,
+      "lat": 45.27,
+      "lng": -75.42
     },
     {
       "name": "United States",
       "chinese": "美國",
+      "code": "US",
+      "url": "https://www.cia.gov/the-world-factbook/countries/united-states/",
       "capital": "Washington, DC",
       "area": 9833517,
       "population": 341963408,
@@ -1308,13 +1662,17 @@
       "GNI per capita (current US$)": 80300.0,
       "Merchandise exports (current US$)": 2019542000000.0,
       "Merchandise imports (current US$)": 3172514000000.0,
-      "Urban population (% of total)": 83.298
+      "Urban population (% of total)": 83.298,
+      "lat": 39.91,
+      "lng": -77.02
     }
   ],
   "中南美洲": [
     {
       "name": "Antigua and Barbuda",
       "chinese": "安地卡及巴布達",
+      "code": "AG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/antigua-and-barbuda/",
       "capital": "Saint John's",
       "area": 443,
       "population": 102634,
@@ -1325,11 +1683,15 @@
       "GNI per capita (current US$)": 19990.0,
       "Merchandise exports (current US$)": 27000000.0,
       "Merchandise imports (current US$)": 902000000.0,
-      "Urban population (% of total)": 24.332
+      "Urban population (% of total)": 24.332,
+      "lat": 17.633014,
+      "lng": -61.787041
     },
     {
       "name": "Bahamas, The",
       "chinese": "巴哈馬",
+      "code": "BS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bahamas-the/",
       "capital": "Nassau",
       "area": 13880,
       "population": 410862,
@@ -1340,11 +1702,15 @@
       "GNI per capita (current US$)": 31990.0,
       "Merchandise exports (current US$)": 708000000.0,
       "Merchandise imports (current US$)": 4188000000.0,
-      "Urban population (% of total)": 83.625
+      "Urban population (% of total)": 83.625,
+      "lat": 25.05,
+      "lng": -77.2
     },
     {
       "name": "Barbados",
       "chinese": "巴貝多",
+      "code": "BB",
+      "url": "https://www.cia.gov/the-world-factbook/countries/barbados/",
       "capital": "Bridgetown",
       "area": 430,
       "population": 304139,
@@ -1355,11 +1721,15 @@
       "GNI per capita (current US$)": 21280.0,
       "Merchandise exports (current US$)": 486000000.0,
       "Merchandise imports (current US$)": 2092000000.0,
-      "Urban population (% of total)": 31.425
+      "Urban population (% of total)": 31.425,
+      "lat": 13.180145,
+      "lng": -59.540064
     },
     {
       "name": "Belize",
       "chinese": "貝里斯",
+      "code": "BZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/belize/",
       "capital": "Belmopan",
       "area": 22966,
       "population": 415789,
@@ -1370,11 +1740,15 @@
       "GNI per capita (current US$)": 7190.0,
       "Merchandise exports (current US$)": 488000000.0,
       "Merchandise imports (current US$)": 1341000000.0,
-      "Urban population (% of total)": 46.608
+      "Urban population (% of total)": 46.608,
+      "lat": 17.18,
+      "lng": -88.3
     },
     {
       "name": "Costa Rica",
       "chinese": "哥斯大黎加",
+      "code": "CR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/costa-rica/",
       "capital": "San José",
       "area": 51100,
       "population": 5265575,
@@ -1385,11 +1759,15 @@
       "GNI per capita (current US$)": 13850.0,
       "Merchandise exports (current US$)": 19025000000.0,
       "Merchandise imports (current US$)": 24039000000.0,
-      "Urban population (% of total)": 82.622
+      "Urban population (% of total)": 82.622,
+      "lat": 9.55,
+      "lng": -84.02
     },
     {
       "name": "Cuba",
       "chinese": "古巴",
+      "code": "CU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cuba/",
       "capital": "Havana",
       "area": 110860,
       "population": 10966038,
@@ -1397,11 +1775,15 @@
       "GDP growth (annual %)": 1.77485399483382,
       "Merchandise exports (current US$)": 1939000000.0,
       "Merchandise imports (current US$)": 8920000000.0,
-      "Urban population (% of total)": 77.523
+      "Urban population (% of total)": 77.523,
+      "lat": 23.08,
+      "lng": -82.22
     },
     {
       "name": "Dominica",
       "chinese": "多米尼克",
+      "code": "DM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/dominica/",
       "capital": "Roseau",
       "area": 751,
       "population": 74661,
@@ -1412,11 +1794,15 @@
       "GNI per capita (current US$)": 8920.0,
       "Merchandise exports (current US$)": 15000000.0,
       "Merchandise imports (current US$)": 298000000.0,
-      "Urban population (% of total)": 72.006
+      "Urban population (% of total)": 72.006,
+      "lat": 15.2,
+      "lng": -61.24
     },
     {
       "name": "Dominican Republic",
       "chinese": "多明尼加",
+      "code": "DO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/dominican-republic/",
       "capital": "Santo Domingo",
       "area": 48670,
       "population": 10815857,
@@ -1427,11 +1813,15 @@
       "GNI per capita (current US$)": 9700.0,
       "Merchandise exports (current US$)": 12935000000.0,
       "Merchandise imports (current US$)": 28706000000.0,
-      "Urban population (% of total)": 84.446
+      "Urban population (% of total)": 84.446,
+      "lat": 18.3,
+      "lng": -69.59
     },
     {
       "name": "El Salvador",
       "chinese": "薩爾瓦多",
+      "code": "SV",
+      "url": "https://www.cia.gov/the-world-factbook/countries/el-salvador/",
       "capital": "San Salvador",
       "area": 21041,
       "population": 6628702,
@@ -1442,11 +1832,15 @@
       "GNI per capita (current US$)": 4920.0,
       "Merchandise exports (current US$)": 6498000000.0,
       "Merchandise imports (current US$)": 15648000000.0,
-      "Urban population (% of total)": 75.393
+      "Urban population (% of total)": 75.393,
+      "lat": 13.4,
+      "lng": -89.1
     },
     {
       "name": "Grenada",
       "chinese": "格瑞那達",
+      "code": "GD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/grenada/",
       "capital": "Saint George's",
       "area": 344,
       "population": 114621,
@@ -1457,11 +1851,15 @@
       "GNI per capita (current US$)": 9800.0,
       "Merchandise exports (current US$)": 46000000.0,
       "Merchandise imports (current US$)": 609000000.0,
-      "Urban population (% of total)": 37.059
+      "Urban population (% of total)": 37.059,
+      "lat": 12.133773,
+      "lng": -61.679059
     },
     {
       "name": "Guatemala",
       "chinese": "瓜地馬拉",
+      "code": "GT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/guatemala/",
       "capital": "Guatemala City",
       "area": 108889,
       "population": 18255216,
@@ -1472,11 +1870,15 @@
       "GNI per capita (current US$)": 5580.0,
       "Merchandise exports (current US$)": 14199000000.0,
       "Merchandise imports (current US$)": 30318000000.0,
-      "Urban population (% of total)": 53.098
+      "Urban population (% of total)": 53.098,
+      "lat": 14.4,
+      "lng": -90.22
     },
     {
       "name": "Haiti",
       "chinese": "海地",
+      "code": "HT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/haiti/",
       "capital": "Port-au-Prince",
       "area": 27750,
       "population": 11753943,
@@ -1487,11 +1889,15 @@
       "GNI per capita (current US$)": 1740.0,
       "Merchandise exports (current US$)": 896000000.0,
       "Merchandise imports (current US$)": 3996000000.0,
-      "Urban population (% of total)": 59.656
+      "Urban population (% of total)": 59.656,
+      "lat": 18.4,
+      "lng": -72.2
     },
     {
       "name": "Honduras",
       "chinese": "宏都拉斯",
+      "code": "HN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/honduras/",
       "capital": "Tegucigalpa; note - article eight of the Honduran constitution states that the twin cities of Tegucigalpa and Comayaguela, jointly, constitute the capital of the Republic of Honduras; however, virtually all governmental institutions are on the Tegucigalpa side, which in practical terms makes Tegucigalpa the capital",
       "area": 112090,
       "population": 9529188,
@@ -1502,11 +1908,15 @@
       "GNI per capita (current US$)": 2900.0,
       "Merchandise exports (current US$)": 11376000000.0,
       "Merchandise imports (current US$)": 17525000000.0,
-      "Urban population (% of total)": 60.212
+      "Urban population (% of total)": 60.212,
+      "lat": 14.05,
+      "lng": -87.14
     },
     {
       "name": "Jamaica",
       "chinese": "牙買加",
+      "code": "JM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/jamaica/",
       "capital": "Kingston",
       "area": 10991,
       "population": 2823713,
@@ -1517,11 +1927,15 @@
       "GNI per capita (current US$)": 6150.0,
       "Merchandise exports (current US$)": 2107000000.0,
       "Merchandise imports (current US$)": 7858000000.0,
-      "Urban population (% of total)": 57.378
+      "Urban population (% of total)": 57.378,
+      "lat": 18,
+      "lng": -76.5
     },
     {
       "name": "Nicaragua",
       "chinese": "尼加拉瓜",
+      "code": "NI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/nicaragua/",
       "capital": "Managua",
       "area": 130370,
       "population": 6676948,
@@ -1532,11 +1946,15 @@
       "GNI per capita (current US$)": 2270.0,
       "Merchandise exports (current US$)": 7378000000.0,
       "Merchandise imports (current US$)": 10916000000.0,
-      "Urban population (% of total)": 59.849
+      "Urban population (% of total)": 59.849,
+      "lat": 12.06,
+      "lng": -86.2
     },
     {
       "name": "Panama",
       "chinese": "巴拿馬",
+      "code": "PA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/panama/",
       "capital": "Panama City",
       "area": 75420,
       "population": 4470241,
@@ -1547,11 +1965,15 @@
       "GNI per capita (current US$)": 18010.0,
       "Merchandise exports (current US$)": 15713000000.0,
       "Merchandise imports (current US$)": 35095000000.0,
-      "Urban population (% of total)": 69.512
+      "Urban population (% of total)": 69.512,
+      "lat": 9,
+      "lng": -79.25
     },
     {
       "name": "St. Kitts and Nevis",
       "chinese": "聖克里斯多福及尼維斯",
+      "code": "KN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/saint-kitts-and-nevis/",
       "capital": "Basseterre",
       "area": 261,
       "population": 55133,
@@ -1562,11 +1984,15 @@
       "GNI per capita (current US$)": 21380.0,
       "Merchandise exports (current US$)": 24000000.0,
       "Merchandise imports (current US$)": 317000000.0,
-      "Urban population (% of total)": 31.096
+      "Urban population (% of total)": 31.096,
+      "lat": 17.17,
+      "lng": -62.43
     },
     {
       "name": "St. Lucia",
       "chinese": "聖露西亞",
+      "code": "LC",
+      "url": "https://www.cia.gov/the-world-factbook/countries/saint-lucia/",
       "capital": "Castries",
       "area": 616,
       "population": 168038,
@@ -1577,11 +2003,15 @@
       "GNI per capita (current US$)": 12400.0,
       "Merchandise exports (current US$)": 77000000.0,
       "Merchandise imports (current US$)": 936000000.0,
-      "Urban population (% of total)": 19.172
+      "Urban population (% of total)": 19.172,
+      "lat": 14.02,
+      "lng": -60.58
     },
     {
       "name": "St. Vincent and the Grenadines",
       "chinese": "聖文森及格瑞那丁",
+      "code": "VC",
+      "url": "https://www.cia.gov/the-world-factbook/countries/saint-vincent-and-the-grenadines/",
       "capital": "Kingstown",
       "area": 389,
       "population": 100647,
@@ -1592,11 +2022,15 @@
       "GNI per capita (current US$)": 10070.0,
       "Merchandise exports (current US$)": 43000000.0,
       "Merchandise imports (current US$)": 414000000.0,
-      "Urban population (% of total)": 54.299
+      "Urban population (% of total)": 54.299,
+      "lat": 13.1,
+      "lng": -61.1
     },
     {
       "name": "Trinidad and Tobago",
       "chinese": "千里達及托巴哥",
+      "code": "TT",
+      "url": "https://www.cia.gov/the-world-factbook/countries/trinidad-and-tobago/",
       "capital": "Port of Spain",
       "area": 5128,
       "population": 1408966,
@@ -1607,11 +2041,15 @@
       "GNI per capita (current US$)": 17940.0,
       "Merchandise exports (current US$)": 8925000000.0,
       "Merchandise imports (current US$)": 7270000000.0,
-      "Urban population (% of total)": 53.439
+      "Urban population (% of total)": 53.439,
+      "lat": 10.394876,
+      "lng": -61.196506
     },
     {
       "name": "Mexico",
       "chinese": "墨西哥",
+      "code": "MX",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mexico/",
       "capital": "Mexico City (Ciudad de Mexico)",
       "area": 1964375,
       "population": 130739927,
@@ -1622,11 +2060,15 @@
       "GNI per capita (current US$)": 12100.0,
       "Merchandise exports (current US$)": 593012000000.0,
       "Merchandise imports (current US$)": 621476000000.0,
-      "Urban population (% of total)": 81.582
+      "Urban population (% of total)": 81.582,
+      "lat": 19.2,
+      "lng": -99.1
     },
     {
       "name": "Argentina",
       "chinese": "阿根廷",
+      "code": "AR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/argentina/",
       "capital": "Buenos Aires",
       "area": 2780400,
       "population": 46994384,
@@ -1637,11 +2079,15 @@
       "GNI per capita (current US$)": 12520.0,
       "Merchandise exports (current US$)": 66787000000.0,
       "Merchandise imports (current US$)": 73715000000.0,
-      "Urban population (% of total)": 92.463
+      "Urban population (% of total)": 92.463,
+      "lat": -36.3,
+      "lng": -60
     },
     {
       "name": "Bolivia",
       "chinese": "玻利維亞",
+      "code": "BO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/bolivia/",
       "capital": "La Paz (administrative capital); Sucre (constitutional [legislative and judicial] capital)",
       "area": 1098581,
       "population": 12311974,
@@ -1652,11 +2098,15 @@
       "GNI per capita (current US$)": 3600.0,
       "Merchandise exports (current US$)": 11018000000.0,
       "Merchandise imports (current US$)": 11120000000.0,
-      "Urban population (% of total)": 71.186
+      "Urban population (% of total)": 71.186,
+      "lat": -16.2,
+      "lng": -68.1
     },
     {
       "name": "Brazil",
       "chinese": "巴西",
+      "code": "BR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/brazil/",
       "capital": "Brasília",
       "area": 8515770,
       "population": 220051512,
@@ -1667,11 +2117,15 @@
       "GNI per capita (current US$)": 9070.0,
       "Merchandise exports (current US$)": 339696000000.0,
       "Merchandise imports (current US$)": 252710000000.0,
-      "Urban population (% of total)": 87.788
+      "Urban population (% of total)": 87.788,
+      "lat": -15.47,
+      "lng": -47.55
     },
     {
       "name": "Chile",
       "chinese": "智利",
+      "code": "CL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/chile/",
       "capital": "Santiago; note - Valparaiso is the seat of the national legislature",
       "area": 756102,
       "population": 18664652,
@@ -1682,11 +2136,15 @@
       "GNI per capita (current US$)": 15820.0,
       "Merchandise exports (current US$)": 94937000000.0,
       "Merchandise imports (current US$)": 85506000000.0,
-      "Urban population (% of total)": 88.012
+      "Urban population (% of total)": 88.012,
+      "lat": -33.24,
+      "lng": -70.4
     },
     {
       "name": "Colombia",
       "chinese": "哥倫比亞",
+      "code": "CO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/colombia/",
       "capital": "Bogotá",
       "area": 1138910,
       "population": 49588357,
@@ -1697,11 +2155,15 @@
       "GNI per capita (current US$)": 6870.0,
       "Merchandise exports (current US$)": 49545000000.0,
       "Merchandise imports (current US$)": 62797000000.0,
-      "Urban population (% of total)": 82.354
+      "Urban population (% of total)": 82.354,
+      "lat": 4.34,
+      "lng": -74
     },
     {
       "name": "Ecuador",
       "chinese": "厄瓜多",
+      "code": "EC",
+      "url": "https://www.cia.gov/the-world-factbook/countries/ecuador/",
       "capital": "Quito",
       "area": 283561,
       "population": 18309984,
@@ -1712,11 +2174,15 @@
       "GNI per capita (current US$)": 6510.0,
       "Merchandise exports (current US$)": 31126000000.0,
       "Merchandise imports (current US$)": 30898000000.0,
-      "Urban population (% of total)": 64.792
+      "Urban population (% of total)": 64.792,
+      "lat": -0.15,
+      "lng": -78.35
     },
     {
       "name": "Guyana",
       "chinese": "蓋亞那",
+      "code": "GY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/guyana/",
       "capital": "Georgetown",
       "area": 214969,
       "population": 794099,
@@ -1727,11 +2193,15 @@
       "GNI per capita (current US$)": 20360.0,
       "Merchandise exports (current US$)": 13059000000.0,
       "Merchandise imports (current US$)": 6478000000.0,
-      "Urban population (% of total)": 27.162
+      "Urban population (% of total)": 27.162,
+      "lat": 6.5,
+      "lng": -58.12
     },
     {
       "name": "Paraguay",
       "chinese": "巴拉圭",
+      "code": "PY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/paraguay/",
       "capital": "Asunción",
       "area": 406752,
       "population": 7522549,
@@ -1742,11 +2212,15 @@
       "GNI per capita (current US$)": 6200.0,
       "Merchandise exports (current US$)": 11891000000.0,
       "Merchandise imports (current US$)": 16105000000.0,
-      "Urban population (% of total)": 63.149
+      "Urban population (% of total)": 63.149,
+      "lat": -25.44,
+      "lng": 28.12
     },
     {
       "name": "Peru",
       "chinese": "秘魯",
+      "code": "PE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/peru/",
       "capital": "Lima",
       "area": 1285216,
       "population": 32600249,
@@ -1757,11 +2231,15 @@
       "GNI per capita (current US$)": 6990.0,
       "Merchandise exports (current US$)": 60756000000.0,
       "Merchandise imports (current US$)": 52306000000.0,
-      "Urban population (% of total)": 78.922
+      "Urban population (% of total)": 78.922,
+      "lat": -12,
+      "lng": -77
     },
     {
       "name": "Suriname",
       "chinese": "蘇利南",
+      "code": "SR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/suriname/",
       "capital": "Paramaribo",
       "area": 163820,
       "population": 646758,
@@ -1772,11 +2250,15 @@
       "GNI per capita (current US$)": 5360.0,
       "Merchandise exports (current US$)": 2498000000.0,
       "Merchandise imports (current US$)": 1822000000.0,
-      "Urban population (% of total)": 66.411
+      "Urban population (% of total)": 66.411,
+      "lat": 5.5,
+      "lng": -55.1
     },
     {
       "name": "Uruguay",
       "chinese": "烏拉圭",
+      "code": "UY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/uruguay/",
       "capital": "Montevideo",
       "area": 176215,
       "population": 3425330,
@@ -1787,24 +2269,32 @@
       "GNI per capita (current US$)": 19530.0,
       "Merchandise exports (current US$)": 9193000000.0,
       "Merchandise imports (current US$)": 12486000000.0,
-      "Urban population (% of total)": 95.771
+      "Urban population (% of total)": 95.771,
+      "lat": -34.5,
+      "lng": -56.11
     },
     {
       "name": "Venezuela, RB",
       "chinese": "委內瑞拉",
+      "code": "VE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/venezuela/",
       "capital": "Caracas",
       "area": 912050,
       "population": 31250306,
       "Age dependency ratio (% of working-age population)": 55.1640657488662,
       "Merchandise exports (current US$)": 8470000000.0,
       "Merchandise imports (current US$)": 11180000000.0,
-      "Urban population (% of total)": 88.438
+      "Urban population (% of total)": 88.438,
+      "lat": 10.3,
+      "lng": -66.55
     }
   ],
   "中亞": [
     {
       "name": "Kazakhstan",
       "chinese": "哈薩克",
+      "code": "KZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kazakhstan/",
       "capital": "Astana",
       "area": 2724900,
       "population": 20260006,
@@ -1815,11 +2305,15 @@
       "GNI per capita (current US$)": 10940.0,
       "Merchandise exports (current US$)": 78533000000.0,
       "Merchandise imports (current US$)": 60655000000.0,
-      "Urban population (% of total)": 58.179
+      "Urban population (% of total)": 58.179,
+      "lat": 51.1,
+      "lng": 71.3
     },
     {
       "name": "Kyrgyz Republic",
       "chinese": "吉爾吉斯",
+      "code": "KG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kyrgyzstan/",
       "capital": "Bishkek",
       "area": 199951,
       "population": 6172101,
@@ -1830,11 +2324,15 @@
       "GNI per capita (current US$)": 1700.0,
       "Merchandise exports (current US$)": 3309000000.0,
       "Merchandise imports (current US$)": 12352000000.0,
-      "Urban population (% of total)": 37.801
+      "Urban population (% of total)": 37.801,
+      "lat": 42.54,
+      "lng": 74.46
     },
     {
       "name": "Tajikistan",
       "chinese": "塔吉克",
+      "code": "TJ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tajikistan/",
       "capital": "Dushanbe",
       "area": 144100,
       "population": 10394063,
@@ -1845,11 +2343,15 @@
       "GNI per capita (current US$)": 1440.0,
       "Merchandise exports (current US$)": 1718000000.0,
       "Merchandise imports (current US$)": 5748000000.0,
-      "Urban population (% of total)": 28.234
+      "Urban population (% of total)": 28.234,
+      "lat": 38.33,
+      "lng": 68.48
     },
     {
       "name": "Turkmenistan",
       "chinese": "土庫曼",
+      "code": "TM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/turkmenistan/",
       "capital": "Ashgabat (Ashkhabad)",
       "area": 488100,
       "population": 5744151,
@@ -1859,11 +2361,15 @@
       "GDP per capita (current US$)": 9190.67154341786,
       "Merchandise exports (current US$)": 9917000000.0,
       "Merchandise imports (current US$)": 3482000000.0,
-      "Urban population (% of total)": 54.003
+      "Urban population (% of total)": 54.003,
+      "lat": 38,
+      "lng": 57.5
     },
     {
       "name": "Uzbekistan",
       "chinese": "烏茲別克",
+      "code": "UZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/uzbekistan/",
       "capital": "Tashkent (Toshkent)",
       "area": 447400,
       "population": 36520593,
@@ -1874,11 +2380,15 @@
       "GNI per capita (current US$)": 2360.0,
       "Merchandise exports (current US$)": 20045000000.0,
       "Merchandise imports (current US$)": 36781000000.0,
-      "Urban population (% of total)": 50.532
+      "Urban population (% of total)": 50.532,
+      "lat": 41.2,
+      "lng": 69.1
     },
     {
       "name": "Armenia",
       "chinese": "亞美尼亞",
+      "code": "AM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/armenia/",
       "capital": "Yerevan",
       "area": 29743,
       "population": 2976765,
@@ -1889,11 +2399,15 @@
       "GNI per capita (current US$)": 7330.0,
       "Merchandise exports (current US$)": 8415000000.0,
       "Merchandise imports (current US$)": 12308000000.0,
-      "Urban population (% of total)": 63.739
+      "Urban population (% of total)": 63.739,
+      "lat": 40.1,
+      "lng": 44.31
     },
     {
       "name": "Azerbaijan",
       "chinese": "亞塞拜然",
+      "code": "AZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/azerbaijan/",
       "capital": "Baku (Baki, Baky)",
       "area": 86600,
       "population": 10650239,
@@ -1904,11 +2418,15 @@
       "GNI per capita (current US$)": 6680.0,
       "Merchandise exports (current US$)": 33899000000.0,
       "Merchandise imports (current US$)": 17285000000.0,
-      "Urban population (% of total)": 57.577
+      "Urban population (% of total)": 57.577,
+      "lat": 40.29,
+      "lng": 49.56
     },
     {
       "name": "Georgia",
       "chinese": "喬治亞",
+      "code": "GE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/georgia/",
       "capital": "Tbilisi",
       "area": 69700,
       "population": 4900961,
@@ -1919,13 +2437,17 @@
       "GNI per capita (current US$)": 6680.0,
       "Merchandise exports (current US$)": 6091000000.0,
       "Merchandise imports (current US$)": 15514000000.0,
-      "Urban population (% of total)": 60.727
+      "Urban population (% of total)": 60.727,
+      "lat": 42.15671,
+      "lng": 43.653891
     }
   ],
   "大洋洲": [
     {
       "name": "Australia",
       "chinese": "澳洲",
+      "code": "AU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/australia/",
       "capital": "Canberra",
       "area": 7741220,
       "population": 26768598,
@@ -1936,11 +2458,15 @@
       "GNI per capita (current US$)": 63140.0,
       "Merchandise exports (current US$)": 370866000000.0,
       "Merchandise imports (current US$)": 287740000000.0,
-      "Urban population (% of total)": 86.617
+      "Urban population (% of total)": 86.617,
+      "lat": -35.15,
+      "lng": 149.08
     },
     {
       "name": "Fiji",
       "chinese": "斐濟",
+      "code": "FJ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/fiji/",
       "capital": "Suva (on Viti Levu)",
       "area": 18274,
       "population": 951611,
@@ -1951,11 +2477,15 @@
       "GNI per capita (current US$)": 5580.0,
       "Merchandise exports (current US$)": 1017000000.0,
       "Merchandise imports (current US$)": 3118000000.0,
-      "Urban population (% of total)": 58.713
+      "Urban population (% of total)": 58.713,
+      "lat": -18.06,
+      "lng": 178.3
     },
     {
       "name": "Guam",
       "chinese": "關島",
+      "code": "GU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/guam/",
       "capital": "Hagatna (Agana)",
       "area": 544,
       "population": 169532,
@@ -1965,11 +2495,15 @@
       "GDP per capita (current US$)": 40227.2753734558,
       "Merchandise exports (current US$)": 23000000.0,
       "Merchandise imports (current US$)": 1305000000.0,
-      "Urban population (% of total)": 95.166
+      "Urban population (% of total)": 95.166,
+      "lat": 13.447986,
+      "lng": 144.773676
     },
     {
       "name": "Kiribati",
       "chinese": "吉里巴斯",
+      "code": "KI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kiribati/",
       "capital": "Tarawa",
       "area": 811,
       "population": 116545,
@@ -1980,11 +2514,15 @@
       "GNI per capita (current US$)": 3730.0,
       "Merchandise exports (current US$)": 8000000.0,
       "Merchandise imports (current US$)": 96000000.0,
-      "Urban population (% of total)": 57.762
+      "Urban population (% of total)": 57.762,
+      "lat": 1.3,
+      "lng": 173
     },
     {
       "name": "Marshall Islands",
       "chinese": "馬紹爾群島",
+      "code": "MH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/marshall-islands/",
       "capital": "Majuro; note - the capital is an atoll of 64 islands; governmental buildings are housed on three fused islands on the eastern side of the atoll: Djarrit, Uliga, and Delap",
       "area": 181,
       "population": 82011,
@@ -1995,11 +2533,15 @@
       "GNI per capita (current US$)": 7570.0,
       "Merchandise exports (current US$)": 59000000.0,
       "Merchandise imports (current US$)": 103000000.0,
-      "Urban population (% of total)": 78.868
+      "Urban population (% of total)": 78.868,
+      "lat": 7.213159,
+      "lng": 168.830045
     },
     {
       "name": "Micronesia, Fed. Sts.",
       "chinese": "密克羅尼西亞聯邦",
+      "code": "FM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/micronesia-federated-states-of/",
       "capital": "Palikir",
       "area": 702,
       "population": 99603,
@@ -2010,11 +2552,15 @@
       "GNI per capita (current US$)": 4150.0,
       "Merchandise exports (current US$)": 106000000.0,
       "Merchandise imports (current US$)": 301000000.0,
-      "Urban population (% of total)": 23.379
+      "Urban population (% of total)": 23.379,
+      "lat": 6.55,
+      "lng": 158.09
     },
     {
       "name": "Nauru",
       "chinese": "諾魯",
+      "code": "NR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/nauru/",
       "capital": "no official capital; government offices in the Yaren District",
       "area": 21,
       "population": 9892,
@@ -2025,11 +2571,15 @@
       "GNI per capita (current US$)": 22090.0,
       "Merchandise exports (current US$)": 44000000.0,
       "Merchandise imports (current US$)": 79000000.0,
-      "Urban population (% of total)": 100.0
+      "Urban population (% of total)": 100.0,
+      "lat": -0.531241,
+      "lng": 166.931119
     },
     {
       "name": "New Zealand",
       "chinese": "紐西蘭",
+      "code": "NZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/new-zealand/",
       "capital": "Wellington",
       "area": 268838,
       "population": 5161211,
@@ -2040,18 +2590,26 @@
       "GNI per capita (current US$)": 48610.0,
       "Merchandise exports (current US$)": 41483000000.0,
       "Merchandise imports (current US$)": 49997000000.0,
-      "Urban population (% of total)": 86.985
+      "Urban population (% of total)": 86.985,
+      "lat": -41.19,
+      "lng": 174.46
     },
     {
       "name": "Niue",
       "chinese": "紐埃",
+      "code": "NU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/niue/",
       "capital": "Alofi",
       "area": 260,
-      "population": 2000
+      "population": 2000,
+      "lat": -19.070956,
+      "lng": -169.85431
     },
     {
       "name": "Palau",
       "chinese": "帛琉",
+      "code": "PW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/palau/",
       "capital": "Ngerulmud",
       "area": 459,
       "population": 21864,
@@ -2062,11 +2620,15 @@
       "GNI per capita (current US$)": 14250.0,
       "Merchandise exports (current US$)": 2000000.0,
       "Merchandise imports (current US$)": 242000000.0,
-      "Urban population (% of total)": 82.408
+      "Urban population (% of total)": 82.408,
+      "lat": 4.285494,
+      "lng": 126.66928
     },
     {
       "name": "Samoa",
       "chinese": "薩摩亞",
+      "code": "WS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/samoa/",
       "capital": "Apia",
       "area": 2831,
       "population": 208853,
@@ -2077,11 +2639,15 @@
       "GNI per capita (current US$)": 4020.0,
       "Merchandise exports (current US$)": 42000000.0,
       "Merchandise imports (current US$)": 468000000.0,
-      "Urban population (% of total)": 17.508
+      "Urban population (% of total)": 17.508,
+      "lat": -13.5,
+      "lng": -171.5
     },
     {
       "name": "Solomon Islands",
       "chinese": "索羅門群島",
+      "code": "SB",
+      "url": "https://www.cia.gov/the-world-factbook/countries/solomon-islands/",
       "capital": "Honiara",
       "area": 28896,
       "population": 726799,
@@ -2092,18 +2658,26 @@
       "GNI per capita (current US$)": 2270.0,
       "Merchandise exports (current US$)": 427000000.0,
       "Merchandise imports (current US$)": 732000000.0,
-      "Urban population (% of total)": 26.037
+      "Urban population (% of total)": 26.037,
+      "lat": -9.27,
+      "lng": 159.57
     },
     {
       "name": "Tokelau",
       "chinese": "托克勞群島",
+      "code": "TK",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tokelau/",
       "capital": "\"Te Atua\" (For the Almighty)",
       "area": 12,
-      "population": 1647
+      "population": 1647,
+      "lat": -9.180904,
+      "lng": -171.822775
     },
     {
       "name": "Tonga",
       "chinese": "東加",
+      "code": "TO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tonga/",
       "capital": "Nuku'alofa",
       "area": 747,
       "population": 104889,
@@ -2114,11 +2688,15 @@
       "GNI per capita (current US$)": 5000.0,
       "Merchandise exports (current US$)": 9000000.0,
       "Merchandise imports (current US$)": 265000000.0,
-      "Urban population (% of total)": 23.16
+      "Urban population (% of total)": 23.16,
+      "lat": -21.1,
+      "lng": -174
     },
     {
       "name": "Tuvalu",
       "chinese": "吐瓦魯",
+      "code": "TV",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tuvalu/",
       "capital": "Funafuti; note - the capital is an atoll of some 29 islets; administrative offices are in Vaiaku Village on Fongafale Islet",
       "area": 26,
       "population": 11733,
@@ -2129,11 +2707,15 @@
       "GNI per capita (current US$)": 7550.0,
       "Merchandise exports (current US$)": 0.0,
       "Merchandise imports (current US$)": 25000000.0,
-      "Urban population (% of total)": 66.241
+      "Urban population (% of total)": 66.241,
+      "lat": -8.31,
+      "lng": 179.13
     },
     {
       "name": "Vanuatu",
       "chinese": "萬那杜",
+      "code": "VU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/vanuatu/",
       "capital": "Port-Vila (on Efate)",
       "area": 12189,
       "population": 318007,
@@ -2144,11 +2726,15 @@
       "GNI per capita (current US$)": 3660.0,
       "Merchandise exports (current US$)": 63000000.0,
       "Merchandise imports (current US$)": 455000000.0,
-      "Urban population (% of total)": 25.976
+      "Urban population (% of total)": 25.976,
+      "lat": -17.45,
+      "lng": 168.18
     },
     {
       "name": "Papua New Guinea",
       "chinese": "巴布亞紐幾內亞",
+      "code": "PG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/papua-new-guinea/",
       "capital": "Port Moresby",
       "area": 462840,
       "population": 10046233,
@@ -2159,13 +2745,17 @@
       "GNI per capita (current US$)": 2840.0,
       "Merchandise exports (current US$)": 12036000000.0,
       "Merchandise imports (current US$)": 3019000000.0,
-      "Urban population (% of total)": 13.723
+      "Urban population (% of total)": 13.723,
+      "lat": -9.24,
+      "lng": 147.08
     }
   ],
   "漠南非洲": [
     {
       "name": "Angola",
       "chinese": "安哥拉",
+      "code": "AO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/angola/",
       "capital": "Luanda",
       "area": 1246700,
       "population": 37202061,
@@ -2176,11 +2766,15 @@
       "GNI per capita (current US$)": 2130.0,
       "Merchandise exports (current US$)": 38351000000.0,
       "Merchandise imports (current US$)": 16108000000.0,
-      "Urban population (% of total)": 68.688
+      "Urban population (% of total)": 68.688,
+      "lat": -8.5,
+      "lng": 13.15
     },
     {
       "name": "Benin",
       "chinese": "貝南",
+      "code": "BJ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/benin/",
       "capital": "Porto-Novo (constitutional capital); Cotonou (seat of government)",
       "area": 112622,
       "population": 14697052,
@@ -2191,11 +2785,15 @@
       "GNI per capita (current US$)": 1440.0,
       "Merchandise exports (current US$)": 4071000000.0,
       "Merchandise imports (current US$)": 4234000000.0,
-      "Urban population (% of total)": 50.1
+      "Urban population (% of total)": 50.1,
+      "lat": 6.23,
+      "lng": 2.42
     },
     {
       "name": "Botswana",
       "chinese": "波札那",
+      "code": "BW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/botswana/",
       "capital": "Gaborone",
       "area": 581730,
       "population": 2450668,
@@ -2206,11 +2804,15 @@
       "GNI per capita (current US$)": 7620.0,
       "Merchandise exports (current US$)": 5424000000.0,
       "Merchandise imports (current US$)": 6392000000.0,
-      "Urban population (% of total)": 72.867
+      "Urban population (% of total)": 72.867,
+      "lat": -24.45,
+      "lng": 25.57
     },
     {
       "name": "Burkina Faso",
       "chinese": "布吉納法索",
+      "code": "BF",
+      "url": "https://www.cia.gov/the-world-factbook/countries/burkina-faso/",
       "capital": "Ouagadougou",
       "area": 274200,
       "population": 23042199,
@@ -2221,11 +2823,15 @@
       "GNI per capita (current US$)": 850.0,
       "Merchandise exports (current US$)": 4309000000.0,
       "Merchandise imports (current US$)": 5863000000.0,
-      "Urban population (% of total)": 32.52
+      "Urban population (% of total)": 32.52,
+      "lat": 12.15,
+      "lng": -1.3
     },
     {
       "name": "Burundi",
       "chinese": "蒲隆地",
+      "code": "BI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/burundi/",
       "capital": "Gitega (political capital), Bujumbura (commercial capital)",
       "area": 27830,
       "population": 13590102,
@@ -2236,11 +2842,15 @@
       "GNI per capita (current US$)": 230.0,
       "Merchandise exports (current US$)": 204000000.0,
       "Merchandise imports (current US$)": 1151000000.0,
-      "Urban population (% of total)": 14.784
+      "Urban population (% of total)": 14.784,
+      "lat": -3.16,
+      "lng": 29.18
     },
     {
       "name": "Cabo Verde",
       "chinese": "維德角",
+      "code": "CV",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cabo-verde/",
       "capital": "Praia",
       "area": 4033,
       "population": 611014,
@@ -2251,11 +2861,15 @@
       "GNI per capita (current US$)": 4280.0,
       "Merchandise exports (current US$)": 54000000.0,
       "Merchandise imports (current US$)": 980000000.0,
-      "Urban population (% of total)": 67.982
+      "Urban population (% of total)": 67.982,
+      "lat": 15.02,
+      "lng": -23.34
     },
     {
       "name": "Cameroon",
       "chinese": "喀麥隆",
+      "code": "CM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/",
       "capital": "Yaounde",
       "area": 475440,
       "population": 30966105,
@@ -2266,11 +2880,15 @@
       "GNI per capita (current US$)": 1650.0,
       "Merchandise exports (current US$)": 4400000000.0,
       "Merchandise imports (current US$)": 9000000000.0,
-      "Urban population (% of total)": 59.315
+      "Urban population (% of total)": 59.315,
+      "lat": 3.5,
+      "lng": 11.35
     },
     {
       "name": "Central African Republic",
       "chinese": "中非共和國",
+      "code": "CF",
+      "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/",
       "capital": "Bangui",
       "area": 622984,
       "population": 5650957,
@@ -2281,11 +2899,15 @@
       "GNI per capita (current US$)": 470.0,
       "Merchandise exports (current US$)": 137000000.0,
       "Merchandise imports (current US$)": 502000000.0,
-      "Urban population (% of total)": 43.614
+      "Urban population (% of total)": 43.614,
+      "lat": 4.23,
+      "lng": 18.35
     },
     {
       "name": "Chad",
       "chinese": "查德",
+      "code": "TD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/chad/",
       "capital": "N'Djamena",
       "area": 1284000,
       "population": 19093595,
@@ -2296,11 +2918,15 @@
       "GNI per capita (current US$)": 710.0,
       "Merchandise exports (current US$)": 3700000000.0,
       "Merchandise imports (current US$)": 2200000000.0,
-      "Urban population (% of total)": 24.366
+      "Urban population (% of total)": 24.366,
+      "lat": 12.1,
+      "lng": 14.59
     },
     {
       "name": "Comoros",
       "chinese": "葛摩聯盟",
+      "code": "KM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/comoros/",
       "capital": "Moroni",
       "area": 2235,
       "population": 900141,
@@ -2311,11 +2937,15 @@
       "GNI per capita (current US$)": 1600.0,
       "Merchandise exports (current US$)": 31000000.0,
       "Merchandise imports (current US$)": 375000000.0,
-      "Urban population (% of total)": 30.132
+      "Urban population (% of total)": 30.132,
+      "lat": -11.4,
+      "lng": 43.16
     },
     {
       "name": "Congo, Dem. Rep.",
       "chinese": "剛果民主共和國",
+      "code": "CD",
+      "url": "https://www.cia.gov/the-world-factbook/countries/congo-democratic-republic-of-the/",
       "capital": "Kinshasa",
       "area": 2344858,
       "population": 115403027,
@@ -2326,11 +2956,15 @@
       "GNI per capita (current US$)": 660.0,
       "Merchandise exports (current US$)": 16400000000.0,
       "Merchandise imports (current US$)": 11600000000.0,
-      "Urban population (% of total)": 47.444
+      "Urban population (% of total)": 47.444,
+      "lat": -2.924545,
+      "lng": 23.561947
     },
     {
       "name": "Congo, Rep.",
       "chinese": "剛果",
+      "code": "CG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/",
       "capital": "Brazzaville",
       "area": 342000,
       "population": 6097665,
@@ -2341,11 +2975,15 @@
       "GNI per capita (current US$)": 2470.0,
       "Merchandise exports (current US$)": 5970000000.0,
       "Merchandise imports (current US$)": 3950000000.0,
-      "Urban population (% of total)": 69.188
+      "Urban population (% of total)": 69.188,
+      "lat": -4.09,
+      "lng": 15.12
     },
     {
       "name": "Cote d'Ivoire",
       "chinese": "象牙海岸",
+      "code": "CI",
+      "url": "https://www.cia.gov/the-world-factbook/countries/cote-divoire/",
       "capital": "Yamoussoukro (legislative capital), Abidjan (administrative capital); note - although Yamoussoukro has been the official capital since 1983, Abidjan remains the administrative capital as well as the officially designated economic capital; the US, like other countries, maintains its Embassy in Abidjan",
       "area": 322463,
       "population": 29981758,
@@ -2356,11 +2994,15 @@
       "GNI per capita (current US$)": 2670.0,
       "Merchandise exports (current US$)": 20263000000.0,
       "Merchandise imports (current US$)": 18887000000.0,
-      "Urban population (% of total)": 53.149
+      "Urban population (% of total)": 53.149,
+      "lat": 6.49,
+      "lng": -5.17
     },
     {
       "name": "Djibouti",
       "chinese": "吉布地",
+      "code": "DJ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/djibouti/",
       "capital": "Djibouti",
       "area": 23200,
       "population": 994974,
@@ -2371,11 +3013,15 @@
       "GNI per capita (current US$)": 3450.0,
       "Merchandise exports (current US$)": 5002000000.0,
       "Merchandise imports (current US$)": 4663000000.0,
-      "Urban population (% of total)": 78.552
+      "Urban population (% of total)": 78.552,
+      "lat": 11.08,
+      "lng": 42.2
     },
     {
       "name": "Equatorial Guinea",
       "chinese": "赤道幾內亞",
+      "code": "GQ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/equatorial-guinea/",
       "capital": "Malabo; note - Malabo is on the island of Bioko; some months of the year, the government operates out of Bata on the mainland region.",
       "area": 28051,
       "population": 1795834,
@@ -2386,22 +3032,30 @@
       "GNI per capita (current US$)": 5240.0,
       "Merchandise exports (current US$)": 5200000000.0,
       "Merchandise imports (current US$)": 3100000000.0,
-      "Urban population (% of total)": 74.448
+      "Urban population (% of total)": 74.448,
+      "lat": 10,
+      "lng": 2
     },
     {
       "name": "Eritrea",
       "chinese": "厄利垂亞",
+      "code": "ER",
+      "url": "https://www.cia.gov/the-world-factbook/countries/eritrea/",
       "capital": "Asmara",
       "area": 117600,
       "population": 6343956,
       "Age dependency ratio (% of working-age population)": 74.4850019920393,
       "Merchandise exports (current US$)": 495000000.0,
       "Merchandise imports (current US$)": 524000000.0,
-      "Urban population (% of total)": 43.267
+      "Urban population (% of total)": 43.267,
+      "lat": 15.19,
+      "lng": 38.55
     },
     {
       "name": "Eswatini",
       "chinese": "史瓦帝尼",
+      "code": "SZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/",
       "capital": "Mbabane (administrative capital); Lobamba (royal and legislative capital)",
       "area": 17364,
       "population": 1138089,
@@ -2412,11 +3066,15 @@
       "GNI per capita (current US$)": 3860.0,
       "Merchandise exports (current US$)": 1762000000.0,
       "Merchandise imports (current US$)": 1925000000.0,
-      "Urban population (% of total)": 24.79
+      "Urban population (% of total)": 24.79,
+      "lat": -26.18,
+      "lng": 31.06
     },
     {
       "name": "Ethiopia",
       "chinese": "衣索比亞",
+      "code": "ET",
+      "url": "https://www.cia.gov/the-world-factbook/countries/ethiopia/",
       "capital": "Addis Ababa",
       "area": 1104300,
       "population": 118550298,
@@ -2427,11 +3085,15 @@
       "GNI per capita (current US$)": 1130.0,
       "Merchandise exports (current US$)": 3616000000.0,
       "Merchandise imports (current US$)": 17888000000.0,
-      "Urban population (% of total)": 23.157
+      "Urban population (% of total)": 23.157,
+      "lat": 9.02,
+      "lng": 38.42
     },
     {
       "name": "Gabon",
       "chinese": "加彭",
+      "code": "GA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/gabon/",
       "capital": "Libreville",
       "area": 267667,
       "population": 2455105,
@@ -2442,11 +3104,15 @@
       "GNI per capita (current US$)": 7960.0,
       "Merchandise exports (current US$)": 7700000000.0,
       "Merchandise imports (current US$)": 6100000000.0,
-      "Urban population (% of total)": 91.029
+      "Urban population (% of total)": 91.029,
+      "lat": 0.25,
+      "lng": 9.26
     },
     {
       "name": "Gambia, The",
       "chinese": "甘比亞",
+      "code": "GM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/gambia-the/",
       "capital": "Banjul",
       "area": 11300,
       "population": 2523327,
@@ -2457,11 +3123,15 @@
       "GNI per capita (current US$)": 830.0,
       "Merchandise exports (current US$)": 40000000.0,
       "Merchandise imports (current US$)": 784000000.0,
-      "Urban population (% of total)": 64.472
+      "Urban population (% of total)": 64.472,
+      "lat": 13.28,
+      "lng": -16.4
     },
     {
       "name": "Ghana",
       "chinese": "迦納",
+      "code": "GH",
+      "url": "https://www.cia.gov/the-world-factbook/countries/ghana/",
       "capital": "Accra",
       "area": 238533,
       "population": 34589092,
@@ -2472,11 +3142,15 @@
       "GNI per capita (current US$)": 2340.0,
       "Merchandise exports (current US$)": 15868000000.0,
       "Merchandise imports (current US$)": 13715000000.0,
-      "Urban population (% of total)": 59.238
+      "Urban population (% of total)": 59.238,
+      "lat": 5.35,
+      "lng": -0.06
     },
     {
       "name": "Guinea",
       "chinese": "幾內亞",
+      "code": "GN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/guinea/",
       "capital": "Conakry",
       "area": 245857,
       "population": 13986179,
@@ -2487,11 +3161,15 @@
       "GNI per capita (current US$)": 1360.0,
       "Merchandise exports (current US$)": 9636000000.0,
       "Merchandise imports (current US$)": 4696000000.0,
-      "Urban population (% of total)": 38.085
+      "Urban population (% of total)": 38.085,
+      "lat": 9.29,
+      "lng": -13.49
     },
     {
       "name": "Guinea-Bissau",
       "chinese": "幾內亞比索",
+      "code": "GW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/guinea-bissau/",
       "capital": "Bissau",
       "area": 36125,
       "population": 2132325,
@@ -2502,11 +3180,15 @@
       "GNI per capita (current US$)": 900.0,
       "Merchandise exports (current US$)": 233000000.0,
       "Merchandise imports (current US$)": 588000000.0,
-      "Urban population (% of total)": 45.466
+      "Urban population (% of total)": 45.466,
+      "lat": 11.45,
+      "lng": -15.45
     },
     {
       "name": "Kenya",
       "chinese": "肯亞",
+      "code": "KE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/kenya/",
       "capital": "Nairobi",
       "area": 580367,
       "population": 58246378,
@@ -2517,11 +3199,15 @@
       "GNI per capita (current US$)": 2110.0,
       "Merchandise exports (current US$)": 7193000000.0,
       "Merchandise imports (current US$)": 18591000000.0,
-      "Urban population (% of total)": 29.52
+      "Urban population (% of total)": 29.52,
+      "lat": -1.17,
+      "lng": 36.48
     },
     {
       "name": "Lesotho",
       "chinese": "賴索托",
+      "code": "LS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/lesotho/",
       "capital": "Maseru",
       "area": 30355,
       "population": 2227548,
@@ -2532,11 +3218,15 @@
       "GNI per capita (current US$)": 1160.0,
       "Merchandise exports (current US$)": 794000000.0,
       "Merchandise imports (current US$)": 1772000000.0,
-      "Urban population (% of total)": 30.415
+      "Urban population (% of total)": 30.415,
+      "lat": 53.52,
+      "lng": 27.3
     },
     {
       "name": "Liberia",
       "chinese": "賴比瑞亞",
+      "code": "LR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/liberia/",
       "capital": "Monrovia",
       "area": 111369,
       "population": 5437249,
@@ -2547,11 +3237,15 @@
       "GNI per capita (current US$)": 730.0,
       "Merchandise exports (current US$)": 1100000000.0,
       "Merchandise imports (current US$)": 1700000000.0,
-      "Urban population (% of total)": 53.567
+      "Urban population (% of total)": 53.567,
+      "lat": 6.18,
+      "lng": -10.47
     },
     {
       "name": "Madagascar",
       "chinese": "馬達加斯加",
+      "code": "MG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/madagascar/",
       "capital": "Antananarivo",
       "area": 587041,
       "population": 29452714,
@@ -2562,11 +3256,15 @@
       "GNI per capita (current US$)": 530.0,
       "Merchandise exports (current US$)": 3213000000.0,
       "Merchandise imports (current US$)": 4750000000.0,
-      "Urban population (% of total)": 40.556
+      "Urban population (% of total)": 40.556,
+      "lat": -18.55,
+      "lng": 47.31
     },
     {
       "name": "Malawi",
       "chinese": "馬拉威",
+      "code": "MW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/malawi/",
       "capital": "Lilongwe",
       "area": 118484,
       "population": 21763309,
@@ -2577,11 +3275,15 @@
       "GNI per capita (current US$)": 640.0,
       "Merchandise exports (current US$)": 880000000.0,
       "Merchandise imports (current US$)": 1560000000.0,
-      "Urban population (% of total)": 18.28
+      "Urban population (% of total)": 18.28,
+      "lat": -14,
+      "lng": 33.48
     },
     {
       "name": "Mali",
       "chinese": "馬利",
+      "code": "ML",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mali/",
       "capital": "Bamako",
       "area": 1240192,
       "population": 21990607,
@@ -2592,11 +3294,15 @@
       "GNI per capita (current US$)": 860.0,
       "Merchandise exports (current US$)": 5321000000.0,
       "Merchandise imports (current US$)": 8364000000.0,
-      "Urban population (% of total)": 46.189
+      "Urban population (% of total)": 46.189,
+      "lat": 12.34,
+      "lng": -7.55
     },
     {
       "name": "Mauritania",
       "chinese": "茅利塔尼亞",
+      "code": "MR",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mauritania/",
       "capital": "Nouakchott",
       "area": 1030700,
       "population": 4328040,
@@ -2607,11 +3313,15 @@
       "GNI per capita (current US$)": 2150.0,
       "Merchandise exports (current US$)": 4017000000.0,
       "Merchandise imports (current US$)": 5242000000.0,
-      "Urban population (% of total)": 57.699
+      "Urban population (% of total)": 57.699,
+      "lat": -20.1,
+      "lng": 57.3
     },
     {
       "name": "Mauritius",
       "chinese": "模里西斯",
+      "code": "MU",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mauritius/",
       "capital": "Port Louis",
       "area": 2040,
       "population": 1310504,
@@ -2622,11 +3332,15 @@
       "GNI per capita (current US$)": 11530.0,
       "Merchandise exports (current US$)": 2300000000.0,
       "Merchandise imports (current US$)": 6284000000.0,
-      "Urban population (% of total)": 40.867
+      "Urban population (% of total)": 40.867,
+      "lat": -20.094797,
+      "lng": 57.630969
     },
     {
       "name": "Mozambique",
       "chinese": "莫三比克",
+      "code": "MZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/mozambique/",
       "capital": "Maputo",
       "area": 799380,
       "population": 33350954,
@@ -2637,11 +3351,15 @@
       "GNI per capita (current US$)": 530.0,
       "Merchandise exports (current US$)": 8276000000.0,
       "Merchandise imports (current US$)": 10098000000.0,
-      "Urban population (% of total)": 38.753
+      "Urban population (% of total)": 38.753,
+      "lat": -25.58,
+      "lng": 32.32
     },
     {
       "name": "Namibia",
       "chinese": "納米比亞",
+      "code": "NA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/namibia/",
       "capital": "Windhoek",
       "area": 824292,
       "population": 2803660,
@@ -2652,11 +3370,15 @@
       "GNI per capita (current US$)": 4870.0,
       "Merchandise exports (current US$)": 5930000000.0,
       "Merchandise imports (current US$)": 7090000000.0,
-      "Urban population (% of total)": 54.886
+      "Urban population (% of total)": 54.886,
+      "lat": -22.35,
+      "lng": 17.04
     },
     {
       "name": "Niger",
       "chinese": "尼日",
+      "code": "NE",
+      "url": "https://www.cia.gov/the-world-factbook/countries/niger/",
       "capital": "Niamey",
       "area": 1267000,
       "population": 26342784,
@@ -2667,11 +3389,15 @@
       "GNI per capita (current US$)": 600.0,
       "Merchandise exports (current US$)": 1097000000.0,
       "Merchandise imports (current US$)": 2287000000.0,
-      "Urban population (% of total)": 17.054
+      "Urban population (% of total)": 17.054,
+      "lat": 13.27,
+      "lng": 2.06
     },
     {
       "name": "Nigeria",
       "chinese": "奈及利亞",
+      "code": "NG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/nigeria/",
       "capital": "Abuja",
       "area": 923768,
       "population": 236747130,
@@ -2682,11 +3408,15 @@
       "GNI per capita (current US$)": 1930.0,
       "Merchandise exports (current US$)": 57890000000.0,
       "Merchandise imports (current US$)": 45946000000.0,
-      "Urban population (% of total)": 54.283
+      "Urban population (% of total)": 54.283,
+      "lat": 9.05,
+      "lng": 7.32
     },
     {
       "name": "Rwanda",
       "chinese": "盧安達",
+      "code": "RW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/rwanda/",
       "capital": "Kigali",
       "area": 26338,
       "population": 13623302,
@@ -2697,11 +3427,15 @@
       "GNI per capita (current US$)": 980.0,
       "Merchandise exports (current US$)": 2479000000.0,
       "Merchandise imports (current US$)": 3897000000.0,
-      "Urban population (% of total)": 17.892
+      "Urban population (% of total)": 17.892,
+      "lat": -1.59,
+      "lng": 30.04
     },
     {
       "name": "Sao Tome and Principe",
       "chinese": "聖多美普林西比",
+      "code": "ST",
+      "url": "https://www.cia.gov/the-world-factbook/countries/sao-tome-and-principe/",
       "capital": "Sao Tome",
       "area": 964,
       "population": 223561,
@@ -2712,11 +3446,15 @@
       "GNI per capita (current US$)": 2480.0,
       "Merchandise exports (current US$)": 20000000.0,
       "Merchandise imports (current US$)": 186000000.0,
-      "Urban population (% of total)": 76.401
+      "Urban population (% of total)": 76.401,
+      "lat": 0.1,
+      "lng": 6.39
     },
     {
       "name": "Senegal",
       "chinese": "塞內加爾",
+      "code": "SN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/senegal/",
       "capital": "Dakar",
       "area": 196722,
       "population": 18847519,
@@ -2727,11 +3465,15 @@
       "GNI per capita (current US$)": 1660.0,
       "Merchandise exports (current US$)": 5313000000.0,
       "Merchandise imports (current US$)": 11064000000.0,
-      "Urban population (% of total)": 49.579
+      "Urban population (% of total)": 49.579,
+      "lat": 14.34,
+      "lng": -17.29
     },
     {
       "name": "Seychelles",
       "chinese": "塞席爾",
+      "code": "SC",
+      "url": "https://www.cia.gov/the-world-factbook/countries/seychelles/",
       "capital": "Victoria",
       "area": 455,
       "population": 98187,
@@ -2742,11 +3484,15 @@
       "GNI per capita (current US$)": 16940.0,
       "Merchandise exports (current US$)": 541000000.0,
       "Merchandise imports (current US$)": 1431000000.0,
-      "Urban population (% of total)": 58.82
+      "Urban population (% of total)": 58.82,
+      "lat": -4.626174,
+      "lng": 55.458898
     },
     {
       "name": "Sierra Leone",
       "chinese": "獅子山",
+      "code": "SL",
+      "url": "https://www.cia.gov/the-world-factbook/countries/sierra-leone/",
       "capital": "Freetown",
       "area": 71740,
       "population": 9121049,
@@ -2757,11 +3503,15 @@
       "GNI per capita (current US$)": 560.0,
       "Merchandise exports (current US$)": 1270000000.0,
       "Merchandise imports (current US$)": 2154000000.0,
-      "Urban population (% of total)": 44.3
+      "Urban population (% of total)": 44.3,
+      "lat": 8.3,
+      "lng": -13.17
     },
     {
       "name": "Somalia",
       "chinese": "索馬利亞",
+      "code": "SO",
+      "url": "https://www.cia.gov/the-world-factbook/countries/somalia/",
       "capital": "Mogadishu",
       "area": 637657,
       "population": 13017273,
@@ -2770,11 +3520,15 @@
       "GDP growth (annual %)": 3.1029619961507,
       "GDP per capita (current US$)": 643.750028806778,
       "GNI per capita (current US$)": 610.0,
-      "Urban population (% of total)": 47.92
+      "Urban population (% of total)": 47.92,
+      "lat": 2.02,
+      "lng": 45.25
     },
     {
       "name": "South Africa",
       "chinese": "南非",
+      "code": "ZA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/south-africa/",
       "capital": "Pretoria (administrative capital); Cape Town (legislative capital); Bloemfontein (judicial capital)",
       "area": 1219090,
       "population": 60442647,
@@ -2785,22 +3539,30 @@
       "GNI per capita (current US$)": 6750.0,
       "Merchandise exports (current US$)": 110855000000.0,
       "Merchandise imports (current US$)": 130747000000.0,
-      "Urban population (% of total)": 68.819
+      "Urban population (% of total)": 68.819,
+      "lat": -30.741216,
+      "lng": 24.275444
     },
     {
       "name": "South Sudan",
       "chinese": "南蘇丹",
+      "code": "SS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/south-sudan/",
       "capital": "Juba",
       "area": 644329,
       "population": 12703714,
       "Age dependency ratio (% of working-age population)": 84.8602353098079,
       "Merchandise exports (current US$)": 833000000.0,
       "Merchandise imports (current US$)": 1184000000.0,
-      "Urban population (% of total)": 21.195
+      "Urban population (% of total)": 21.195,
+      "lat": "#N/A",
+      "lng": "#N/A"
     },
     {
       "name": "Tanzania",
       "chinese": "坦尚尼亞",
+      "code": "TZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tanzania/",
       "capital": "Dodoma; note - Dodoma was designated the national capital in 1996; Dar es Salaam, the original national capital, is the country's largest city and commercial center",
       "area": 947300,
       "population": 67462121,
@@ -2811,11 +3573,15 @@
       "GNI per capita (current US$)": 1210.0,
       "Merchandise exports (current US$)": 7292000000.0,
       "Merchandise imports (current US$)": 13817000000.0,
-      "Urban population (% of total)": 37.409
+      "Urban population (% of total)": 37.409,
+      "lat": -6.08,
+      "lng": 35.45
     },
     {
       "name": "Togo",
       "chinese": "多哥",
+      "code": "TG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/togo/",
       "capital": "Lome",
       "area": 56785,
       "population": 8917994,
@@ -2826,11 +3592,15 @@
       "GNI per capita (current US$)": 1030.0,
       "Merchandise exports (current US$)": 1434000000.0,
       "Merchandise imports (current US$)": 3204000000.0,
-      "Urban population (% of total)": 44.49
+      "Urban population (% of total)": 44.49,
+      "lat": 6.09,
+      "lng": 1.2
     },
     {
       "name": "Uganda",
       "chinese": "烏干達",
+      "code": "UG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/uganda/",
       "capital": "Kampala",
       "area": 241038,
       "population": 49283041,
@@ -2841,11 +3611,15 @@
       "GNI per capita (current US$)": 980.0,
       "Merchandise exports (current US$)": 6162000000.0,
       "Merchandise imports (current US$)": 12159000000.0,
-      "Urban population (% of total)": 26.771
+      "Urban population (% of total)": 26.771,
+      "lat": 0.2,
+      "lng": 32.3
     },
     {
       "name": "Zambia",
       "chinese": "尚比亞",
+      "code": "ZM",
+      "url": "https://www.cia.gov/the-world-factbook/countries/zambia/",
       "capital": "Lusaka",
       "area": 752618,
       "population": 20799116,
@@ -2856,11 +3630,15 @@
       "GNI per capita (current US$)": 1320.0,
       "Merchandise exports (current US$)": 9652000000.0,
       "Merchandise imports (current US$)": 9324000000.0,
-      "Urban population (% of total)": 46.335
+      "Urban population (% of total)": 46.335,
+      "lat": -15.28,
+      "lng": 28.16
     },
     {
       "name": "Zimbabwe",
       "chinese": "辛巴威",
+      "code": "ZW",
+      "url": "https://www.cia.gov/the-world-factbook/countries/zimbabwe/",
       "capital": "Harare",
       "area": 390757,
       "population": 17150352,
@@ -2871,13 +3649,17 @@
       "GNI per capita (current US$)": 1740.0,
       "Merchandise exports (current US$)": 7225000000.0,
       "Merchandise imports (current US$)": 9214000000.0,
-      "Urban population (% of total)": 32.517
+      "Urban population (% of total)": 32.517,
+      "lat": -17.43,
+      "lng": 31.02
     }
   ],
   "北非": [
     {
       "name": "Algeria",
       "chinese": "阿爾及利亞",
+      "code": "DZ",
+      "url": "https://www.cia.gov/the-world-factbook/countries/algeria/",
       "capital": "Algiers",
       "area": 2381740,
       "population": 47022473,
@@ -2888,11 +3670,15 @@
       "GNI per capita (current US$)": 4960.0,
       "Merchandise exports (current US$)": 51799000000.0,
       "Merchandise imports (current US$)": 41849000000.0,
-      "Urban population (% of total)": 75.268
+      "Urban population (% of total)": 75.268,
+      "lat": 36.42,
+      "lng": 3.08
     },
     {
       "name": "Egypt, Arab Rep.",
       "chinese": "埃及",
+      "code": "EG",
+      "url": "https://www.cia.gov/the-world-factbook/countries/egypt/",
       "capital": "Cairo",
       "area": 1001450,
       "population": 111247248,
@@ -2903,11 +3689,15 @@
       "GNI per capita (current US$)": 3900.0,
       "Merchandise exports (current US$)": 39853000000.0,
       "Merchandise imports (current US$)": 78895000000.0,
-      "Urban population (% of total)": 43.1
+      "Urban population (% of total)": 43.1,
+      "lat": 30.01,
+      "lng": 31.14
     },
     {
       "name": "Libya",
       "chinese": "利比亞",
+      "code": "LY",
+      "url": "https://www.cia.gov/the-world-factbook/countries/libya/",
       "capital": "Tripoli (Tarabulus)",
       "area": 1759540,
       "population": 7361263,
@@ -2918,11 +3708,15 @@
       "GNI per capita (current US$)": 7570.0,
       "Merchandise exports (current US$)": 35270000000.0,
       "Merchandise imports (current US$)": 20523000000.0,
-      "Urban population (% of total)": 81.606
+      "Urban population (% of total)": 81.606,
+      "lat": 27.055803,
+      "lng": 17.583546
     },
     {
       "name": "Morocco",
       "chinese": "摩洛哥",
+      "code": "MA",
+      "url": "https://www.cia.gov/the-world-factbook/countries/morocco/",
       "capital": "Rabat",
       "area": 716550,
       "population": 37387585,
@@ -2933,11 +3727,15 @@
       "GNI per capita (current US$)": 3700.0,
       "Merchandise exports (current US$)": 41642000000.0,
       "Merchandise imports (current US$)": 68632000000.0,
-      "Urban population (% of total)": 65.121
+      "Urban population (% of total)": 65.121,
+      "lat": 31.967759,
+      "lng": -6.240875
     },
     {
       "name": "Sudan",
       "chinese": "蘇丹",
+      "code": "SS",
+      "url": "https://www.cia.gov/the-world-factbook/countries/sudan/",
       "capital": "Khartoum",
       "area": 1861484,
       "population": 50467278,
@@ -2948,11 +3746,15 @@
       "GNI per capita (current US$)": 990.0,
       "Merchandise exports (current US$)": 4780000000.0,
       "Merchandise imports (current US$)": 7100000000.0,
-      "Urban population (% of total)": 36.342
+      "Urban population (% of total)": 36.342,
+      "lat": 30,
+      "lng": 15
     },
     {
       "name": "Tunisia",
       "chinese": "突尼西亞",
+      "code": "TN",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tunisia/",
       "capital": "Tunis",
       "area": 163610,
       "population": 12048847,
@@ -2963,7 +3765,9 @@
       "GNI per capita (current US$)": 3770.0,
       "Merchandise exports (current US$)": 19985000000.0,
       "Merchandise imports (current US$)": 25485000000.0,
-      "Urban population (% of total)": 70.544
+      "Urban population (% of total)": 70.544,
+      "lat": 36.5,
+      "lng": 10.11
     }
   ]
 }
