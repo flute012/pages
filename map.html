@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countries Map</title>
+    <title>Updated Leaflet Countries Map</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <style>
@@ -18,42 +18,22 @@
         let map;
         let countries = [];
 
-        function log(message) {
-            console.log(message);
-        }
-
         function loadCountryData() {
-            const paths = [
-                '/data/merged_country_data.json',
-                'data/merged_country_data.json',
-                '../data/merged_country_data.json',
-                './data/merged_country_data.json'
-            ];
-
-            function tryLoadPath(index) {
-                if (index >= paths.length) {
-                    log('Failed to load data from all attempted paths');
-                    return Promise.reject('Data load failed');
-                }
-
-                return fetch(paths[index])
-                    .then(response => {
-                        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                        return response.json();
-                    })
-                    .then(data => {
-                        log(`Successfully loaded data from ${paths[index]}`);
-                        countries = Object.values(data).flat();
-                        log(`Loaded ${countries.length} countries`);
-                        return countries;
-                    })
-                    .catch(error => {
-                        log(`Failed to load from ${paths[index]}: ${error.message}`);
-                        return tryLoadPath(index + 1);
-                    });
-            }
-
-            return tryLoadPath(0);
+            return fetch('data/merged_country_data.json')
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Data loaded successfully');
+                    countries = Object.values(data).flat();
+                    console.log(`Loaded ${countries.length} countries`);
+                    return countries;
+                })
+                .catch(error => {
+                    console.error('Error loading country data:', error);
+                    return Promise.reject(error);
+                });
         }
 
         function initMap() {
@@ -64,14 +44,13 @@
             }).addTo(map);
 
             loadCountryData().then(() => {
-                let markersAdded = 0;
                 countries.forEach(country => {
                     if (country.lat && country.lng) {
                         const lat = parseFloat(country.lat);
                         const lng = parseFloat(country.lng);
                         
                         if (isNaN(lat) || isNaN(lng)) {
-                            log(`Invalid coordinates for ${country.name}: ${country.lat}, ${country.lng}`);
+                            console.warn(`Invalid coordinates for ${country.name}: ${country.lat}, ${country.lng}`);
                             return;
                         }
 
@@ -82,19 +61,15 @@
                             <p>首都: ${country.capital || 'N/A'}</p>
                             <p>人口: ${(country.population || 0).toLocaleString()}</p>
                             <p>面積: ${(country.area || 0).toLocaleString()} km²</p>
-                            <p>GDP: ${(country.GDP || 0).toLocaleString()} 美元</p>
-                            <p>GDP成長率: ${(country.GDP_growth || 0).toLocaleString()} %</p>
-                            <p>人均GDP: ${(country.GDP_per_capita || 0).toLocaleString()} 美元</p>
-                            <p>人均GNI: ${(country.GNI_per_capita || 0).toLocaleString()} 美元</p>
-                            <p>城市人口: ${(country.Urban_population || 0).toLocaleString()} %</p>
+                            <p>人均GDP: ${(country['GDP per capita (current US$)'] || 0).toLocaleString()} 美元</p>
+                            <p>人均GNI: ${(country['GNI per capita (current US$)'] || 0).toLocaleString()} 美元</p>
+                            <p>城市人口: ${(country['Urban population (% of total)'] || 0).toLocaleString()} %</p>
                         `);
-
-                        markersAdded++;
                     }
                 });
-                log(`Added ${markersAdded} markers to the map`);
+                console.log(`Added markers for ${countries.length} countries`);
             }).catch(error => {
-                log(`Error in initMap: ${error}`);
+                console.error('Error initializing map:', error);
             });
         }
 
