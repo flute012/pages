@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Maps Countries</title>
+    <title>Leaflet Countries Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <style>
         #map {
             height: 100vh;
@@ -22,106 +24,54 @@
 
 <body>
     <div id="map"></div>
-    <div id="debug"></div>
 
     <script>
         let map;
         let countries = [];
 
-        function log(message) {
-            const debugElement = document.getElementById('debug');
-            debugElement.innerHTML += message + '<br>';
-            console.log(message);
-        }
-
         function loadCountryData() {
             return fetch('/data/merged_country_data.json')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
-                    log(`Loaded ${Object.keys(data).length} continents`);
-                    // Flatten the continent arrays into a single array of countries
                     countries = Object.values(data).flat();
-                    log(`Total countries: ${countries.length}`);
                     return countries;
-                })
-                .catch(error => {
-                    log(`Error loading country data: ${error.message}`);
-                    throw error;
                 });
         }
 
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 2,
-                center: { lat: 20, lng: 0 },
-                mapTypeId: 'terrain'
-            });
+            map = L.map('map').setView([20, 0], 2);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
 
             loadCountryData().then(() => {
-                let markersAdded = 0;
                 countries.forEach(country => {
                     if (country.lat && country.lng) {
-                        const marker = new google.maps.Marker({
-                            position: { lat: parseFloat(country.lat), lng: parseFloat(country.lng) },
-                            map: map,
-                            title: country.chinese || country.name
-                        });
+                        const lat = parseFloat(country.lat);
+                        const lng = parseFloat(country.lng);
 
-                        const infowindow = new google.maps.InfoWindow({
-                            content: `
-                                <h2>${country.chinese || ''} (${country.name})</h2>
-                                <p>首都: ${country.capital || 'N/A'}</p>
-                                <p>人口: ${(country.population || 0).toLocaleString()}</p>
-                                <p>面積: ${(country.area || 0).toLocaleString()} km²</p>
-                                <p>GDP: $${(country['GDP (current US$)'] || 0).toLocaleString()}</p>
-                            `
-                        });
+                        if (isNaN(lat) || isNaN(lng)) {
+                            console.error(`Invalid coordinates for ${country.name}: ${country.lat}, ${country.lng}`);
+                            return;
+                        }
 
-                        marker.addListener('click', () => {
-                            infowindow.open(map, marker);
-                        });
+                        const marker = L.marker([lat, lng]).addTo(map);
 
-                        markersAdded++;
-                    } else {
-                        log(`Missing coordinates for ${country.name}`);
+                        marker.bindPopup(`
+                            <h2>${country.chinese || ''} (${country.name})</h2>
+                            <p>首都: ${country.capital || 'N/A'}</p>
+                            <p>人口: ${(country.population || 0).toLocaleString()}</p>
+                            <p>面積: ${(country.area || 0).toLocaleString()} km²</p>
+                        `);
                     }
                 });
-                log(`Added ${markersAdded} markers to the map`);
             }).catch(error => {
-                log(`Failed to initialize map: ${error.message}`);
+                console.error('Error loading country data:', error);
             });
         }
 
-        function loadGoogleMapsScript() {
-            const script = document.createElement('script');
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&callback=initMap`;
-            script.async = true;
-            script.defer = true;
-            document.head.appendChild(script);
-        }
-
-        // 假設我們有一個安全的方法來獲取 API 密鑰
-        function getGoogleMapsApiKey() {
-            // 這裡應該是從安全的來源獲取 API 密鑰的邏輯
-            // 例如，從伺服器端 API 獲取，或從環境變數中讀取
-            return new Promise((resolve) => {
-                // 模擬異步操作
-                setTimeout(() => {
-                    resolve('AIzaSyBQIMPccrUGRd_qTPEKa_k8IbHTwT6I1Bc');
-                }, 100);
-            });
-        }
-
-        let GOOGLE_MAPS_API_KEY;
-        getGoogleMapsApiKey().then(apiKey => {
-            GOOGLE_MAPS_API_KEY = apiKey;
-            loadGoogleMapsScript();
-        });
+        initMap();
     </script>
 </body>
 
