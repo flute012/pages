@@ -549,9 +549,9 @@
       "Merchandise exports (current US$)": 679000000.0,
       "Merchandise imports (current US$)": 4118000000.0,
       "Urban population (% of total)": 68.502,
-       "lng": 42.8889,
-       "lat": 19.297
-   },
+      "lat": 19.297,
+      "lng": 42.8889
+    },
     {
       "name": "Netherlands",
       "chinese": "荷蘭",
@@ -587,8 +587,8 @@
       "Merchandise exports (current US$)": 8999000000.0,
       "Merchandise imports (current US$)": 12056000000.0,
       "Urban population (% of total)": 59.479,
-       "lng": 41.9949,  
-       "lat": 21.42727
+      "lat": 21.42727,
+      "lng": 41.9949
     },
     {
       "name": "Norway",
@@ -680,8 +680,8 @@
       "GDP per capita (current US$)": 54982.451714817,
       "GNI per capita (current US$)": 47120.0,
       "Urban population (% of total)": 97.836,
-      "lat": 43.946215101,
-      "lng": 12.46
+      "lat": 43.55,
+      "lng": 12.3
     },
     {
       "name": "Serbia",
@@ -1290,8 +1290,8 @@
       "Merchandise exports (current US$)": 1654000000.0,
       "Merchandise imports (current US$)": 17541000000.0,
       "Urban population (% of total)": 100.0,
-      "lat":22.2 ,
-      "lng":113.55
+      "lat": 113.55,
+      "lng": 22.2
     },
     {
       "name": "Mongolia",
@@ -1320,8 +1320,8 @@
       "capital": "Taipei",
       "area": 35980,
       "population": 23595274,
-      "lat": 25.01,
-      "lng": 121.54
+      "lat": 121.54,
+      "lng": 25.01
     }
   ],
   "西亞": [
@@ -1467,10 +1467,10 @@
       "area": 10400,
       "population": 5364482,
       "Age dependency ratio (% of working-age population)": 60.1226566352927,
-      "GDP (current US$)": 17937256175.141,
-      "GDP growth (annual %)": -0.150115204985752,
-      "GDP per capita (current US$)": 3350.29710420961,
-      "GNI per capita (current US$)": 3740.0,
+      "GDP (current US$)": 20992421948.8081,
+      "GDP growth (annual %)": -0.621678970663112,
+      "GDP per capita (current US$)": 3823.93806860546,
+      "GNI per capita (current US$)": 4410.0,
       "Merchandise exports (current US$)": 3083000000.0,
       "Merchandise imports (current US$)": 15286000000.0,
       "Urban population (% of total)": 89.432,
@@ -1600,7 +1600,6 @@
       "area": 527968,
       "population": 32140443,
       "Age dependency ratio (% of working-age population)": 71.5859246632877,
-      "GDP per capita (current US$)": 533.367123496464,
       "Merchandise exports (current US$)": 226000000.0,
       "Merchandise imports (current US$)": 5031000000.0,
       "Urban population (% of total)": 39.831,
@@ -3555,8 +3554,8 @@
       "Merchandise exports (current US$)": 833000000.0,
       "Merchandise imports (current US$)": 1184000000.0,
       "Urban population (% of total)": 21.195,
-      "lat": "#N/A",
-      "lng": "#N/A"
+      "lat": 29.8652,
+      "lng": 7.50339
     },
     {
       "name": "Tanzania",
