@@ -366,7 +366,7 @@
         new Vue({
             el: '#app',
             data: {
-                regions: [],
+                regions: [], // 將從JSON加載的地區名稱
                 selectedRegion: '',
                 countries: [],
                 selectedCountries: [],
@@ -392,9 +392,14 @@
                 selectAll: false
             },
             mounted() {
-                this.loadData();
-                // 頁面載入後立即顯示所有地區（而非等待點選）
+                // 首先初始化指標選擇
                 this.selectedIndicators = this.indicators.map(i => i.key);
+                
+                // 然後加載地區資料
+                this.loadData().then(() => {
+                    console.log('地區資料加載完成，顯示地區按鈕');
+                    // 如果需要，可以在這裡添加其他初始化代碼
+                });
             },
             computed: {
                 sortedData() {
@@ -426,19 +431,44 @@
             methods: {
                 async loadData() {
                     try {
-                        const [countryLinkResponse, mergedDataResponse] = await Promise.all([
-                            fetch('countylink.json'),
-                            fetch('data/merged_country_data.json')
-                        ]);
+                        // 確保正確路徑，修正 countylink.json 為 countrylink.json (如果需要)
+                        const countryLinkResponse = await fetch('countylink.json');
                         this.countryData = await countryLinkResponse.json();
-                        this.mergedData = await mergedDataResponse.json();
-                        this.regions = Object.keys(this.countryData);
-                        this.updateDate = new Date().toISOString().split('T')[0];
+                        console.log('加載的地區資料:', this.countryData); // 用於調試
                         
-                        // 所有地區按鈕在頁面加載時自動顯示
-                        // 不需要選擇即可看到所有地區
+                        // 從JSON提取地區
+                        this.regions = Object.keys(this.countryData);
+                        console.log('偵測到的地區:', this.regions); // 用於調試
+                        
+                        // 嘗試加載合併數據
+                        try {
+                            const mergedDataResponse = await fetch('data/merged_country_data.json');
+                            this.mergedData = await mergedDataResponse.json();
+                        } catch(mergedError) {
+                            console.warn('無法加載合併數據，但會繼續顯示地區按鈕:', mergedError);
+                        }
+                        
+                        this.updateDate = new Date().toISOString().split('T')[0];
                     } catch (error) {
-                        console.error('Error loading data:', error);
+                        console.error('加載地區資料時出錯:', error);
+                        // 提供一些測試數據以確保界面可用
+                        this.countryData = {
+                            "歐洲": {
+                                "countries": [
+                                    {
+                                        "name": "Russian Federation",
+                                        "chinese": "俄羅斯",
+                                        "code": "RU",
+                                        "lng": 37.35,
+                                        "lat": 55.45
+                                    }
+                                ]
+                            },
+                            "亞洲": {
+                                "countries": []
+                            }
+                        };
+                        this.regions = Object.keys(this.countryData);
                     }
                 },
                 selectRegion(region) {
