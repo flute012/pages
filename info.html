@@ -381,7 +381,7 @@
         new Vue({
             el: '#app',
             data: {
-                regions: [],
+                regions: ['亞洲', '歐洲', '北美洲', '南美洲', '大洋洲', '非洲'], // 預設顯示常見地區
                 selectedRegion: '',
                 countries: [],
                 selectedCountries: [],
@@ -448,7 +448,12 @@
                         ]);
                         this.countryData = await countryLinkResponse.json();
                         this.mergedData = await mergedDataResponse.json();
-                        this.regions = Object.keys(this.countryData);
+                        
+                        // 使用伺服器返回的地區替換預設值
+                        if (this.countryData) {
+                            this.regions = Object.keys(this.countryData);
+                        }
+                        
                         this.updateDate = new Date().toISOString().split('T')[0];
                         
                         // 创建CSV下载链接
