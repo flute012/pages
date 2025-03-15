@@ -19,24 +19,26 @@
             font-family: 'Microsoft JhengHei', Arial, sans-serif;
             background: linear-gradient(
                 125deg, 
-                #d8e1ff 0%, 
-                #c9f0ff 20%, 
-                #e9d8ff 40%, 
-                #d4e6ff 60%,
-                #e0d1ff 80%,
-                #c3e5ff 100%
+                #ece5fd 10%, /* 更淡的粉紫 */
+                #e8f3ff 20%, /* 更淡的粉藍 */
+                #ffeef2 40%, /* 粉紅(少一點) */
+                #ffffff 80%, /* 白色 */
+                #e8e3ff 30%, /* 更淡的粉紫 */
+                #e6f2ff 60% /* 更淡的粉藍 */
             );
             background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            animation: gradientBG 45s ease infinite; /* 從15秒改為25秒 */
             background-attachment: fixed;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         
         @keyframes gradientBG {
             0% { background-position: 0% 50% }
-            25% { background-position: 50% 25% }
-            50% { background-position: 100% 50% }
-            75% { background-position: 50% 75% }
+            20% { background-position: 20% 30% } /* 添加更多的中間點使動畫更不規則 */
+            40% { background-position: 60% 20% }
+            60% { background-position: 80% 60% }
+            80% { background-position: 40% 80% }
             100% { background-position: 0% 50% }
         }
         
@@ -44,11 +46,34 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+            position: relative;
+            
         }
         
-        h1, h2 {
+        h1 {
             color: #5a5a8a;
             text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            font-size: 2.5rem;
+            font-weight: 800;
+            position: relative;
+            z-index: 2;
+        }
+        
+        h2 {
+            color: #5a5a8a;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* 地球背景 */
+        .globe-bg {
+            position: absolute;
+            left: 25rem;
+            top: 80;
+            width: 115%;
+            height: auto;
+            opacity: 0.15;
+            z-index: 1;
+            pointer-events: none;
         }
         
         .glassmorphism {
@@ -61,13 +86,14 @@
             overflow: hidden;
         }
         
+        /* 按鈕邊緣反光感 */
         .glassmorphism::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 1px;
             background: linear-gradient(90deg, 
                 rgba(255,255,255,0) 0%, 
                 rgba(255,255,255,0.8) 50%, 
@@ -76,12 +102,12 @@
         }
         
         .blue-btn {
-            background: rgba(173, 216, 230, 0.4);
+            background: rgba(173, 216, 230, 0.4); /* 粉藍色 */
             color: #4a5568;
             font-weight: bold;
             padding: 0.75rem 1.5rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 3s ease;
         }
         
         .blue-btn:hover {
@@ -90,12 +116,12 @@
         }
         
         .pink-btn {
-            background: rgba(255, 182, 193, 0.4);
+            background: rgba(255, 182, 193, 0.4); /* 粉紅色 */
             color: #4a5568;
             font-weight: bold;
             padding: 0.75rem 1.5rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 1s ease;
         }
         
         .pink-btn:hover {
@@ -132,6 +158,7 @@
             cursor: pointer;
         }
         
+        /* 表格邊緣反光感 */
         table {
             width: 100%;
             border-collapse: separate;
@@ -141,6 +168,8 @@
             border-radius: 10px;
             overflow: hidden;
             position: relative;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
         }
         
         table::before {
@@ -149,7 +178,7 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 1px;
             background: linear-gradient(90deg, 
                 rgba(255,255,255,0) 0%, 
                 rgba(255,255,255,0.8) 50%, 
@@ -162,7 +191,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 2px;
+            height: 1px;
             background: linear-gradient(90deg, 
                 rgba(255,255,255,0) 0%, 
                 rgba(255,255,255,0.8) 50%, 
@@ -172,20 +201,20 @@
         th, td {
             padding: 0.75rem;
             text-align: left;
-            border: 1px solid #e2e8f0;
+            border: 1px solid rgba(226, 232, 240, 0.5);
         }
         
         th {
-            background-color: #f8f9fa;
+            background-color: rgba(248, 249, 250, 0.5);
             font-weight: 600;
         }
         
         .country-column {
-            background-color: #edf4d3;
+            background-color: rgba(237, 244, 211, 0.5);
         }
         
         .alternate-column {
-            background-color: #ffe6e6;
+            background-color: rgba(255, 230, 230, 0.5);
         }
         
         .sort-icon {
@@ -235,95 +264,105 @@
         .items-center {
             align-items: center;
         }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 
 <body>
     <div id="app" class="container">
-        <h1 class="mb-4">國家資料比較</h1>
+        <!-- 半透明地球背景 -->
+        <img src="3572360.png" alt="Globe" class="globe-bg">
+        
+        <div class="content-wrapper">
+            <h1 class="mb-4">國家資料比較</h1>
 
-        <div class="mb-4">
-            <h2 class="mb-2">選擇地區：</h2>
-            <div class="flex flex-wrap">
-                <button v-for="region in regions" 
-                        :key="region" 
-                        @click="selectRegion(region)" 
-                        class="glassmorphism blue-btn region-btn" 
-                        :class="{ 'active': selectedRegion === region }">
-                    {{ region }}
-                </button>
-            </div>
-        </div>
-
-        <div v-if="selectedRegion" class="mb-4">
-            <h2 class="mb-2">選擇國家：</h2>
-            <div class="flex items-center mb-2">
-                <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries">
-                <label for="selectAll">全部</label>
-            </div>
-            <div class="flex flex-wrap">
-                <label v-for="country in countries" :key="country.name" class="mr-4 mb-2 flex items-center">
-                    <input type="checkbox" :value="country" v-model="selectedCountries">
-                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                    {{ country.chinese }}
-                </label>
-            </div>
-        </div>
-
-        <div v-if="selectedCountries.length" class="mb-4">
-            <h2 class="mb-2">已選擇的國家：</h2>
-            <div class="flex flex-wrap">
-                <div v-for="country in selectedCountries" :key="country.name" class="selected-country">
-                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                    {{ country.chinese }}
-                    <button @click="removeCountry(country)" class="remove-btn">&times;</button>
+            <div class="mb-4">
+                <h2 class="mb-2">選擇地區：</h2>
+                <div class="flex flex-wrap">
+                    <button v-for="region in regions" 
+                            :key="region" 
+                            @click="selectRegion(region)" 
+                            class="glassmorphism blue-btn region-btn" 
+                            :class="{ 'active': selectedRegion === region }">
+                        {{ region }}
+                    </button>
                 </div>
             </div>
-            <button @click="clearSelectedCountries" class="glassmorphism pink-btn mb-4">清除所有選擇</button>
-        </div>
 
-        <div class="mb-4">
-            <h2 class="mb-2">選擇要顯示的指標：</h2>
-            <div class="flex flex-wrap">
-                <label v-for="indicator in indicators" :key="indicator.key" class="mr-4 mb-2">
-                    <input type="checkbox" :value="indicator.key" v-model="selectedIndicators">
-                    {{ indicator.label }}
-                </label>
+            <div v-if="selectedRegion" class="mb-4">
+                <h2 class="mb-2">選擇國家：</h2>
+                <div class="flex items-center mb-2">
+                    <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries">
+                    <label for="selectAll">全部</label>
+                </div>
+                <div class="flex flex-wrap">
+                    <label v-for="country in countries" :key="country.name" class="mr-4 mb-2 flex items-center">
+                        <input type="checkbox" :value="country" v-model="selectedCountries">
+                        <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                        {{ country.chinese }}
+                    </label>
+                </div>
             </div>
-        </div>
 
-        <button @click="compareCountries" class="glassmorphism blue-btn mb-4">比較</button>
+            <div v-if="selectedCountries.length" class="mb-4">
+                <h2 class="mb-2">已選擇的國家：</h2>
+                <div class="flex flex-wrap">
+                    <div v-for="country in selectedCountries" :key="country.name" class="selected-country">
+                        <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                        {{ country.chinese }}
+                        <button @click="removeCountry(country)" class="remove-btn">&times;</button>
+                    </div>
+                </div>
+                <button @click="clearSelectedCountries" class="glassmorphism pink-btn mb-4">清除所有選擇</button>
+            </div>
 
-        <div v-if="comparisonData.length" class="overflow-x-auto">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="country-column">序號</th>
-                        <th @click="sort('chinese')" class="country-column cursor-pointer">
-                            國家/指標
-                            <span class="sort-icon">{{ getSortIcon('chinese') }}</span>
-                        </th>
-                        <th v-for="indicator in selectedIndicators" :key="indicator" @click="sort(indicator)"
-                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
-                            {{ getIndicatorLabel(indicator) }}
-                            <span class="sort-icon">{{ getSortIcon(indicator) }}</span>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="(country, index) in sortedData" :key="country.name">
-                        <td class="text-center">{{ index + 1 }}</td>
-                        <td class="country-column">
-                            <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                            {{ country.chinese }} ({{ country.name }})
-                        </td>
-                        <td v-for="indicator in selectedIndicators" :key="indicator"
-                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
-                            {{ formatValue(country[indicator], indicator) }}
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="mb-4">
+                <h2 class="mb-2">選擇要顯示的指標：</h2>
+                <div class="flex flex-wrap">
+                    <label v-for="indicator in indicators" :key="indicator.key" class="mr-4 mb-2">
+                        <input type="checkbox" :value="indicator.key" v-model="selectedIndicators">
+                        {{ indicator.label }}
+                    </label>
+                </div>
+            </div>
+
+            <button @click="compareCountries" class="glassmorphism blue-btn mb-4">比較</button>
+
+            <div v-if="comparisonData.length" class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="country-column">序號</th>
+                            <th @click="sort('chinese')" class="country-column cursor-pointer">
+                                國家/指標
+                                <span class="sort-icon">{{ getSortIcon('chinese') }}</span>
+                            </th>
+                            <th v-for="indicator in selectedIndicators" :key="indicator" @click="sort(indicator)"
+                                :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
+                                {{ getIndicatorLabel(indicator) }}
+                                <span class="sort-icon">{{ getSortIcon(indicator) }}</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(country, index) in sortedData" :key="country.name">
+                            <td class="text-center">{{ index + 1 }}</td>
+                            <td class="country-column">
+                                <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                                {{ country.chinese }} ({{ country.name }})
+                            </td>
+                            <td v-for="indicator in selectedIndicators" :key="indicator"
+                                :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
+                                {{ formatValue(country[indicator], indicator) }}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
