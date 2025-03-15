@@ -274,97 +274,93 @@
 
 <body>
     <div id="app" class="container">
-        <!-- 半透明地球背景 -->
-        <img src="3572360.png" alt="Globe" class="globe-bg">
-        
-        <div class="content-wrapper">
-            <h1 class="mb-4">國家資料比較</h1>
+        <h1 class="mb-4">國家資料比較</h1>
 
-            <div class="mb-4">
-                <h2 class="mb-2">選擇地區：</h2>
-                <div class="flex flex-wrap">
-                    <button v-for="region in regions" 
-                            :key="region" 
-                            @click="selectRegion(region)" 
-                            class="glassmorphism blue-btn region-btn" 
-                            :class="{ 'active': selectedRegion === region }">
-                        {{ region }}
-                    </button>
-                </div>
-            </div>
-
-            <div v-if="selectedRegion" class="mb-4">
-                <h2 class="mb-2">選擇國家：</h2>
-                <div class="flex items-center mb-2">
-                    <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries">
-                    <label for="selectAll">全部</label>
-                </div>
-                <div class="flex flex-wrap">
-                    <label v-for="country in countries" :key="country.name" class="mr-4 mb-2 flex items-center">
-                        <input type="checkbox" :value="country" v-model="selectedCountries">
-                        <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                        {{ country.chinese }}
-                    </label>
-                </div>
-            </div>
-
-            <div v-if="selectedCountries.length" class="mb-4">
-                <h2 class="mb-2">已選擇的國家：</h2>
-                <div class="flex flex-wrap">
-                    <div v-for="country in selectedCountries" :key="country.name" class="selected-country">
-                        <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                        {{ country.chinese }}
-                        <button @click="removeCountry(country)" class="remove-btn">&times;</button>
-                    </div>
-                </div>
-                <button @click="clearSelectedCountries" class="glassmorphism pink-btn mb-4">清除所有選擇</button>
-            </div>
-
-            <div class="mb-4">
-                <h2 class="mb-2">選擇要顯示的指標：</h2>
-                <div class="flex flex-wrap">
-                    <label v-for="indicator in indicators" :key="indicator.key" class="mr-4 mb-2">
-                        <input type="checkbox" :value="indicator.key" v-model="selectedIndicators">
-                        {{ indicator.label }}
-                    </label>
-                </div>
-            </div>
-
-            <button @click="compareCountries" class="glassmorphism blue-btn mb-4">比較</button>
-
-            <div v-if="comparisonData.length" class="overflow-x-auto">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="country-column">序號</th>
-                            <th @click="sort('chinese')" class="country-column cursor-pointer">
-                                國家/指標
-                                <span class="sort-icon">{{ getSortIcon('chinese') }}</span>
-                            </th>
-                            <th v-for="indicator in selectedIndicators" :key="indicator" @click="sort(indicator)"
-                                :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
-                                {{ getIndicatorLabel(indicator) }}
-                                <span class="sort-icon">{{ getSortIcon(indicator) }}</span>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="(country, index) in sortedData" :key="country.name">
-                            <td class="text-center">{{ index + 1 }}</td>
-                            <td class="country-column">
-                                <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
-                                {{ country.chinese }} ({{ country.name }})
-                            </td>
-                            <td v-for="indicator in selectedIndicators" :key="indicator"
-                                :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
-                                {{ formatValue(country[indicator], indicator) }}
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="mb-4">
+            <h2 class="mb-2">選擇地區：</h2>
+            <div class="flex flex-wrap">
+                <button v-for="region in regions" 
+                        :key="region" 
+                        @click="selectRegion(region)" 
+                        class="glassmorphism blue-btn region-btn" 
+                        :class="{ 'active': selectedRegion === region }">
+                    {{ region }}
+                </button>
             </div>
         </div>
+
+        <div v-if="selectedRegion" class="mb-4">
+            <h2 class="mb-2">選擇國家：</h2>
+            <div class="flex items-center mb-2">
+                <input type="checkbox" id="selectAll" v-model="selectAll" @change="toggleAllCountries">
+                <label for="selectAll">全部</label>
+            </div>
+            <div class="flex flex-wrap">
+                <label v-for="country in countries" :key="country.name" class="mr-4 mb-2 flex items-center">
+                    <input type="checkbox" :value="country" v-model="selectedCountries">
+                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                    {{ country.chinese }}
+                </label>
+            </div>
+        </div>
+
+        <div v-if="selectedCountries.length" class="mb-4">
+            <h2 class="mb-2">已選擇的國家：</h2>
+            <div class="flex flex-wrap">
+                <div v-for="country in selectedCountries" :key="country.name" class="selected-country">
+                    <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                    {{ country.chinese }}
+                    <button @click="removeCountry(country)" class="remove-btn">&times;</button>
+                </div>
+            </div>
+            <button @click="clearSelectedCountries" class="glassmorphism pink-btn mb-4">清除所有選擇</button>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="mb-2">選擇要顯示的指標：</h2>
+            <div class="flex flex-wrap">
+                <label v-for="indicator in indicators" :key="indicator.key" class="mr-4 mb-2">
+                    <input type="checkbox" :value="indicator.key" v-model="selectedIndicators">
+                    {{ indicator.label }}
+                </label>
+            </div>
+        </div>
+
+        <button @click="compareCountries" class="glassmorphism blue-btn mb-4">比較</button>
+
+        <div v-if="comparisonData.length" class="overflow-x-auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="country-column">序號</th>
+                        <th @click="sort('chinese')" class="country-column cursor-pointer">
+                            國家/指標
+                            <span class="sort-icon">{{ getSortIcon('chinese') }}</span>
+                        </th>
+                        <th v-for="indicator in selectedIndicators" :key="indicator" @click="sort(indicator)"
+                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
+                            {{ getIndicatorLabel(indicator) }}
+                            <span class="sort-icon">{{ getSortIcon(indicator) }}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(country, index) in sortedData" :key="country.name">
+                        <td class="text-center">{{ index + 1 }}</td>
+                        <td class="country-column">
+                            <span :class="['flag-icon', `flag-icon-${country.code.toLowerCase()}`]" class="mr-1"></span>
+                            {{ country.chinese }} ({{ country.name }})
+                        </td>
+                        <td v-for="indicator in selectedIndicators" :key="indicator"
+                            :class="{ 'alternate-column': selectedIndicators.indexOf(indicator) % 2 !== 0 }">
+                            {{ formatValue(country[indicator], indicator) }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
 
 
     <script>
