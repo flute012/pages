@@ -362,7 +362,6 @@
     </div>
 
 
-
     <script>
         new Vue({
             el: '#app',
@@ -435,11 +434,9 @@
                         this.mergedData = await mergedDataResponse.json();
                         this.regions = Object.keys(this.countryData);
                         this.updateDate = new Date().toISOString().split('T')[0];
-                        // 初始顯示所有地區按鈕
-                        if (this.regions.length > 0) {
-                            // 可以預設選擇第一個地區，或是保持空白等待用戶選擇
-                            // this.selectRegion(this.regions[0]);
-                        }
+                        
+                        // 所有地區按鈕在頁面加載時自動顯示
+                        // 不需要選擇即可看到所有地區
                     } catch (error) {
                         console.error('Error loading data:', error);
                     }
