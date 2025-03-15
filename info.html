@@ -27,7 +27,7 @@
                 #e6f2ff 60% /* 更淡的粉藍 */
             );
             background-size: 400% 400%;
-            animation: gradientBG 45s ease infinite; /* 從15秒改為25秒 */
+            animation: gradientBG 45s ease infinite;
             background-attachment: fixed;
             min-height: 100vh;
             overflow-x: hidden;
@@ -35,7 +35,7 @@
         
         @keyframes gradientBG {
             0% { background-position: 0% 50% }
-            20% { background-position: 20% 30% } /* 添加更多的中間點使動畫更不規則 */
+            20% { background-position: 20% 30% }
             40% { background-position: 60% 20% }
             60% { background-position: 80% 60% }
             80% { background-position: 40% 80% }
@@ -47,7 +47,6 @@
             margin: 0 auto;
             padding: 2rem;
             position: relative;
-            
         }
         
         h1 {
@@ -62,18 +61,6 @@
         h2 {
             color: #5a5a8a;
             text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
-        }
-        
-        /* 地球背景 */
-        .globe-bg {
-            position: absolute;
-            left: 25rem;
-            top: 80;
-            width: 115%;
-            height: auto;
-            opacity: 0.15;
-            z-index: 1;
-            pointer-events: none;
         }
         
         .glassmorphism {
@@ -107,7 +94,7 @@
             font-weight: bold;
             padding: 0.75rem 1.5rem;
             cursor: pointer;
-            transition: all 3s ease;
+            transition: all 0.3s ease;
         }
         
         .blue-btn:hover {
@@ -121,7 +108,7 @@
             font-weight: bold;
             padding: 0.75rem 1.5rem;
             cursor: pointer;
-            transition: all 1s ease;
+            transition: all 0.3s ease;
         }
         
         .pink-btn:hover {
@@ -269,12 +256,41 @@
             position: relative;
             z-index: 2;
         }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .file-info a {
+            color: #5a5a8a;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .file-info a:hover {
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
 <body>
     <div id="app" class="container">
         <h1 class="mb-4">國家資料比較</h1>
+
+        <div id="fileInfo" class="file-info">
+            <p>資料更新日期: <span id="updateDate">{{ updateDate }}</span></p>
+            <a :href="csvDownloadUrl" download="merged_country_data.csv">下載所有資料(CSV)</a>
+            <a href="map.html">地圖</a>
+        </div>
 
         <div class="mb-4">
             <h2 class="mb-2">選擇地區：</h2>
@@ -361,12 +377,11 @@
         </div>
     </div>
 
-
     <script>
         new Vue({
             el: '#app',
             data: {
-                regions: [], // 將從JSON加載的地區名稱
+                regions: [],
                 selectedRegion: '',
                 countries: [],
                 selectedCountries: [],
@@ -389,17 +404,13 @@
                 mergedData: null,
                 sortKey: '',
                 sortOrder: 'asc',
-                selectAll: false
+                selectAll: false,
+                csvDownloadUrl: '#'
             },
             mounted() {
-                // 首先初始化指標選擇
+                this.loadData();
+                // 自動選擇所有指標
                 this.selectedIndicators = this.indicators.map(i => i.key);
-                
-                // 然後加載地區資料
-                this.loadData().then(() => {
-                    console.log('地區資料加載完成，顯示地區按鈕');
-                    // 如果需要，可以在這裡添加其他初始化代碼
-                });
             },
             computed: {
                 sortedData() {
@@ -431,45 +442,36 @@
             methods: {
                 async loadData() {
                     try {
-                        // 確保正確路徑，修正 countylink.json 為 countrylink.json (如果需要)
-                        const countryLinkResponse = await fetch('countylink.json');
+                        const [countryLinkResponse, mergedDataResponse] = await Promise.all([
+                            fetch('countylink.json'),
+                            fetch('data/merged_country_data.json')
+                        ]);
                         this.countryData = await countryLinkResponse.json();
-                        console.log('加載的地區資料:', this.countryData); // 用於調試
-                        
-                        // 從JSON提取地區
+                        this.mergedData = await mergedDataResponse.json();
                         this.regions = Object.keys(this.countryData);
-                        console.log('偵測到的地區:', this.regions); // 用於調試
-                        
-                        // 嘗試加載合併數據
-                        try {
-                            const mergedDataResponse = await fetch('data/merged_country_data.json');
-                            this.mergedData = await mergedDataResponse.json();
-                        } catch(mergedError) {
-                            console.warn('無法加載合併數據，但會繼續顯示地區按鈕:', mergedError);
-                        }
-                        
                         this.updateDate = new Date().toISOString().split('T')[0];
+                        
+                        // 创建CSV下载链接
+                        const csvData = this.convertToCSV(this.mergedData);
+                        const csvBlob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
+                        this.csvDownloadUrl = URL.createObjectURL(csvBlob);
                     } catch (error) {
-                        console.error('加載地區資料時出錯:', error);
-                        // 提供一些測試數據以確保界面可用
-                        this.countryData = {
-                            "歐洲": {
-                                "countries": [
-                                    {
-                                        "name": "Russian Federation",
-                                        "chinese": "俄羅斯",
-                                        "code": "RU",
-                                        "lng": 37.35,
-                                        "lat": 55.45
-                                    }
-                                ]
-                            },
-                            "亞洲": {
-                                "countries": []
-                            }
-                        };
-                        this.regions = Object.keys(this.countryData);
+                        console.error('Error loading data:', error);
                     }
+                },
+                convertToCSV(data) {
+                    // 简单的数据转CSV实现
+                    let csv = 'region,country,';
+                    csv += this.indicators.map(i => i.key).join(',') + '\n';
+                    
+                    for (const region in data) {
+                        for (const country of data[region]) {
+                            csv += `${region},${country.name},`;
+                            csv += this.indicators.map(i => country[i.key] || '').join(',') + '\n';
+                        }
+                    }
+                    
+                    return csv;
                 },
                 selectRegion(region) {
                     this.selectedRegion = region;
