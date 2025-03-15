@@ -381,7 +381,7 @@
         new Vue({
             el: '#app',
             data: {
-                regions: ['亞洲', '歐洲', '北美洲', '南美洲', '大洋洲', '非洲'], // 預設顯示常見地區
+                regions: [],
                 selectedRegion: '',
                 countries: [],
                 selectedCountries: [],
@@ -407,10 +407,19 @@
                 selectAll: false,
                 csvDownloadUrl: '#'
             },
-            mounted() {
+            created() {
+                // 立即開始載入數據
                 this.loadData();
+            },
+            mounted() {
                 // 自動選擇所有指標
                 this.selectedIndicators = this.indicators.map(i => i.key);
+                
+                // 如果數據未載入，再次嘗試
+                if (this.regions.length === 0) {
+                    console.log("在mounted中重新嘗試載入數據");
+                    this.loadData();
+                }
             },
             computed: {
                 sortedData() {
@@ -442,26 +451,65 @@
             methods: {
                 async loadData() {
                     try {
-                        const [countryLinkResponse, mergedDataResponse] = await Promise.all([
-                            fetch('countylink.json'),
-                            fetch('data/merged_country_data.json')
-                        ]);
-                        this.countryData = await countryLinkResponse.json();
-                        this.mergedData = await mergedDataResponse.json();
+                        console.log("開始載入數據...");
                         
-                        // 使用伺服器返回的地區替換預設值
+                        // 分開處理每個fetch請求，以便更好地診斷問題
+                        let countryLinkResponse;
+                        try {
+                            countryLinkResponse = await fetch('countylink.json');
+                            console.log("countylink.json 請求成功");
+                        } catch (e) {
+                            console.error("countylink.json 請求失敗:", e);
+                            throw e;
+                        }
+                        
+                        let mergedDataResponse;
+                        try {
+                            mergedDataResponse = await fetch('data/merged_country_data.json');
+                            console.log("merged_country_data.json 請求成功");
+                        } catch (e) {
+                            console.error("merged_country_data.json 請求失敗:", e);
+                            throw e;
+                        }
+                        
+                        // 解析JSON數據
+                        try {
+                            this.countryData = await countryLinkResponse.json();
+                            console.log("countylink.json 解析成功");
+                        } catch (e) {
+                            console.error("解析 countylink.json 失敗:", e);
+                            throw e;
+                        }
+                        
+                        try {
+                            this.mergedData = await mergedDataResponse.json();
+                            console.log("merged_country_data.json 解析成功");
+                        } catch (e) {
+                            console.error("解析 merged_country_data.json 失敗:", e);
+                            throw e;
+                        }
+                        
+                        // 設置地區
                         if (this.countryData) {
                             this.regions = Object.keys(this.countryData);
+                            console.log("地區數據載入成功:", this.regions);
+                        } else {
+                            console.error("countryData 為空，無法設置地區");
                         }
                         
                         this.updateDate = new Date().toISOString().split('T')[0];
                         
-                        // 创建CSV下载链接
-                        const csvData = this.convertToCSV(this.mergedData);
-                        const csvBlob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
-                        this.csvDownloadUrl = URL.createObjectURL(csvBlob);
+                        // 創建CSV下載鏈接
+                        if (this.mergedData) {
+                            const csvData = this.convertToCSV(this.mergedData);
+                            const csvBlob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
+                            this.csvDownloadUrl = URL.createObjectURL(csvBlob);
+                            console.log("CSV 下載鏈接創建成功");
+                        } else {
+                            console.error("mergedData 為空，無法創建CSV下載鏈接");
+                        }
                     } catch (error) {
-                        console.error('Error loading data:', error);
+                        console.error('數據載入過程中發生錯誤:', error);
                     }
                 },
                 convertToCSV(data) {
