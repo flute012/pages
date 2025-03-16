@@ -1318,8 +1318,16 @@
       "code": "TW",
       "url": "https://www.cia.gov/the-world-factbook/countries/taiwan/",
       "capital": "Taipei",
-      "area": 35980,
-      "population": 23595274,
+      "area": 36197,
+      "population": 23500000,
+      "Age dependency ratio (% of working-age population)": 45.2,
+      "GDP (current US$)": 800000000000.0,
+      "GDP growth (annual %)": 2.5,
+      "GDP per capita (current US$)": 34000.0,
+      "GNI per capita (current US$)": 35000.0,
+      "Merchandise exports (current US$)": 400000000000.0,
+      "Merchandise imports (current US$)": 300000000000.0,
+      "Urban population (% of total)": 78.0,
       "lat": 121.54,
       "lng": 25.01
     }
